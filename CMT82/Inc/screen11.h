@@ -13,5 +13,6 @@
 void screen11_init();
 int screen11_button();
 void screen11_action(int button);
+void screen11_value_update(char c);
 
 #endif /* SCREEN11_H_ */
