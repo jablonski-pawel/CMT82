@@ -5,6 +5,7 @@
  *      Author: gorian
  */
 #include "process.h"
+#include "lista.h"
 
 //obroty silników
 uint16_t ipr = 2134; // ilość impulsów na jeden obrót
@@ -13,11 +14,18 @@ uint16_t ipr_count = 0; //ilość zrobionych impulsów
 uint16_t i2do = 0; //ilość impulsów do zrobienia w danym cyklu
 
 uint8_t step = 0; // numer kroku procesu
+uint8_t start_begin = 0; //flaga potwierdzająca ręczne włączenie procesu - potrzebna do wyświetlenia pierwszy raz ekranu 6
 
 uint8_t step_cut = 0; // numer kroku bazowania
 uint16_t close_open_knife_clk = 0;
 
+extern UART_HandleTypeDef huart1;
+extern uint8_t data[50];
+extern uint16_t size;
+
+extern char temp_name[18];
 extern uint16_t _pcs;
+extern uint16_t _pcs_done;
 extern uint16_t _length;
 extern uint8_t _left_cov;
 extern uint8_t _left_eye;
@@ -26,20 +34,34 @@ extern uint8_t _right_cov;
 extern uint16_t _knife;
 extern uint16_t _knife_move_back;
 extern uint8_t start;
+extern uint8_t stop_process;
 extern uint8_t cut;
 extern RTC_HandleTypeDef hrtc;
 extern RTC_TimeTypeDef stimestructureget;
+
+//lista jednokierunkowa
+extern wezel *L;
+extern uint16_t p;
 
 void process_run() {
 	//bazowanie();
 	switch (step) {
 	case 0:
+		//Jeśli otwarto drzwiczki
 		if(HAL_GPIO_ReadPin(door_GPIO_Port, door_Pin) < 1){
 			start = 0;
 			screen9_init();
 		} else {
 			HAL_RTC_GetTime(&hrtc, &stimestructureget, FORMAT_BIN);
-			screen6_init(stimestructureget.Hours, stimestructureget.Minutes); //TODO: Dorobić warunek sprawdzania ilości sztuk, czy jest mniejsza od ilości całkowitej; jeśli jest równa, to zmień ekran na zakończono proces
+			if(_pcs_done < _pcs && stop_process < 1){
+				screen6_init(stimestructureget.Hours, stimestructureget.Minutes);
+			} else {
+				//przygotowanie zmiennych do wysunięcia ostatniego przewodu obrobionego z maszyny
+				ipr_count = 0;
+				i2do = process_mm2i(80);
+				step = 18;
+				break;
+			}
 			//kierunek w lewo
 			process_steppers_CW(1);
 			//włączenie silników
@@ -307,9 +329,35 @@ void process_run() {
 		}
 		break;
 
+	case 17:
+		//zwiększenie ilości wykonanych przewodów i zapisanie tej wartości do struktury
+		++_pcs_done;
+		usun(&L, p);
+		wstaw(&L, p, temp_name, _pcs, _pcs_done, _length, _left_cov, _left_eye,
+			_right_eye, _right_cov, _knife, _knife_move_back);
+		step = 19;
+		break;
+
+	case 18:
+		//wysunięcie ostatniego przewodu z maszyny i zakończenie procesu
+		if (ipr_count < i2do) {
+			HAL_GPIO_TogglePin(CP_L_GPIO_Port, CP_L_Pin);
+			++ipr_count;
+		} else {
+			if(stop_process < 1){
+				screen6_init(stimestructureget.Hours, stimestructureget.Minutes);
+			} else {
+				screen6_1_init(stimestructureget.Hours, stimestructureget.Minutes);
+				stop_process = 0;
+			}
+			ipr_count = 0;
+			process_steppers_EN(0);
+			start = 0;
+			step = 0;
+		}
+		break;
+
 	default:
-		process_steppers_EN(0);
-		start = 0;
 		step = 0;
 		break;
 	}

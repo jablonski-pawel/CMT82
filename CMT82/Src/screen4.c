@@ -79,8 +79,11 @@ void screen4_init() {
 	size = sprintf(data, "UF 3 100 15 65535 %s\n\r", temp_name);
 	HAL_UART_Transmit(&huart2, data, size, 1000);
 
-	size = sprintf(data, "UF 2 214 72 0 %s\/%s\n\r", temp_pcs_done, temp_pcs);
+	size = sprintf(data, "UF 2 214 72 0 %s\n\r", temp_pcs);
 	HAL_UART_Transmit(&huart2, data, size, 1000);
+
+//	size = sprintf(data, "UF 2 214 72 0 %s\/%s\n\r", temp_pcs_done, temp_pcs);
+//	HAL_UART_Transmit(&huart2, data, size, 1000);
 
 	size = sprintf(data, "UF 2 165 114 0 %s\n\r", temp_length);
 	HAL_UART_Transmit(&huart2, data, size, 1000);

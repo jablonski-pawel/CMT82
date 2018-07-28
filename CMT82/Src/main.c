@@ -42,7 +42,9 @@
 #include "screen3.h"
 #include "screen4.h"
 #include "screen6.h"
+#include "screen6_1.h"
 #include "screen7.h"
+#include "screen8.h"
 #include "screen9.h"
 #include "screen10.h"
 #include "screen11.h"
@@ -95,12 +97,18 @@ uint16_t p = 3;
 uint16_t p_max = 0;
 
 uint8_t start = 0; //start procesu
+uint8_t stop_process = 0;	//flaga zatrzymująca proces po naciśnięciu stopu
 uint8_t base = 0; //bazowanie noży - 1 - zbazowane; 0 - nie
 uint8_t cut = 0; //cięcie - 1 - tnie; 0 - nie
 extern uint16_t impuls2open;
 uint16_t cutting_deph = 0;
 uint8_t set_cutting = 0;
 extern uint16_t cutting_impulses;
+
+extern uint16_t _pcs;
+extern uint16_t _pcs_done;
+extern uint8_t step;
+extern uint8_t start_begin;
 
 /* USER CODE END PV */
 
@@ -128,6 +136,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 				impuls2open);
 		HAL_UART_Transmit(&huart1, data, size, 100);
 	}
+
 	if (GPIO_Pin == wire_sensor_Pin) {
 		if(HAL_GPIO_ReadPin(wire_sensor_GPIO_Port, wire_sensor_Pin) < 1 && start == 1){
 			start = 0;
@@ -136,6 +145,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 		size = sprintf((char*) data, "Brak przewodu\n\r");
 		HAL_UART_Transmit(&huart1, data, size, 100);
 	}
+
 	if (GPIO_Pin == knife_Pin) {
 		size = sprintf((char*) data, "Noz interrupt\n\r");
 		HAL_UART_Transmit(&huart1, data, size, 100);
@@ -166,12 +176,24 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 					break;
 
 				case 2: //uruchomienie procesu cięcia na długość i odizolowywania
-					start = 1;
-					//process_run();
+					//Jeśli ilość sztuk wykonanych jest większa lub równa od ilości zadanej to wyskakuje okno z ostrzeżeniem
+					if(_pcs_done >= _pcs){
+						start = 0;
+						screen8_init();
+					} else {
+						if(screen == 2){
+							step = 0;
+							start_begin = 1;
+							start = 1;
+						}
+					}
+
 					break;
 
 				case 3: //zatrzymanie procesu cięcia
-					start = 0;
+					if(start == 1){
+						stop_process = 1;
+					}
 					break;
 
 				case 4: //bazowanie
@@ -245,11 +267,19 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 			break;
 
 		case 6:
-			//brak akcji do wykonania, nie ma takiej funkcji, bo nie ma przycisków
+			screen6_action(screen6_button());
+			break;
+
+		case 61:
+			screen6_1_action(screen6_1_button());
 			break;
 
 		case 7:
 			screen7_action(screen7_button());
+			break;
+
+		case 8:
+			screen8_action(screen8_button());
 			break;
 
 		case 9:
@@ -302,8 +332,18 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 			screen6_init(stimestructureget.Hours, stimestructureget.Minutes);
 			break;
 
+		case 61:
+			HAL_RTC_GetTime(&hrtc, &stimestructureget, FORMAT_BIN);
+			screen6_1_init(stimestructureget.Hours, stimestructureget.Minutes);
+			break;
+
 		case 7:
 			screen7_init();
+			//action = 0;
+			break;
+
+		case 8:
+			screen8_init();
 			//action = 0;
 			break;
 
@@ -360,11 +400,13 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 			}
 
 			if (screen == 6) {
-				size = sprintf(data, "CLR 400 1 479 45 405441\n\r");
-				HAL_UART_Transmit(&huart2, data, size, 100);
-				size = sprintf(data, "UF 5 405 10 65535 %0.2d:%0.2d\n\r",
-						stimestructureget.Hours, stimestructureget.Minutes);
-				HAL_UART_Transmit(&huart2, data, size, 100);
+				if(_pcs_done < _pcs){
+					size = sprintf(data, "CLR 400 1 479 45 405441\n\r");
+					HAL_UART_Transmit(&huart2, data, size, 100);
+					size = sprintf(data, "UF 5 405 10 65535 %0.2d:%0.2d\n\r",
+							stimestructureget.Hours, stimestructureget.Minutes);
+					HAL_UART_Transmit(&huart2, data, size, 100);
+				}
 			}
 
 			if (screen == 10) {
@@ -491,7 +533,7 @@ int main(void) {
 	//wstawPocz(&L, 33);
 	wstaw(&L, 1, "bbb", 1000, 0, 200, 7, 6, 7, 8, 810, 250);
 	wstaw(&L, 2, "ccc", 2000, 0, 300, 8, 7, 8, 9, 820, 250);
-	wstaw(&L, 3, "ddd", 300, 0, 900, 9, 8, 1, 2, 825, 50);
+	wstaw(&L, 3, "ddd", 3, 0, 50, 9, 8, 0, 0, 825, 50);
 	wstaw(&L, 4, "eee", 4000, 0, 500, 4, 3, 4, 5, 840, 250);
 
 //ekran startowy - logo+pasek ładowania

@@ -25,6 +25,7 @@ extern uint8_t param_number;
 extern uint8_t max_size1;
 
 extern uint8_t start;
+extern uint8_t base;
 
 char temp_name[18];
 char *temp_pcs[5];
@@ -73,10 +74,10 @@ void screen1_init(uint8_t hours, uint8_t minutes) {
 	sprintf(temp_knife, "%d", _knife);
 	sprintf(temp_knife_move_back, "%d", _knife_move_back);
 
-	size = sprintf(data, "CLR 200 14 340 35 19481\n\r");
+	size = sprintf(data, "CLR 140 10 340 40 19481\n\r");
 	HAL_UART_Transmit(&huart2, data, size, 1000);
 
-	size = sprintf(data, "UF 3 200 15 65535 %s\n\r", temp_name);
+	size = sprintf(data, "UF 3 %d 15 65535 %s\n\r", 240-(strlen(temp_name))*5, temp_name);
 	HAL_UART_Transmit(&huart2, data, size, 1000);
 
 	size = sprintf(data, "UF 2 200 72 0 %s\/%s\n\r", temp_pcs_done, temp_pcs);
@@ -212,6 +213,13 @@ int screen1_button() {
 		return 16;
 	}
 
+	if (((0 < position_x) && (position_x < 45))
+			&& ((91 < position_y) && (position_y < 136))) {
+		size = sprintf(data, "BUZ 150 2000\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+		return 17;
+	}
+
 	position_x = 0;
 	position_y = 0;
 	return 0;
@@ -220,7 +228,7 @@ int screen1_button() {
 	//2 - dodaj program
 	//3 - w lewo <
 	//4 - w prawo >
-	//5 - regulacja noży
+	//5 - cięcie przewodu
 	//6 - AWG tabela
 	//7 - info o producencie
 	//8 - ustawianie zegara i daty
@@ -231,6 +239,7 @@ int screen1_button() {
 	//14 - lewe oczko
 	//15 - prawe oczko
 	//16 - prawy odpad
+	//17 - reset licznika
 }
 
 void screen1_action(int button) {
@@ -262,8 +271,7 @@ void screen1_action(int button) {
 		break;
 
 	case 5:
-
-		start = 1;
+		base = 0;
 		break;
 
 	case 6:
@@ -330,6 +338,17 @@ void screen1_action(int button) {
 		action = 1;
 		break;
 
+	case 17:
+		_pcs_done = 0;
+		usun(&L, p);
+		wstaw(&L, p, temp_name, _pcs, _pcs_done, _length, _left_cov, _left_eye, _right_eye,
+					_right_cov, _knife, _knife_move_back);
+//		screen = 1;
+//		action = 1;
+		screen1_program_update();
+
+		break;
+
 	default:
 		action = 0;
 		break;
@@ -350,10 +369,10 @@ void screen1_program_update() {
 	sprintf(temp_right_cov, "%d", _right_cov);
 	sprintf(temp_knife, "%d", _knife);
 
-	size = sprintf(data, "CLR 200 14 340 35 19481\n\r");
+	size = sprintf(data, "CLR 140 10 340 40 19481\n\r");
 	HAL_UART_Transmit(&huart2, data, size, 1000);
 
-	size = sprintf(data, "UF 3 200 15 65535 %s\n\r", temp_name);
+	size = sprintf(data, "UF 3 %d 15 65535 %s\n\r", 240-(strlen(temp_name))*5, temp_name);
 	HAL_UART_Transmit(&huart2, data, size, 1000);
 
 	size = sprintf(data, "CLR 200 76 240 87 65535\n\r");
