@@ -52,7 +52,7 @@ void process_run() {
 			start = 0;
 			screen9_init();
 		} else {
-			HAL_RTC_GetTime(&hrtc, &stimestructureget, FORMAT_BIN);
+			HAL_RTC_GetTime(&hrtc, &stimestructureget, RTC_FORMAT_BIN);
 			if(_pcs_done < _pcs && stop_process < 1){
 				screen6_init(stimestructureget.Hours, stimestructureget.Minutes);
 			} else {

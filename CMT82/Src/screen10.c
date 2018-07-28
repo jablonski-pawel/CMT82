@@ -38,14 +38,14 @@ void screen10_init() {
 	size = sprintf(data, "Zaladowano ekran 10\n\r");
 	HAL_UART_Transmit(&huart1, data, size, 1000);
 
-	HAL_RTC_GetTime(&hrtc, &stimestructureget, FORMAT_BIN);
+	HAL_RTC_GetTime(&hrtc, &stimestructureget, RTC_FORMAT_BIN);
 	size = sprintf(data, "UF 5 55 94 0 %0.2d\n\r", stimestructureget.Hours);
 	HAL_UART_Transmit(&huart2, data, size, 100);
 
 	size = sprintf(data, "UF 5 112 94 0 %0.2d\n\r", stimestructureget.Minutes);
 	HAL_UART_Transmit(&huart2, data, size, 100);
 
-	HAL_RTC_GetDate(&hrtc, &sdatestructureget, FORMAT_BIN);
+	HAL_RTC_GetDate(&hrtc, &sdatestructureget, RTC_FORMAT_BIN);
 	size = sprintf(data, "UF 5 55 151 0 %0.2d\n\r", sdatestructureget.Date);
 	HAL_UART_Transmit(&huart2, data, size, 100);
 
@@ -251,8 +251,8 @@ void screen10_action(int button) {
 		if (strlen(temp_year) > 0)
 			sdatestructureget.Year = atoi(temp_year);
 
-		HAL_RTC_SetTime(&hrtc, &stimestructureget, FORMAT_BIN);
-		HAL_RTC_SetDate(&hrtc, &sdatestructureget, FORMAT_BIN);
+		HAL_RTC_SetTime(&hrtc, &stimestructureget, RTC_FORMAT_BIN);
+		HAL_RTC_SetDate(&hrtc, &sdatestructureget, RTC_FORMAT_BIN);
 		sprintf(temp_str, "");
 		sprintf(temp_hours, "");
 		sprintf(temp_minutes, "");

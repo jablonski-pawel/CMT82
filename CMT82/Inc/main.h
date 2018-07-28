@@ -1,10 +1,16 @@
 /**
   ******************************************************************************
-  * File Name          : main.h
-  * Description        : This file contains the common defines of the application
+  * @file           : main.h
+  * @brief          : Header for main.c file.
+  *                   This file contains the common defines of the application.
   ******************************************************************************
+  ** This notice applies to any and all portions of this file
+  * that are not between comment pairs USER CODE BEGIN and
+  * USER CODE END. Other portions of this file, whether 
+  * inserted by the user or by software development tools
+  * are owned by their respective copyright owners.
   *
-  * COPYRIGHT(c) 2016 STMicroelectronics
+  * COPYRIGHT(c) 2018 STMicroelectronics
   *
   * Redistribution and use in source and binary forms, with or without modification,
   * are permitted provided that the following conditions are met:
@@ -30,10 +36,12 @@
   *
   ******************************************************************************
   */
+
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __MAIN_H
-#define __MAIN_H
-  /* Includes ------------------------------------------------------------------*/
+#ifndef __MAIN_H__
+#define __MAIN_H__
+
+/* Includes ------------------------------------------------------------------*/
 
 /* USER CODE BEGIN Includes */
 
@@ -49,14 +57,17 @@
 #define C1_GPIO_Port GPIOA
 #define wire_sensor_Pin GPIO_PIN_6
 #define wire_sensor_GPIO_Port GPIOA
+#define wire_sensor_EXTI_IRQn EXTI9_5_IRQn
 #define wire_LED_Pin GPIO_PIN_7
 #define wire_LED_GPIO_Port GPIOA
 #define door_Pin GPIO_PIN_0
 #define door_GPIO_Port GPIOB
+#define door_EXTI_IRQn EXTI0_IRQn
 #define LED_Pin GPIO_PIN_1
 #define LED_GPIO_Port GPIOB
 #define knife_Pin GPIO_PIN_8
 #define knife_GPIO_Port GPIOA
+#define knife_EXTI_IRQn EXTI9_5_IRQn
 #define USBDISC_Pin GPIO_PIN_15
 #define USBDISC_GPIO_Port GPIOA
 #define CP_R_Pin GPIO_PIN_4
@@ -71,17 +82,28 @@
 #define CW_L_GPIO_Port GPIOB
 #define CP_L_Pin GPIO_PIN_9
 #define CP_L_GPIO_Port GPIOB
+
+/* ########################## Assert Selection ############################## */
+/**
+  * @brief Uncomment the line below to expanse the "assert_param" macro in the 
+  *        HAL drivers code
+  */
+/* #define USE_FULL_ASSERT    1U */
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
 
-/**
-  * @}
-  */ 
+#ifdef __cplusplus
+ extern "C" {
+#endif
+void _Error_Handler(char *, int);
 
-/**
-  * @}
-*/ 
+#define Error_Handler() _Error_Handler(__FILE__, __LINE__)
+#ifdef __cplusplus
+}
+#endif
 
-#endif /* __MAIN_H */
+#endif /* __MAIN_H__ */
+
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

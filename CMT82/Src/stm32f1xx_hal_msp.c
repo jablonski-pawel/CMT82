@@ -4,8 +4,13 @@
   * Description        : This file provides code for the MSP Initialization 
   *                      and de-Initialization codes.
   ******************************************************************************
+  ** This notice applies to any and all portions of this file
+  * that are not between comment pairs USER CODE BEGIN and
+  * USER CODE END. Other portions of this file, whether 
+  * inserted by the user or by software development tools
+  * are owned by their respective copyright owners.
   *
-  * COPYRIGHT(c) 2016 STMicroelectronics
+  * COPYRIGHT(c) 2018 STMicroelectronics
   *
   * Redistribution and use in source and binary forms, with or without modification,
   * are permitted provided that the following conditions are met:
@@ -34,7 +39,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f1xx_hal.h"
 
-extern void Error_Handler(void);
+extern void _Error_Handler(char *, int);
 /* USER CODE BEGIN 0 */
 
 /* USER CODE END 0 */
@@ -89,7 +94,7 @@ void HAL_RTC_MspInit(RTC_HandleTypeDef* hrtc)
     __HAL_RCC_BKP_CLK_ENABLE();
     /* Peripheral clock enable */
     __HAL_RCC_RTC_ENABLE();
-    /* Peripheral interrupt init */
+    /* RTC interrupt Init */
     HAL_NVIC_SetPriority(RTC_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(RTC_IRQn);
   /* USER CODE BEGIN RTC_MspInit 1 */
@@ -110,13 +115,12 @@ void HAL_RTC_MspDeInit(RTC_HandleTypeDef* hrtc)
     /* Peripheral clock disable */
     __HAL_RCC_RTC_DISABLE();
 
-    /* Peripheral interrupt DeInit*/
+    /* RTC interrupt DeInit */
     HAL_NVIC_DisableIRQ(RTC_IRQn);
-
-  }
   /* USER CODE BEGIN RTC_MspDeInit 1 */
 
   /* USER CODE END RTC_MspDeInit 1 */
+  }
 
 }
 
@@ -130,7 +134,7 @@ void HAL_TIM_OnePulse_MspInit(TIM_HandleTypeDef* htim_onepulse)
   /* USER CODE END TIM1_MspInit 0 */
     /* Peripheral clock enable */
     __HAL_RCC_TIM1_CLK_ENABLE();
-    /* Peripheral interrupt init */
+    /* TIM1 interrupt Init */
     HAL_NVIC_SetPriority(TIM1_UP_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(TIM1_UP_IRQn);
   /* USER CODE BEGIN TIM1_MspInit 1 */
@@ -144,7 +148,7 @@ void HAL_TIM_OnePulse_MspInit(TIM_HandleTypeDef* htim_onepulse)
   /* USER CODE END TIM3_MspInit 0 */
     /* Peripheral clock enable */
     __HAL_RCC_TIM3_CLK_ENABLE();
-    /* Peripheral interrupt init */
+    /* TIM3 interrupt Init */
     HAL_NVIC_SetPriority(TIM3_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(TIM3_IRQn);
   /* USER CODE BEGIN TIM3_MspInit 1 */
@@ -158,7 +162,7 @@ void HAL_TIM_OnePulse_MspInit(TIM_HandleTypeDef* htim_onepulse)
   /* USER CODE END TIM4_MspInit 0 */
     /* Peripheral clock enable */
     __HAL_RCC_TIM4_CLK_ENABLE();
-    /* Peripheral interrupt init */
+    /* TIM4 interrupt Init */
     HAL_NVIC_SetPriority(TIM4_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(TIM4_IRQn);
   /* USER CODE BEGIN TIM4_MspInit 1 */
@@ -179,9 +183,8 @@ void HAL_TIM_OnePulse_MspDeInit(TIM_HandleTypeDef* htim_onepulse)
     /* Peripheral clock disable */
     __HAL_RCC_TIM1_CLK_DISABLE();
 
-    /* Peripheral interrupt DeInit*/
+    /* TIM1 interrupt DeInit */
     HAL_NVIC_DisableIRQ(TIM1_UP_IRQn);
-
   /* USER CODE BEGIN TIM1_MspDeInit 1 */
 
   /* USER CODE END TIM1_MspDeInit 1 */
@@ -194,9 +197,8 @@ void HAL_TIM_OnePulse_MspDeInit(TIM_HandleTypeDef* htim_onepulse)
     /* Peripheral clock disable */
     __HAL_RCC_TIM3_CLK_DISABLE();
 
-    /* Peripheral interrupt DeInit*/
+    /* TIM3 interrupt DeInit */
     HAL_NVIC_DisableIRQ(TIM3_IRQn);
-
   /* USER CODE BEGIN TIM3_MspDeInit 1 */
 
   /* USER CODE END TIM3_MspDeInit 1 */
@@ -209,9 +211,8 @@ void HAL_TIM_OnePulse_MspDeInit(TIM_HandleTypeDef* htim_onepulse)
     /* Peripheral clock disable */
     __HAL_RCC_TIM4_CLK_DISABLE();
 
-    /* Peripheral interrupt DeInit*/
+    /* TIM4 interrupt DeInit */
     HAL_NVIC_DisableIRQ(TIM4_IRQn);
-
   /* USER CODE BEGIN TIM4_MspDeInit 1 */
 
   /* USER CODE END TIM4_MspDeInit 1 */
@@ -245,7 +246,7 @@ void HAL_UART_MspInit(UART_HandleTypeDef* huart)
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-    /* Peripheral interrupt init */
+    /* USART1 interrupt Init */
     HAL_NVIC_SetPriority(USART1_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(USART1_IRQn);
   /* USER CODE BEGIN USART1_MspInit 1 */
@@ -274,7 +275,7 @@ void HAL_UART_MspInit(UART_HandleTypeDef* huart)
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-    /* Peripheral interrupt init */
+    /* USART2 interrupt Init */
     HAL_NVIC_SetPriority(USART2_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(USART2_IRQn);
   /* USER CODE BEGIN USART2_MspInit 1 */
@@ -301,9 +302,8 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* huart)
     */
     HAL_GPIO_DeInit(GPIOA, GPIO_PIN_9|GPIO_PIN_10);
 
-    /* Peripheral interrupt DeInit*/
+    /* USART1 interrupt DeInit */
     HAL_NVIC_DisableIRQ(USART1_IRQn);
-
   /* USER CODE BEGIN USART1_MspDeInit 1 */
 
   /* USER CODE END USART1_MspDeInit 1 */
@@ -322,9 +322,8 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* huart)
     */
     HAL_GPIO_DeInit(GPIOA, GPIO_PIN_2|GPIO_PIN_3);
 
-    /* Peripheral interrupt DeInit*/
+    /* USART2 interrupt DeInit */
     HAL_NVIC_DisableIRQ(USART2_IRQn);
-
   /* USER CODE BEGIN USART2_MspDeInit 1 */
 
   /* USER CODE END USART2_MspDeInit 1 */
@@ -359,10 +358,10 @@ void HAL_PCD_MspDeInit(PCD_HandleTypeDef* hpcd)
   /* USER CODE END USB_MspDeInit 0 */
     /* Peripheral clock disable */
     __HAL_RCC_USB_CLK_DISABLE();
-  }
   /* USER CODE BEGIN USB_MspDeInit 1 */
 
   /* USER CODE END USB_MspDeInit 1 */
+  }
 
 }
 

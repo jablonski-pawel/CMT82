@@ -23,6 +23,7 @@ extern uint8_t base;
 
 extern char *temp_str[1];
 
+extern uint8_t key_delay;
 extern uint8_t param_number;
 extern uint8_t max_size1;
 uint8_t dot_char;
@@ -51,6 +52,7 @@ uint8_t _right_eye;
 uint8_t _right_cov;
 uint16_t _knife;
 uint16_t _knife_move_back;
+double tempFloat;
 
 //lista jednokierunkowa
 extern wezel *L;
@@ -83,11 +85,19 @@ void screen11_init() {
 	size = sprintf(data, "LOAD 0 0 11.bmp\n\r");
 	HAL_UART_Transmit(&huart2, data, size, 100);
 
-	size = sprintf(data, "Zaladowano ekran 11\n\r");
-	HAL_UART_Transmit(&huart1, data, size, 1000);
+//	tempFloat= 3.1;
 
-	size = sprintf(data, "Wartosc noza: %d\n\r", _knife);
-	HAL_UART_Transmit(&huart1, data, size, 1000);
+	size = sprintf(data, "UF 3 %d 178 0 %.1f mm\n\r", 141-(strlen(temp_knife_mm)+3)*5, -0.016*_knife+14.4);
+	HAL_UART_Transmit(&huart2, data, size, 100);
+
+	size = sprintf(data, "UF 3 %d 234 0 %.1f mm\n\r", 141-(strlen(temp_knife_move_back_mm)+3)*5, _knife_move_back/837.5);
+	HAL_UART_Transmit(&huart2, data, size, 100);
+
+	size = sprintf(data, "Zaladowano ekran 11\n\r");
+	HAL_UART_Transmit(&huart1, data, size, 100);
+
+	size = sprintf(data, "Wartosc noza: %d  %.1f  %.1f\n\r", _knife, -0.016*_knife+14.4, _knife_move_back/837.5);
+	HAL_UART_Transmit(&huart1, data, size, 100);
 }
 
 int screen11_button() {
@@ -110,6 +120,20 @@ int screen11_button() {
 		size = sprintf(data, "BUZ 150 2000\n\r");
 		HAL_UART_Transmit(&huart2, data, size, 100);
 		return 3;
+	}
+
+	if (((380 < position_x) && (position_x < 425))
+			&& ((0 < position_y) && (position_y < 45))) {
+		size = sprintf(data, "BUZ 150 2000\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+		return 4;
+	}
+
+	if (((425 < position_x) && (position_x < 470))
+			&& ((0 < position_y) && (position_y < 45))) {
+		size = sprintf(data, "BUZ 150 2000\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+		return 5;
 	}
 
 //	if (((255 < position_x) && (position_x < 300))
@@ -232,7 +256,8 @@ int screen11_button() {
 	//1 - zamknij/powrót
 	//2 - zapisz
 	//3 - usuwanie wartości
-	//5 - pozycja zapisana (wyjściowa)
+	//4 - plus noże
+	//5 - minus noże
 	//10 - zero
 	//11 - jeden
 	//12 - dwa
@@ -301,40 +326,43 @@ void screen11_action(int button) {
 
 		case 2:
 			sprintf(temp_knife_move_back_mm, "");
-			size = sprintf(data, "CLR 82 227 202 248 65535\n\r");
+			size = sprintf(data, "CLR 82 227 202 260 65535\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 			break;
 		}
 
 		dot_char = 0;
 		break;
-//		if ((cutting_impulses < 900) && base == 1) {
-//			//zmiana prędkości zamykania noży
-//			htim4.Init.Period = 143;
-//			if (HAL_TIM_OnePulse_Init(&htim4, TIM_OPMODE_REPETITIVE)
-//					!= HAL_OK) {
-//				Error_Handler();
-//			}
-//			//kierunek zamykania
-//			HAL_GPIO_WritePin(CW_C_GPIO_Port, CW_C_Pin, GPIO_PIN_RESET);
-//			set_cutting = 1;
-//		}
+
+	case 4:
+		if ((cutting_impulses < 900) && base == 1) {
+			//zmiana prędkości zamykania noży
+			htim4.Init.Period = 143;
+			if (HAL_TIM_OnePulse_Init(&htim4, TIM_OPMODE_REPETITIVE)
+					!= HAL_OK) {
+				Error_Handler();
+			}
+			//kierunek zamykania
+			HAL_GPIO_WritePin(CW_C_GPIO_Port, CW_C_Pin, GPIO_PIN_RESET);
+			set_cutting = 1;
+		}
+		break;
 
 
-//	case 4:
-//		if ((cutting_impulses > 0) && base == 1) {
-//			//zmiana prędkości otwierania noży
-//			htim4.Init.Period = 143;
-//			if (HAL_TIM_OnePulse_Init(&htim4, TIM_OPMODE_REPETITIVE)
-//					!= HAL_OK) {
-//				Error_Handler();
-//			}
-//			//kierunek otwierania
-//			HAL_GPIO_WritePin(CW_C_GPIO_Port, CW_C_Pin, GPIO_PIN_SET);
-//			set_cutting = 2;
-//			//action = 1;
-//		}
-//		break;
+	case 5:
+		if ((cutting_impulses > 0) && base == 1) {
+			//zmiana prędkości otwierania noży
+			htim4.Init.Period = 143;
+			if (HAL_TIM_OnePulse_Init(&htim4, TIM_OPMODE_REPETITIVE)
+					!= HAL_OK) {
+				Error_Handler();
+			}
+			//kierunek otwierania
+			HAL_GPIO_WritePin(CW_C_GPIO_Port, CW_C_Pin, GPIO_PIN_SET);
+			set_cutting = 2;
+			//action = 1;
+		}
+		break;
 
 	case 10:
 		screen11_value_update('0');
@@ -378,13 +406,17 @@ void screen11_action(int button) {
 
 	case 20:
 		if(param_number == 1){
-			screen11_value_update('.');
-			dot_char = 1;
+			if(strlen(temp_knife_mm) > 0){
+				screen11_value_update('.');
+				dot_char = 1;
+			}
 		}
 
 		if(param_number == 2){
-			screen11_value_update('.');
-			dot_char = 2;
+			if(strlen(temp_knife_move_back_mm) > 0){
+				screen11_value_update('.');
+				dot_char = 2;
+			}
 		}
 		break;
 
@@ -404,70 +436,76 @@ void screen11_action(int button) {
 void screen11_value_update(char c) {
 	uint8_t len = 0;
 
-//	switch (param_number) {
-//	case 1:
-//		len = strlen(temp_knife_mm);
-//		if (len < max_size1 && dot_char < 1) {
-//
-//			char *str2 = malloc(len + 1 + 1); //allokacja pamięci tla tymczasowego stringa - zwiększenie o jeden plus jeden dla znaku końca
-//			strcpy(str2, temp_knife_mm);
-//
-//			str2[len] = c;
-//			str2[len + 1] = '\0';
-//
-//			size = sprintf(data, "%s\n\r", str2);
-//			HAL_UART_Transmit(&huart1, data, size, 1000);
-//			strcpy(temp_knife_mm, str2);
-//			if (atof(temp_knife_mm) > 12) {
-//				size = sprintf(data, "BUZ 500 500\n\r");
-//				HAL_UART_Transmit(&huart2, data, size, 100);
-//
-//				sprintf(temp_knife_mm, "");
-//				size = sprintf(data, "CLR 205 74 253 90 65535\n\r");
-//				HAL_UART_Transmit(&huart2, data, size, 100);
-//
-//			} else {
-//				size = sprintf(data, "CLR 205 74 253 90 65535\n\r");
-//				HAL_UART_Transmit(&huart2, data, size, 100);
-//
-//				size = sprintf(data, "UF 3 %d 178 0 %s mm\n\r", 141-(strlen(temp_knife_mm)+3)*5, temp_knife_mm);
-//				HAL_UART_Transmit(&huart2, data, size, 100);
-//			}
-//			free(str2);
-//		}
-//		break;
-//
-//	case 2:
-//		len = strlen(temp_knife_move_back_mm);
-//		if (len < max_size1 && dot_char < 2) {
-//
-//			char *str2 = malloc(len + 1 + 1); //allokacja pamięci tla tymczasowego stringa - zwiększenie o jeden plus jeden dla znaku końca
-//			strcpy(str2, temp_knife_move_back_mm);
-//
-//			str2[len] = c;
-//			str2[len + 1] = '\0';
-//
-//			size = sprintf(data, "%s\n\r", str2);
-//			HAL_UART_Transmit(&huart1, data, size, 1000);
-//			strcpy(temp_knife_move_back_mm, str2);
-//			if (atof(temp_knife_move_back_mm) > 12) {
-//				size = sprintf(data, "BUZ 500 500\n\r");
-//				HAL_UART_Transmit(&huart2, data, size, 100);
-//
-//				sprintf(temp_knife_move_back_mm, "");
-//				size = sprintf(data, "CLR 205 228 253 248 65535\n\r");
-//				HAL_UART_Transmit(&huart2, data, size, 100);
-//
-//			} else {
-//				size = sprintf(data, "CLR 205 228 253 248 65535\n\r");
-//				HAL_UART_Transmit(&huart2, data, size, 100);
-//
-//				size = sprintf(data, "UF 3 %d 234 0 %s mm\n\r", 141-(strlen(temp_knife_move_back_mm)+3)*5, temp_knife_move_back_mm);
-//				HAL_UART_Transmit(&huart2, data, size, 100);
-//			}
-//			free(str2);
-//		}
-//		break;
-//
-//	}
+	if(key_delay < 1){
+
+		switch (param_number) {
+		case 1:
+			len = strlen(temp_knife_mm);
+			if (len < max_size1 && dot_char < 2) {
+				//900 imp -> 0mm ; 150imp -> 12mm
+				char *str2 = malloc(len + 1 + 1); //allokacja pamięci tla tymczasowego stringa - zwiększenie o jeden plus jeden dla znaku końca
+				strcpy(str2, temp_knife_mm);
+
+				str2[len] = c;
+				str2[len + 1] = '\0';
+
+				size = sprintf(data, "%s\n\r", str2);
+				HAL_UART_Transmit(&huart1, data, size, 1000);
+				strcpy(temp_knife_mm, str2);
+				if (atof(temp_knife_mm) > 12) {
+					size = sprintf(data, "BUZ 500 500\n\r");
+					HAL_UART_Transmit(&huart2, data, size, 100);
+
+					sprintf(temp_knife_mm, "");
+					size = sprintf(data, "CLR 82 177 202 212 65535\n\r");
+					HAL_UART_Transmit(&huart2, data, size, 100);
+
+				} else {
+					size = sprintf(data, "CLR 82 177 202 212 65535\n\r");
+					HAL_UART_Transmit(&huart2, data, size, 100);
+
+					size = sprintf(data, "UF 3 %d 178 0 %s mm\n\r", 141-(strlen(temp_knife_mm)+3)*5, temp_knife_mm);
+					HAL_UART_Transmit(&huart2, data, size, 100);
+				}
+				free(str2);
+			}
+			break;
+
+		case 2:
+			len = strlen(temp_knife_move_back_mm);
+			if (len < max_size1 && dot_char < 3) {
+
+				char *str2 = malloc(len + 1 + 1); //allokacja pamięci tla tymczasowego stringa - zwiększenie o jeden plus jeden dla znaku końca
+				strcpy(str2, temp_knife_move_back_mm);
+
+				str2[len] = c;
+				str2[len + 1] = '\0';
+
+				size = sprintf(data, "%s\n\r", str2);
+				HAL_UART_Transmit(&huart1, data, size, 1000);
+				strcpy(temp_knife_move_back_mm, str2);
+				if (atof(temp_knife_move_back_mm) > 12) {
+					size = sprintf(data, "BUZ 500 500\n\r");
+					HAL_UART_Transmit(&huart2, data, size, 100);
+
+					sprintf(temp_knife_move_back_mm, "");
+					size = sprintf(data, "CLR 82 227 202 260 65535\n\r");
+					HAL_UART_Transmit(&huart2, data, size, 100);
+
+				} else {
+					size = sprintf(data, "CLR 82 227 202 260 65535\n\r");
+					HAL_UART_Transmit(&huart2, data, size, 100);
+
+					size = sprintf(data, "UF 3 %d 234 0 %s mm\n\r", 141-(strlen(temp_knife_move_back_mm)+3)*5, temp_knife_move_back_mm);
+					HAL_UART_Transmit(&huart2, data, size, 100);
+				}
+				free(str2);
+			}
+			break;
+
+		}
+
+		key_delay= 1;
+
+	}
 }
