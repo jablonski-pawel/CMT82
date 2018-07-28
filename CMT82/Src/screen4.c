@@ -341,71 +341,8 @@ void screen4_action(int button) {
 
 		// XXX: zapisywanie wartości
 	case 2:
-		_pcs = atoi(temp_pcs);
-		_pcs_done = atoi(temp_pcs_done);
-		_length = atoi(temp_length);
-		_left_cov = atoi(temp_left_cov);
-		_left_eye = atoi(temp_left_eye);
-		_right_eye = atoi(temp_right_eye);
-		_right_cov = atoi(temp_right_cov);
-		_knife = atoi(temp_knife);
-		_knife_move_back = atoi(temp_knife_move_back);
-
-		if (_pcs < 1) {
-			size = sprintf(data, "BUZ 500 500\n\r");
-			HAL_UART_Transmit(&huart2, data, size, 100);
-			sprintf(temp_pcs, "");
-			size = sprintf(data, "CLR 205 74 253 90 65535\n\r");
-			HAL_UART_Transmit(&huart2, data, size, 100);
-
-			size = sprintf(data, "LOAD 0 0 error.bmp\n\r");
-			HAL_UART_Transmit(&huart2, data, size, 100);
-
-			size = sprintf(data,
-					"UF 3 60 15 65535 PCS value can't be less than 1\n\r");
-			HAL_UART_Transmit(&huart2, data, size, 100);
-			param_number = 2;
-			max_size1 = 4;
-			error = 1;
-
-		} else if (_length < 50) {
-			size = sprintf(data, "BUZ 500 500\n\r");
-			HAL_UART_Transmit(&huart2, data, size, 100);
-			sprintf(temp_length, "");
-			size = sprintf(data, "CLR 165 114 193 131 65535\n\r");
-			HAL_UART_Transmit(&huart2, data, size, 100);
-
-			size = sprintf(data, "LOAD 0 0 error.bmp\n\r");
-			HAL_UART_Transmit(&huart2, data, size, 100);
-
-			size = sprintf(data,
-					"UF 3 60 15 65535 length can't be less than 50mm\n\r");
-			HAL_UART_Transmit(&huart2, data, size, 100);
-			param_number = 3;
-			max_size1 = 3;
-			error = 1;
-
-		} else if (((_left_cov + _right_cov) >= _length)) {
-			size = sprintf(data, "BUZ 500 500\n\r");
-			HAL_UART_Transmit(&huart2, data, size, 100);
-			sprintf(temp_length, "");
-			size = sprintf(data, "CLR 165 114 193 131 65535\n\r");
-			HAL_UART_Transmit(&huart2, data, size, 100);
-
-			size = sprintf(data, "LOAD 0 0 error.bmp\n\r");
-			HAL_UART_Transmit(&huart2, data, size, 100);
-
-			size = sprintf(data, "UF 3 60 15 65535 Wrong values\n\r");
-			HAL_UART_Transmit(&huart2, data, size, 100);
-			param_number = 3;
-			max_size1 = 3;
-			error = 1;
-
-		} else {
-			usun(&L, p);
-			wstaw(&L, p, temp_name, _pcs, _pcs_done, _length, _left_cov, _left_eye,
-					_right_eye, _right_cov, _knife, _knife_move_back);
-			param_number = 0;
+		screen4_save();
+		if(error <1){
 			screen = 2;
 			action = 1;
 		}
@@ -495,9 +432,11 @@ void screen4_action(int button) {
 
 	case 9:
 		//przełącz na ekran 11 - ustawianie noży
-		//TODO: dorobić zapisywanie ustawień z aktualnego ekranu
-		screen = 11;
-		action = 1;
+		screen4_save();
+		if(error < 1){
+			screen = 11;
+			action = 1;
+		}
 		break;
 
 	case 10:
@@ -1233,3 +1172,76 @@ void screen4_plus_minus(uint8_t option) {
 		break;
 	}
 }
+
+void screen4_save(){
+
+	_pcs = atoi(temp_pcs);
+	_pcs_done = atoi(temp_pcs_done);
+	_length = atoi(temp_length);
+	_left_cov = atoi(temp_left_cov);
+	_left_eye = atoi(temp_left_eye);
+	_right_eye = atoi(temp_right_eye);
+	_right_cov = atoi(temp_right_cov);
+	_knife = atoi(temp_knife);
+	_knife_move_back = atoi(temp_knife_move_back);
+
+	error = 0;
+
+	if (_pcs < 1) {
+		size = sprintf(data, "BUZ 500 500\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+		sprintf(temp_pcs, "");
+		size = sprintf(data, "CLR 205 74 253 90 65535\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+
+		size = sprintf(data, "LOAD 0 0 error.bmp\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+
+		size = sprintf(data,
+				"UF 3 60 15 65535 PCS value can't be less than 1\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+		param_number = 2;
+		max_size1 = 4;
+		error = 1;
+
+	} else if (_length < 50) {
+		size = sprintf(data, "BUZ 500 500\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+		sprintf(temp_length, "");
+		size = sprintf(data, "CLR 165 114 193 131 65535\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+
+		size = sprintf(data, "LOAD 0 0 error.bmp\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+
+		size = sprintf(data,
+				"UF 3 60 15 65535 length can't be less than 50mm\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+		param_number = 3;
+		max_size1 = 3;
+		error = 1;
+
+	} else if (((_left_cov + _right_cov) >= _length)) {
+		size = sprintf(data, "BUZ 500 500\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+		sprintf(temp_length, "");
+		size = sprintf(data, "CLR 165 114 193 131 65535\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+
+		size = sprintf(data, "LOAD 0 0 error.bmp\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+
+		size = sprintf(data, "UF 3 60 15 65535 Wrong values\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+		param_number = 3;
+		max_size1 = 3;
+		error = 1;
+
+	} else {
+		usun(&L, p);
+		wstaw(&L, p, temp_name, _pcs, _pcs_done, _length, _left_cov, _left_eye,
+				_right_eye, _right_cov, _knife, _knife_move_back);
+		param_number = 0;
+	}
+}
+

@@ -14,5 +14,6 @@ int screen4_button();
 void screen4_value_update(char c);
 void screen4_action(int button);
 void screen4_plus_minus(uint8_t option);
+void screen4_save();
 
 #endif /* SCREEN4_H_ */
