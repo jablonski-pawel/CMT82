@@ -4210,6 +4210,128 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x50 Src/screen13.o
  .debug_macro   0x0000000000000000      0x26c Src/screen13.o
  .debug_macro   0x0000000000000000       0x83 Src/screen13.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .group         0x0000000000000000        0x8 Src/screen15.o
+ .text          0x0000000000000000        0x0 Src/screen15.o
+ .data          0x0000000000000000        0x0 Src/screen15.o
+ .debug_macro   0x0000000000000000      0x8bc Src/screen15.o
+ .debug_macro   0x0000000000000000       0xd6 Src/screen15.o
+ .debug_macro   0x0000000000000000      0x175 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x2e Src/screen15.o
+ .debug_macro   0x0000000000000000       0x22 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x22 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x87 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x51 Src/screen15.o
+ .debug_macro   0x0000000000000000       0xef Src/screen15.o
+ .debug_macro   0x0000000000000000       0x6a Src/screen15.o
+ .debug_macro   0x0000000000000000      0x1df Src/screen15.o
+ .debug_macro   0x0000000000000000       0x34 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x34 Src/screen15.o
+ .debug_macro   0x0000000000000000      0xb8e Src/screen15.o
+ .debug_macro   0x0000000000000000     0xe90a Src/screen15.o
+ .debug_macro   0x0000000000000000       0x43 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x58 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x35 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x9c Src/screen15.o
+ .debug_macro   0x0000000000000000       0x16 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x97 Src/screen15.o
+ .debug_macro   0x0000000000000000      0x330 Src/screen15.o
+ .debug_macro   0x0000000000000000       0xfd Src/screen15.o
+ .debug_macro   0x0000000000000000       0x10 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x58 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x1f Src/screen15.o
+ .debug_macro   0x0000000000000000       0x43 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x20 Src/screen15.o
+ .debug_macro   0x0000000000000000      0x187 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x10 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x1c Src/screen15.o
+ .debug_macro   0x0000000000000000       0x52 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x40 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x10 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x40 Src/screen15.o
+ .debug_macro   0x0000000000000000       0xd7 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x16 Src/screen15.o
+ .debug_macro   0x0000000000000000      0x18b Src/screen15.o
+ .debug_macro   0x0000000000000000       0x50 Src/screen15.o
+ .debug_macro   0x0000000000000000      0x5c2 Src/screen15.o
+ .debug_macro   0x0000000000000000      0x28a Src/screen15.o
+ .debug_macro   0x0000000000000000      0x1cb Src/screen15.o
+ .debug_macro   0x0000000000000000      0x11e Src/screen15.o
+ .debug_macro   0x0000000000000000      0x1b3 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x27 Src/screen15.o
+ .debug_macro   0x0000000000000000      0x1bc Src/screen15.o
+ .debug_macro   0x0000000000000000       0x34 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x3c Src/screen15.o
+ .debug_macro   0x0000000000000000       0x57 Src/screen15.o
+ .debug_macro   0x0000000000000000       0x8c Src/screen15.o
+ .debug_macro   0x0000000000000000      0x242 Src/screen15.o
+ .debug_macro   0x0000000000000000      0x143 Src/screen15.o
+ .debug_macro   0x0000000000000000      0x1ef Src/screen15.o
+ .debug_macro   0x0000000000000000       0xf2 Src/screen15.o
+ .debug_macro   0x0000000000000000      0x84c Src/screen15.o
+ .debug_macro   0x0000000000000000       0x1f Src/screen15.o
+ .debug_macro   0x0000000000000000      0x26b Src/screen15.o
+ .debug_macro   0x0000000000000000       0x50 Src/screen15.o
+ .debug_macro   0x0000000000000000      0x26c Src/screen15.o
+ .debug_macro   0x0000000000000000       0x83 Src/screen15.o
  .group         0x0000000000000000        0x8 Src/screen3.o
  .group         0x0000000000000000        0x8 Src/screen3.o
  .group         0x0000000000000000        0x8 Src/screen3.o
@@ -4272,7 +4394,6 @@ Discarded input sections
  .group         0x0000000000000000        0x8 Src/screen3.o
  .text          0x0000000000000000        0x0 Src/screen3.o
  .data          0x0000000000000000        0x0 Src/screen3.o
- .bss           0x0000000000000000        0x0 Src/screen3.o
  .debug_macro   0x0000000000000000      0x8bc Src/screen3.o
  .debug_macro   0x0000000000000000       0xd6 Src/screen3.o
  .debug_macro   0x0000000000000000      0x175 Src/screen3.o
@@ -5679,7 +5800,7 @@ Memory Configuration
 
 Name             Origin             Length             Attributes
 RAM              0x0000000020000000 0x0000000000005000 xrw
-FLASH            0x0000000008000000 0x0000000000010000 xr
+FLASH            0x0000000008000000 0x0000000000020000 xr
 *default*        0x0000000000000000 0xffffffffffffffff
 
 Linker script and memory map
@@ -5714,6 +5835,7 @@ LOAD Src/screen10.o
 LOAD Src/screen11.o
 LOAD Src/screen12.o
 LOAD Src/screen13.o
+LOAD Src/screen15.o
 LOAD Src/screen3.o
 LOAD Src/screen4.o
 LOAD Src/screen6.o
@@ -5753,7 +5875,7 @@ LOAD /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.1
                 0x0000000008000000                g_pfnVectors
                 0x000000000800010c                . = ALIGN (0x4)
 
-.text           0x0000000008000110     0xe36c
+.text           0x0000000008000110     0xeb5c
                 0x0000000008000110                . = ALIGN (0x4)
  *(.text)
  .text          0x0000000008000110       0x6c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
@@ -6070,615 +6192,629 @@ LOAD /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.1
                 0x0000000008002f24        0xc Src/main.o
                 0x0000000008002f24                HAL_UART_TxCpltCallback
  .text.HAL_UART_RxCpltCallback
-                0x0000000008002f30      0x364 Src/main.o
+                0x0000000008002f30      0x378 Src/main.o
                 0x0000000008002f30                HAL_UART_RxCpltCallback
  .text.HAL_TIM_PeriodElapsedCallback
-                0x0000000008003294      0x2c8 Src/main.o
-                0x0000000008003294                HAL_TIM_PeriodElapsedCallback
+                0x00000000080032a8      0x2c8 Src/main.o
+                0x00000000080032a8                HAL_TIM_PeriodElapsedCallback
  .text._Error_Handler
-                0x000000000800355c        0x2 Src/main.o
-                0x000000000800355c                _Error_Handler
- *fill*         0x000000000800355e        0x2 
+                0x0000000008003570        0x2 Src/main.o
+                0x0000000008003570                _Error_Handler
+ *fill*         0x0000000008003572        0x2 
  .text.MX_RTC_Init
-                0x0000000008003560       0xa8 Src/main.o
+                0x0000000008003574       0xa8 Src/main.o
  .text.MX_USART2_UART_Init
-                0x0000000008003608       0x3c Src/main.o
+                0x000000000800361c       0x3c Src/main.o
  .text.MX_USB_PCD_Init
-                0x0000000008003644       0x3c Src/main.o
+                0x0000000008003658       0x3c Src/main.o
  .text.MX_USART1_UART_Init
-                0x0000000008003680       0x3c Src/main.o
+                0x0000000008003694       0x3c Src/main.o
  .text.MX_TIM1_Init
-                0x00000000080036bc       0x3c Src/main.o
+                0x00000000080036d0       0x3c Src/main.o
  .text.MX_TIM3_Init
-                0x00000000080036f8       0x38 Src/main.o
+                0x000000000800370c       0x38 Src/main.o
  .text.MX_TIM4_Init
-                0x0000000008003730       0x38 Src/main.o
+                0x0000000008003744       0x38 Src/main.o
  .text.SystemClock_Config
-                0x0000000008003768       0xac Src/main.o
-                0x0000000008003768                SystemClock_Config
- .text.main     0x0000000008003814      0x1b8 Src/main.o
-                0x0000000008003814                main
+                0x000000000800377c       0xac Src/main.o
+                0x000000000800377c                SystemClock_Config
+ .text.main     0x0000000008003828      0x240 Src/main.o
+                0x0000000008003828                main
  .text.process_mm2i
-                0x00000000080039cc       0x18 Src/process.o
-                0x00000000080039cc                process_mm2i
+                0x0000000008003a68       0x18 Src/process.o
+                0x0000000008003a68                process_mm2i
  .text.process_steppers_EN
-                0x00000000080039e4       0x38 Src/process.o
-                0x00000000080039e4                process_steppers_EN
+                0x0000000008003a80       0x38 Src/process.o
+                0x0000000008003a80                process_steppers_EN
  .text.process_steppers_CW
-                0x0000000008003a1c       0x4c Src/process.o
-                0x0000000008003a1c                process_steppers_CW
+                0x0000000008003ab8       0x4c Src/process.o
+                0x0000000008003ab8                process_steppers_CW
  .text.process_run
-                0x0000000008003a68      0x5d0 Src/process.o
-                0x0000000008003a68                process_run
+                0x0000000008003b04      0x5d0 Src/process.o
+                0x0000000008003b04                process_run
  .text.process_cut
-                0x0000000008004038       0x94 Src/process.o
-                0x0000000008004038                process_cut
+                0x00000000080040d4       0x94 Src/process.o
+                0x00000000080040d4                process_cut
  .text.screen1_init
-                0x00000000080040cc      0x2f4 Src/screen1.o
-                0x00000000080040cc                screen1_init
+                0x0000000008004168      0x2f4 Src/screen1.o
+                0x0000000008004168                screen1_init
  .text.screen1_button
-                0x00000000080043c0      0x424 Src/screen1.o
-                0x00000000080043c0                screen1_button
+                0x000000000800445c      0x424 Src/screen1.o
+                0x000000000800445c                screen1_button
  .text.screen1_program_update
-                0x00000000080047e4      0x360 Src/screen1.o
-                0x00000000080047e4                screen1_program_update
+                0x0000000008004880      0x360 Src/screen1.o
+                0x0000000008004880                screen1_program_update
  .text.screen1_action
-                0x0000000008004b44      0x204 Src/screen1.o
-                0x0000000008004b44                screen1_action
+                0x0000000008004be0      0x204 Src/screen1.o
+                0x0000000008004be0                screen1_action
  .text.screen10_init
-                0x0000000008004d48      0x17c Src/screen10.o
-                0x0000000008004d48                screen10_init
+                0x0000000008004de4      0x17c Src/screen10.o
+                0x0000000008004de4                screen10_init
  .text.screen10_button
-                0x0000000008004ec4      0x47c Src/screen10.o
-                0x0000000008004ec4                screen10_button
+                0x0000000008004f60      0x47c Src/screen10.o
+                0x0000000008004f60                screen10_button
  .text.screen10_value_update
-                0x0000000008005340      0x480 Src/screen10.o
-                0x0000000008005340                screen10_value_update
+                0x00000000080053dc      0x480 Src/screen10.o
+                0x00000000080053dc                screen10_value_update
  .text.screen10_action
-                0x00000000080057c0      0x5c4 Src/screen10.o
-                0x00000000080057c0                screen10_action
- *fill*         0x0000000008005d84        0x4 
+                0x000000000800585c      0x5c4 Src/screen10.o
+                0x000000000800585c                screen10_action
  .text.screen11_init
-                0x0000000008005d88      0x2f0 Src/screen11.o
-                0x0000000008005d88                screen11_init
+                0x0000000008005e20      0x2f0 Src/screen11.o
+                0x0000000008005e20                screen11_init
  .text.screen11_button
-                0x0000000008006078      0x480 Src/screen11.o
-                0x0000000008006078                screen11_button
+                0x0000000008006110      0x480 Src/screen11.o
+                0x0000000008006110                screen11_button
  .text.screen11_value_update
-                0x00000000080064f8      0x4bc Src/screen11.o
-                0x00000000080064f8                screen11_value_update
- *fill*         0x00000000080069b4        0x4 
+                0x0000000008006590      0x3ec Src/screen11.o
+                0x0000000008006590                screen11_value_update
+ *fill*         0x000000000800697c        0x4 
  .text.screen11_action
-                0x00000000080069b8      0x4e0 Src/screen11.o
-                0x00000000080069b8                screen11_action
+                0x0000000008006980      0x4e0 Src/screen11.o
+                0x0000000008006980                screen11_action
  .text.screen12_button
-                0x0000000008006e98       0xd8 Src/screen12.o
-                0x0000000008006e98                screen12_button
+                0x0000000008006e60       0xd8 Src/screen12.o
+                0x0000000008006e60                screen12_button
  .text.screen12_AWG_struct_fill
-                0x0000000008006f70      0x414 Src/screen12.o
-                0x0000000008006f70                screen12_AWG_struct_fill
+                0x0000000008006f38      0x414 Src/screen12.o
+                0x0000000008006f38                screen12_AWG_struct_fill
  .text.screen12_AWG_table
-                0x0000000008007384      0x5f0 Src/screen12.o
-                0x0000000008007384                screen12_AWG_table
+                0x000000000800734c      0x5f0 Src/screen12.o
+                0x000000000800734c                screen12_AWG_table
  .text.screen12_init
-                0x0000000008007974       0x78 Src/screen12.o
-                0x0000000008007974                screen12_init
+                0x000000000800793c       0x78 Src/screen12.o
+                0x000000000800793c                screen12_init
  .text.screen12_action
-                0x00000000080079ec       0x38 Src/screen12.o
-                0x00000000080079ec                screen12_action
+                0x00000000080079b4       0x38 Src/screen12.o
+                0x00000000080079b4                screen12_action
  .text.screen13_init
-                0x0000000008007a24       0x6c Src/screen13.o
-                0x0000000008007a24                screen13_init
+                0x00000000080079ec       0x6c Src/screen13.o
+                0x00000000080079ec                screen13_init
  .text.screen13_button
-                0x0000000008007a90       0x68 Src/screen13.o
-                0x0000000008007a90                screen13_button
+                0x0000000008007a58       0x68 Src/screen13.o
+                0x0000000008007a58                screen13_button
  .text.screen13_action
-                0x0000000008007af8       0x1c Src/screen13.o
-                0x0000000008007af8                screen13_action
- .text.screen3_init
-                0x0000000008007b14       0x6c Src/screen3.o
-                0x0000000008007b14                screen3_init
+                0x0000000008007ac0       0x1c Src/screen13.o
+                0x0000000008007ac0                screen13_action
+ .text.screen15_init
+                0x0000000008007adc       0x8c Src/screen15.o
+                0x0000000008007adc                screen15_init
+ .text.screen15_button
+                0x0000000008007b68       0xa8 Src/screen15.o
+                0x0000000008007b68                screen15_button
+ .text.screen15_action
+                0x0000000008007c10       0x74 Src/screen15.o
+                0x0000000008007c10                screen15_action
  .text.screen3_button
-                0x0000000008007b80       0x68 Src/screen3.o
-                0x0000000008007b80                screen3_button
+                0x0000000008007c84      0x474 Src/screen3.o
+                0x0000000008007c84                screen3_button
+ .text.screen3_table
+                0x00000000080080f8      0x1d0 Src/screen3.o
+                0x00000000080080f8                screen3_table
+ .text.screen3_init
+                0x00000000080082c8       0xf0 Src/screen3.o
+                0x00000000080082c8                screen3_init
  .text.screen3_action
-                0x0000000008007be8       0x1c Src/screen3.o
-                0x0000000008007be8                screen3_action
+                0x00000000080083b8       0x38 Src/screen3.o
+                0x00000000080083b8                screen3_action
  .text.screen4_init
-                0x0000000008007c04      0x26c Src/screen4.o
-                0x0000000008007c04                screen4_init
+                0x00000000080083f0      0x26c Src/screen4.o
+                0x00000000080083f0                screen4_init
  .text.screen4_button
-                0x0000000008007e70      0x698 Src/screen4.o
-                0x0000000008007e70                screen4_button
+                0x000000000800865c      0x698 Src/screen4.o
+                0x000000000800865c                screen4_button
  .text.screen4_value_update
-                0x0000000008008508      0xa54 Src/screen4.o
-                0x0000000008008508                screen4_value_update
+                0x0000000008008cf4      0xa54 Src/screen4.o
+                0x0000000008008cf4                screen4_value_update
  .text.screen4_plus_minus
-                0x0000000008008f5c      0x598 Src/screen4.o
-                0x0000000008008f5c                screen4_plus_minus
+                0x0000000008009748      0x598 Src/screen4.o
+                0x0000000008009748                screen4_plus_minus
  .text.screen4_save
-                0x00000000080094f4      0x354 Src/screen4.o
-                0x00000000080094f4                screen4_save
+                0x0000000008009ce0      0x354 Src/screen4.o
+                0x0000000008009ce0                screen4_save
  .text.screen4_action
-                0x0000000008009848      0x780 Src/screen4.o
-                0x0000000008009848                screen4_action
+                0x000000000800a034      0x780 Src/screen4.o
+                0x000000000800a034                screen4_action
  .text.screen6_init
-                0x0000000008009fc8      0x37c Src/screen6.o
-                0x0000000008009fc8                screen6_init
+                0x000000000800a7b4      0x37c Src/screen6.o
+                0x000000000800a7b4                screen6_init
  .text.screen6_button
-                0x000000000800a344       0x5c Src/screen6.o
-                0x000000000800a344                screen6_button
+                0x000000000800ab30       0x5c Src/screen6.o
+                0x000000000800ab30                screen6_button
  .text.screen6_action
-                0x000000000800a3a0       0x24 Src/screen6.o
-                0x000000000800a3a0                screen6_action
+                0x000000000800ab8c       0x24 Src/screen6.o
+                0x000000000800ab8c                screen6_action
  .text.screen6_1_init
-                0x000000000800a3c4      0x1b0 Src/screen6_1.o
-                0x000000000800a3c4                screen6_1_init
+                0x000000000800abb0      0x1b0 Src/screen6_1.o
+                0x000000000800abb0                screen6_1_init
  .text.screen6_1_button
-                0x000000000800a574       0x68 Src/screen6_1.o
-                0x000000000800a574                screen6_1_button
+                0x000000000800ad60       0x68 Src/screen6_1.o
+                0x000000000800ad60                screen6_1_button
  .text.screen6_1_action
-                0x000000000800a5dc       0x1c Src/screen6_1.o
-                0x000000000800a5dc                screen6_1_action
+                0x000000000800adc8       0x1c Src/screen6_1.o
+                0x000000000800adc8                screen6_1_action
  .text.screen7_init
-                0x000000000800a5f8       0x8c Src/screen7.o
-                0x000000000800a5f8                screen7_init
+                0x000000000800ade4       0x8c Src/screen7.o
+                0x000000000800ade4                screen7_init
  .text.screen7_button
-                0x000000000800a684       0x68 Src/screen7.o
-                0x000000000800a684                screen7_button
+                0x000000000800ae70       0x68 Src/screen7.o
+                0x000000000800ae70                screen7_button
  .text.screen7_action
-                0x000000000800a6ec       0x1c Src/screen7.o
-                0x000000000800a6ec                screen7_action
+                0x000000000800aed8       0x1c Src/screen7.o
+                0x000000000800aed8                screen7_action
  .text.screen8_init
-                0x000000000800a708       0x8c Src/screen8.o
-                0x000000000800a708                screen8_init
+                0x000000000800aef4       0x8c Src/screen8.o
+                0x000000000800aef4                screen8_init
  .text.screen8_button
-                0x000000000800a794       0x68 Src/screen8.o
-                0x000000000800a794                screen8_button
+                0x000000000800af80       0x68 Src/screen8.o
+                0x000000000800af80                screen8_button
  .text.screen8_action
-                0x000000000800a7fc       0x1c Src/screen8.o
-                0x000000000800a7fc                screen8_action
+                0x000000000800afe8       0x1c Src/screen8.o
+                0x000000000800afe8                screen8_action
  .text.screen9_init
-                0x000000000800a818       0x98 Src/screen9.o
-                0x000000000800a818                screen9_init
+                0x000000000800b004       0x98 Src/screen9.o
+                0x000000000800b004                screen9_init
  .text.screen9_button
-                0x000000000800a8b0       0x68 Src/screen9.o
-                0x000000000800a8b0                screen9_button
+                0x000000000800b09c       0x68 Src/screen9.o
+                0x000000000800b09c                screen9_button
  .text.screen9_action
-                0x000000000800a918       0x1c Src/screen9.o
-                0x000000000800a918                screen9_action
+                0x000000000800b104       0x1c Src/screen9.o
+                0x000000000800b104                screen9_action
  .text.HAL_MspInit
-                0x000000000800a934       0x90 Src/stm32f1xx_hal_msp.o
-                0x000000000800a934                HAL_MspInit
+                0x000000000800b120       0x90 Src/stm32f1xx_hal_msp.o
+                0x000000000800b120                HAL_MspInit
  .text.HAL_RTC_MspInit
-                0x000000000800a9c4       0x50 Src/stm32f1xx_hal_msp.o
-                0x000000000800a9c4                HAL_RTC_MspInit
+                0x000000000800b1b0       0x50 Src/stm32f1xx_hal_msp.o
+                0x000000000800b1b0                HAL_RTC_MspInit
  .text.HAL_TIM_OnePulse_MspInit
-                0x000000000800aa14       0xa0 Src/stm32f1xx_hal_msp.o
-                0x000000000800aa14                HAL_TIM_OnePulse_MspInit
+                0x000000000800b200       0xa0 Src/stm32f1xx_hal_msp.o
+                0x000000000800b200                HAL_TIM_OnePulse_MspInit
  .text.HAL_UART_MspInit
-                0x000000000800aab4       0xc8 Src/stm32f1xx_hal_msp.o
-                0x000000000800aab4                HAL_UART_MspInit
+                0x000000000800b2a0       0xc8 Src/stm32f1xx_hal_msp.o
+                0x000000000800b2a0                HAL_UART_MspInit
  .text.HAL_PCD_MspInit
-                0x000000000800ab7c       0x2c Src/stm32f1xx_hal_msp.o
-                0x000000000800ab7c                HAL_PCD_MspInit
+                0x000000000800b368       0x2c Src/stm32f1xx_hal_msp.o
+                0x000000000800b368                HAL_PCD_MspInit
  .text.NMI_Handler
-                0x000000000800aba8        0x2 Src/stm32f1xx_it.o
-                0x000000000800aba8                NMI_Handler
+                0x000000000800b394        0x2 Src/stm32f1xx_it.o
+                0x000000000800b394                NMI_Handler
  .text.HardFault_Handler
-                0x000000000800abaa        0x2 Src/stm32f1xx_it.o
-                0x000000000800abaa                HardFault_Handler
+                0x000000000800b396        0x2 Src/stm32f1xx_it.o
+                0x000000000800b396                HardFault_Handler
  .text.MemManage_Handler
-                0x000000000800abac        0x2 Src/stm32f1xx_it.o
-                0x000000000800abac                MemManage_Handler
+                0x000000000800b398        0x2 Src/stm32f1xx_it.o
+                0x000000000800b398                MemManage_Handler
  .text.BusFault_Handler
-                0x000000000800abae        0x2 Src/stm32f1xx_it.o
-                0x000000000800abae                BusFault_Handler
+                0x000000000800b39a        0x2 Src/stm32f1xx_it.o
+                0x000000000800b39a                BusFault_Handler
  .text.UsageFault_Handler
-                0x000000000800abb0        0x2 Src/stm32f1xx_it.o
-                0x000000000800abb0                UsageFault_Handler
+                0x000000000800b39c        0x2 Src/stm32f1xx_it.o
+                0x000000000800b39c                UsageFault_Handler
  .text.SVC_Handler
-                0x000000000800abb2        0x2 Src/stm32f1xx_it.o
-                0x000000000800abb2                SVC_Handler
+                0x000000000800b39e        0x2 Src/stm32f1xx_it.o
+                0x000000000800b39e                SVC_Handler
  .text.DebugMon_Handler
-                0x000000000800abb4        0x2 Src/stm32f1xx_it.o
-                0x000000000800abb4                DebugMon_Handler
+                0x000000000800b3a0        0x2 Src/stm32f1xx_it.o
+                0x000000000800b3a0                DebugMon_Handler
  .text.PendSV_Handler
-                0x000000000800abb6        0x2 Src/stm32f1xx_it.o
-                0x000000000800abb6                PendSV_Handler
+                0x000000000800b3a2        0x2 Src/stm32f1xx_it.o
+                0x000000000800b3a2                PendSV_Handler
  .text.SysTick_Handler
-                0x000000000800abb8        0xc Src/stm32f1xx_it.o
-                0x000000000800abb8                SysTick_Handler
+                0x000000000800b3a4        0xc Src/stm32f1xx_it.o
+                0x000000000800b3a4                SysTick_Handler
  .text.RTC_IRQHandler
-                0x000000000800abc4       0x10 Src/stm32f1xx_it.o
-                0x000000000800abc4                RTC_IRQHandler
+                0x000000000800b3b0       0x10 Src/stm32f1xx_it.o
+                0x000000000800b3b0                RTC_IRQHandler
  .text.EXTI0_IRQHandler
-                0x000000000800abd4        0xa Src/stm32f1xx_it.o
-                0x000000000800abd4                EXTI0_IRQHandler
+                0x000000000800b3c0        0xa Src/stm32f1xx_it.o
+                0x000000000800b3c0                EXTI0_IRQHandler
  .text.EXTI9_5_IRQHandler
-                0x000000000800abde       0x12 Src/stm32f1xx_it.o
-                0x000000000800abde                EXTI9_5_IRQHandler
+                0x000000000800b3ca       0x12 Src/stm32f1xx_it.o
+                0x000000000800b3ca                EXTI9_5_IRQHandler
  .text.TIM1_UP_IRQHandler
-                0x000000000800abf0       0x10 Src/stm32f1xx_it.o
-                0x000000000800abf0                TIM1_UP_IRQHandler
+                0x000000000800b3dc       0x10 Src/stm32f1xx_it.o
+                0x000000000800b3dc                TIM1_UP_IRQHandler
  .text.TIM3_IRQHandler
-                0x000000000800ac00       0x10 Src/stm32f1xx_it.o
-                0x000000000800ac00                TIM3_IRQHandler
+                0x000000000800b3ec       0x10 Src/stm32f1xx_it.o
+                0x000000000800b3ec                TIM3_IRQHandler
  .text.TIM4_IRQHandler
-                0x000000000800ac10       0x10 Src/stm32f1xx_it.o
-                0x000000000800ac10                TIM4_IRQHandler
+                0x000000000800b3fc       0x10 Src/stm32f1xx_it.o
+                0x000000000800b3fc                TIM4_IRQHandler
  .text.USART1_IRQHandler
-                0x000000000800ac20       0x10 Src/stm32f1xx_it.o
-                0x000000000800ac20                USART1_IRQHandler
+                0x000000000800b40c       0x10 Src/stm32f1xx_it.o
+                0x000000000800b40c                USART1_IRQHandler
  .text.USART2_IRQHandler
-                0x000000000800ac30       0x10 Src/stm32f1xx_it.o
-                0x000000000800ac30                USART2_IRQHandler
+                0x000000000800b41c       0x10 Src/stm32f1xx_it.o
+                0x000000000800b41c                USART2_IRQHandler
  .text.SystemInit
-                0x000000000800ac40       0x4c Src/system_stm32f1xx.o
-                0x000000000800ac40                SystemInit
+                0x000000000800b42c       0x4c Src/system_stm32f1xx.o
+                0x000000000800b42c                SystemInit
  .text.Reset_Handler
-                0x000000000800ac8c       0x48 startup/startup_stm32f103xb.o
-                0x000000000800ac8c                Reset_Handler
+                0x000000000800b478       0x48 startup/startup_stm32f103xb.o
+                0x000000000800b478                Reset_Handler
  .text.Default_Handler
-                0x000000000800acd4        0x2 startup/startup_stm32f103xb.o
-                0x000000000800acd4                RTC_Alarm_IRQHandler
-                0x000000000800acd4                EXTI2_IRQHandler
-                0x000000000800acd4                TIM1_CC_IRQHandler
-                0x000000000800acd4                PVD_IRQHandler
-                0x000000000800acd4                EXTI3_IRQHandler
-                0x000000000800acd4                I2C2_EV_IRQHandler
-                0x000000000800acd4                ADC1_2_IRQHandler
-                0x000000000800acd4                SPI1_IRQHandler
-                0x000000000800acd4                TAMPER_IRQHandler
-                0x000000000800acd4                DMA1_Channel4_IRQHandler
-                0x000000000800acd4                USART3_IRQHandler
-                0x000000000800acd4                DMA1_Channel7_IRQHandler
-                0x000000000800acd4                CAN1_RX1_IRQHandler
-                0x000000000800acd4                I2C1_EV_IRQHandler
-                0x000000000800acd4                DMA1_Channel6_IRQHandler
-                0x000000000800acd4                RCC_IRQHandler
-                0x000000000800acd4                TIM1_TRG_COM_IRQHandler
-                0x000000000800acd4                DMA1_Channel1_IRQHandler
-                0x000000000800acd4                Default_Handler
-                0x000000000800acd4                EXTI15_10_IRQHandler
-                0x000000000800acd4                SPI2_IRQHandler
-                0x000000000800acd4                DMA1_Channel5_IRQHandler
-                0x000000000800acd4                EXTI4_IRQHandler
-                0x000000000800acd4                USB_LP_CAN1_RX0_IRQHandler
-                0x000000000800acd4                USB_HP_CAN1_TX_IRQHandler
-                0x000000000800acd4                DMA1_Channel3_IRQHandler
-                0x000000000800acd4                WWDG_IRQHandler
-                0x000000000800acd4                TIM2_IRQHandler
-                0x000000000800acd4                TIM1_BRK_IRQHandler
-                0x000000000800acd4                EXTI1_IRQHandler
-                0x000000000800acd4                I2C2_ER_IRQHandler
-                0x000000000800acd4                DMA1_Channel2_IRQHandler
-                0x000000000800acd4                CAN1_SCE_IRQHandler
-                0x000000000800acd4                FLASH_IRQHandler
-                0x000000000800acd4                I2C1_ER_IRQHandler
-                0x000000000800acd4                USBWakeUp_IRQHandler
- .text.atof     0x000000000800acd6        0x6 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-atof.o)
-                0x000000000800acd6                atof
- .text.atoi     0x000000000800acdc        0x8 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-atoi.o)
-                0x000000000800acdc                atoi
+                0x000000000800b4c0        0x2 startup/startup_stm32f103xb.o
+                0x000000000800b4c0                RTC_Alarm_IRQHandler
+                0x000000000800b4c0                EXTI2_IRQHandler
+                0x000000000800b4c0                TIM1_CC_IRQHandler
+                0x000000000800b4c0                PVD_IRQHandler
+                0x000000000800b4c0                EXTI3_IRQHandler
+                0x000000000800b4c0                I2C2_EV_IRQHandler
+                0x000000000800b4c0                ADC1_2_IRQHandler
+                0x000000000800b4c0                SPI1_IRQHandler
+                0x000000000800b4c0                TAMPER_IRQHandler
+                0x000000000800b4c0                DMA1_Channel4_IRQHandler
+                0x000000000800b4c0                USART3_IRQHandler
+                0x000000000800b4c0                DMA1_Channel7_IRQHandler
+                0x000000000800b4c0                CAN1_RX1_IRQHandler
+                0x000000000800b4c0                I2C1_EV_IRQHandler
+                0x000000000800b4c0                DMA1_Channel6_IRQHandler
+                0x000000000800b4c0                RCC_IRQHandler
+                0x000000000800b4c0                TIM1_TRG_COM_IRQHandler
+                0x000000000800b4c0                DMA1_Channel1_IRQHandler
+                0x000000000800b4c0                Default_Handler
+                0x000000000800b4c0                EXTI15_10_IRQHandler
+                0x000000000800b4c0                SPI2_IRQHandler
+                0x000000000800b4c0                DMA1_Channel5_IRQHandler
+                0x000000000800b4c0                EXTI4_IRQHandler
+                0x000000000800b4c0                USB_LP_CAN1_RX0_IRQHandler
+                0x000000000800b4c0                USB_HP_CAN1_TX_IRQHandler
+                0x000000000800b4c0                DMA1_Channel3_IRQHandler
+                0x000000000800b4c0                WWDG_IRQHandler
+                0x000000000800b4c0                TIM2_IRQHandler
+                0x000000000800b4c0                TIM1_BRK_IRQHandler
+                0x000000000800b4c0                EXTI1_IRQHandler
+                0x000000000800b4c0                I2C2_ER_IRQHandler
+                0x000000000800b4c0                DMA1_Channel2_IRQHandler
+                0x000000000800b4c0                CAN1_SCE_IRQHandler
+                0x000000000800b4c0                FLASH_IRQHandler
+                0x000000000800b4c0                I2C1_ER_IRQHandler
+                0x000000000800b4c0                USBWakeUp_IRQHandler
+ .text.atof     0x000000000800b4c2        0x6 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-atof.o)
+                0x000000000800b4c2                atof
+ .text.atoi     0x000000000800b4c8        0x8 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-atoi.o)
+                0x000000000800b4c8                atoi
  .text.__libc_init_array
-                0x000000000800ace4       0x48 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-init.o)
-                0x000000000800ace4                __libc_init_array
- .text.malloc   0x000000000800ad2c       0x10 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-malloc.o)
-                0x000000000800ad2c                malloc
- .text.free     0x000000000800ad3c       0x10 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-malloc.o)
-                0x000000000800ad3c                free
- .text.memset   0x000000000800ad4c       0x10 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memset.o)
-                0x000000000800ad4c                memset
- .text._free_r  0x000000000800ad5c       0x98 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-freer.o)
-                0x000000000800ad5c                _free_r
+                0x000000000800b4d0       0x48 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-init.o)
+                0x000000000800b4d0                __libc_init_array
+ .text.malloc   0x000000000800b518       0x10 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-malloc.o)
+                0x000000000800b518                malloc
+ .text.free     0x000000000800b528       0x10 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-malloc.o)
+                0x000000000800b528                free
+ .text.memset   0x000000000800b538       0x10 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memset.o)
+                0x000000000800b538                memset
+ .text._free_r  0x000000000800b548       0x98 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-freer.o)
+                0x000000000800b548                _free_r
  .text._malloc_r
-                0x000000000800adf4       0xbc /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-mallocr.o)
-                0x000000000800adf4                _malloc_r
- .text.__cvt    0x000000000800aeb0       0xb8 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_float.o)
-                0x000000000800aeb0                __cvt
+                0x000000000800b5e0       0xbc /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-mallocr.o)
+                0x000000000800b5e0                _malloc_r
+ .text.__cvt    0x000000000800b69c       0xb8 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_float.o)
+                0x000000000800b69c                __cvt
  .text.__exponent
-                0x000000000800af68       0x6a /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_float.o)
-                0x000000000800af68                __exponent
- *fill*         0x000000000800afd2        0x2 
+                0x000000000800b754       0x6a /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_float.o)
+                0x000000000800b754                __exponent
+ *fill*         0x000000000800b7be        0x2 
  .text._printf_float
-                0x000000000800afd4      0x470 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_float.o)
-                0x000000000800afd4                _printf_float
+                0x000000000800b7c0      0x470 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_float.o)
+                0x000000000800b7c0                _printf_float
  .text._printf_common
-                0x000000000800b444       0xee /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x000000000800b444                _printf_common
- *fill*         0x000000000800b532        0x2 
+                0x000000000800bc30       0xee /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000000000800bc30                _printf_common
+ *fill*         0x000000000800bd1e        0x2 
  .text._printf_i
-                0x000000000800b534      0x240 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x000000000800b534                _printf_i
- .text._sbrk_r  0x000000000800b774       0x20 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-sbrkr.o)
-                0x000000000800b774                _sbrk_r
- .text.sprintf  0x000000000800b794       0x48 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-sprintf.o)
-                0x000000000800b794                sprintf
-                0x000000000800b794                siprintf
- .text.strcpy   0x000000000800b7dc       0x10 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strcpy.o)
-                0x000000000800b7dc                strcpy
+                0x000000000800bd20      0x240 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000000000800bd20                _printf_i
+ .text._sbrk_r  0x000000000800bf60       0x20 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-sbrkr.o)
+                0x000000000800bf60                _sbrk_r
+ .text.sprintf  0x000000000800bf80       0x48 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-sprintf.o)
+                0x000000000800bf80                sprintf
+                0x000000000800bf80                siprintf
+ .text.strcpy   0x000000000800bfc8       0x10 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strcpy.o)
+                0x000000000800bfc8                strcpy
  .text.unlikely.sulp
-                0x000000000800b7ec       0x42 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtod.o)
- *fill*         0x000000000800b82e        0x2 
+                0x000000000800bfd8       0x42 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtod.o)
+ *fill*         0x000000000800c01a        0x6 
  .text._strtod_l
-                0x000000000800b830      0xbf0 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtod.o)
-                0x000000000800b830                _strtod_l
- .text.strtod   0x000000000800c420       0x24 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtod.o)
-                0x000000000800c420                strtod
+                0x000000000800c020      0xbf0 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtod.o)
+                0x000000000800c020                _strtod_l
+ .text.strtod   0x000000000800cc10       0x24 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtod.o)
+                0x000000000800cc10                strtod
  .text._strtol_l.isra.0
-                0x000000000800c444      0x100 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtol.o)
- .text.strtol   0x000000000800c544       0x2c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtol.o)
-                0x000000000800c544                strtol
- .text.quorem   0x000000000800c570      0x118 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-dtoa.o)
- .text._dtoa_r  0x000000000800c688      0xba8 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-dtoa.o)
-                0x000000000800c688                _dtoa_r
- .text.rshift   0x000000000800d230       0x6a /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-gethex.o)
+                0x000000000800cc34      0x100 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtol.o)
+ .text.strtol   0x000000000800cd34       0x2c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtol.o)
+                0x000000000800cd34                strtol
+ .text.quorem   0x000000000800cd60      0x118 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-dtoa.o)
+ .text._dtoa_r  0x000000000800ce78      0xba8 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-dtoa.o)
+                0x000000000800ce78                _dtoa_r
+ .text.rshift   0x000000000800da20       0x6a /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-gethex.o)
  .text.__hexdig_fun
-                0x000000000800d29a       0x2a /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-gethex.o)
-                0x000000000800d29a                __hexdig_fun
+                0x000000000800da8a       0x2a /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-gethex.o)
+                0x000000000800da8a                __hexdig_fun
  .text.__gethex
-                0x000000000800d2c4      0x43e /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-gethex.o)
-                0x000000000800d2c4                __gethex
- .text.L_shift  0x000000000800d702       0x24 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-hexnan.o)
- .text.__match  0x000000000800d726       0x26 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-hexnan.o)
-                0x000000000800d726                __match
+                0x000000000800dab4      0x43e /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-gethex.o)
+                0x000000000800dab4                __gethex
+ .text.L_shift  0x000000000800def2       0x24 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-hexnan.o)
+ .text.__match  0x000000000800df16       0x26 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-hexnan.o)
+                0x000000000800df16                __match
  .text.__hexnan
-                0x000000000800d74c      0x120 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-hexnan.o)
-                0x000000000800d74c                __hexnan
+                0x000000000800df3c      0x120 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-hexnan.o)
+                0x000000000800df3c                __hexnan
  .text.__locale_ctype_ptr_l
-                0x000000000800d86c        0x6 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-locale.o)
-                0x000000000800d86c                __locale_ctype_ptr_l
+                0x000000000800e05c        0x6 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-locale.o)
+                0x000000000800e05c                __locale_ctype_ptr_l
  .text.__localeconv_l
-                0x000000000800d872        0x4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-localeconv.o)
-                0x000000000800d872                __localeconv_l
- *fill*         0x000000000800d876        0x2 
+                0x000000000800e062        0x4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-localeconv.o)
+                0x000000000800e062                __localeconv_l
+ *fill*         0x000000000800e066        0x2 
  .text._localeconv_r
-                0x000000000800d878       0x1c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-localeconv.o)
-                0x000000000800d878                _localeconv_r
+                0x000000000800e068       0x1c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-localeconv.o)
+                0x000000000800e068                _localeconv_r
  .text.__ascii_mbtowc
-                0x000000000800d894       0x24 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mbtowc_r.o)
-                0x000000000800d894                __ascii_mbtowc
- .text.memchr   0x000000000800d8b8       0x1c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memchr-stub.o)
-                0x000000000800d8b8                memchr
- .text.memcpy   0x000000000800d8d4       0x16 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memcpy-stub.o)
-                0x000000000800d8d4                memcpy
+                0x000000000800e084       0x24 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mbtowc_r.o)
+                0x000000000800e084                __ascii_mbtowc
+ .text.memchr   0x000000000800e0a8       0x1c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memchr-stub.o)
+                0x000000000800e0a8                memchr
+ .text.memcpy   0x000000000800e0c4       0x16 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memcpy-stub.o)
+                0x000000000800e0c4                memcpy
  .text.__malloc_lock
-                0x000000000800d8ea        0x2 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mlock.o)
-                0x000000000800d8ea                __malloc_lock
+                0x000000000800e0da        0x2 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mlock.o)
+                0x000000000800e0da                __malloc_lock
  .text.__malloc_unlock
-                0x000000000800d8ec        0x2 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mlock.o)
-                0x000000000800d8ec                __malloc_unlock
- .text._Balloc  0x000000000800d8ee       0x68 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800d8ee                _Balloc
- .text._Bfree   0x000000000800d956       0x2e /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800d956                _Bfree
+                0x000000000800e0dc        0x2 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mlock.o)
+                0x000000000800e0dc                __malloc_unlock
+ .text._Balloc  0x000000000800e0de       0x68 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x000000000800e0de                _Balloc
+ .text._Bfree   0x000000000800e146       0x2e /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x000000000800e146                _Bfree
  .text.__multadd
-                0x000000000800d984       0x76 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800d984                __multadd
- .text.__s2b    0x000000000800d9fa       0x7c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800d9fa                __s2b
+                0x000000000800e174       0x76 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x000000000800e174                __multadd
+ .text.__s2b    0x000000000800e1ea       0x7c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x000000000800e1ea                __s2b
  .text.__hi0bits
-                0x000000000800da76       0x3e /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800da76                __hi0bits
+                0x000000000800e266       0x3e /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x000000000800e266                __hi0bits
  .text.__lo0bits
-                0x000000000800dab4       0x5e /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800dab4                __lo0bits
- .text.__i2b    0x000000000800db12       0x12 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800db12                __i2b
+                0x000000000800e2a4       0x5e /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x000000000800e2a4                __lo0bits
+ .text.__i2b    0x000000000800e302       0x12 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x000000000800e302                __i2b
  .text.__multiply
-                0x000000000800db24      0x118 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800db24                __multiply
+                0x000000000800e314      0x118 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x000000000800e314                __multiply
  .text.__pow5mult
-                0x000000000800dc3c       0x9c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800dc3c                __pow5mult
+                0x000000000800e42c       0x9c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x000000000800e42c                __pow5mult
  .text.__lshift
-                0x000000000800dcd8       0xa2 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800dcd8                __lshift
- .text.__mcmp   0x000000000800dd7a       0x34 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800dd7a                __mcmp
- .text.__mdiff  0x000000000800ddae       0xbe /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800ddae                __mdiff
- .text.__ulp    0x000000000800de6c       0x48 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800de6c                __ulp
- .text.__b2d    0x000000000800deb4       0xa4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800deb4                __b2d
- .text.__d2b    0x000000000800df58       0x9e /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800df58                __d2b
- .text.__ratio  0x000000000800dff6       0x50 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800dff6                __ratio
+                0x000000000800e4c8       0xa2 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x000000000800e4c8                __lshift
+ .text.__mcmp   0x000000000800e56a       0x34 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x000000000800e56a                __mcmp
+ .text.__mdiff  0x000000000800e59e       0xbe /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x000000000800e59e                __mdiff
+ .text.__ulp    0x000000000800e65c       0x48 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x000000000800e65c                __ulp
+ .text.__b2d    0x000000000800e6a4       0xa4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x000000000800e6a4                __b2d
+ .text.__d2b    0x000000000800e748       0x9e /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x000000000800e748                __d2b
+ .text.__ratio  0x000000000800e7e6       0x50 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x000000000800e7e6                __ratio
  .text.__copybits
-                0x000000000800e046       0x34 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800e046                __copybits
+                0x000000000800e836       0x34 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x000000000800e836                __copybits
  .text.__any_on
-                0x000000000800e07a       0x42 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800e07a                __any_on
+                0x000000000800e86a       0x42 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x000000000800e86a                __any_on
  .text._calloc_r
-                0x000000000800e0bc       0x1c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-callocr.o)
-                0x000000000800e0bc                _calloc_r
+                0x000000000800e8ac       0x1c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-callocr.o)
+                0x000000000800e8ac                _calloc_r
  .text.__ssputs_r
-                0x000000000800e0d8       0xb6 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-svfprintf.o)
-                0x000000000800e0d8                __ssputs_r
- *fill*         0x000000000800e18e        0x2 
+                0x000000000800e8c8       0xb6 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-svfprintf.o)
+                0x000000000800e8c8                __ssputs_r
+ *fill*         0x000000000800e97e        0x2 
  .text._svfprintf_r
-                0x000000000800e190      0x1e8 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-svfprintf.o)
-                0x000000000800e190                _svfprintf_r
-                0x000000000800e190                _svfiprintf_r
- .text.strncmp  0x000000000800e378       0x24 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strncmp.o)
-                0x000000000800e378                strncmp
+                0x000000000800e980      0x1e8 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-svfprintf.o)
+                0x000000000800e980                _svfprintf_r
+                0x000000000800e980                _svfiprintf_r
+ .text.strncmp  0x000000000800eb68       0x24 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strncmp.o)
+                0x000000000800eb68                strncmp
  .text.__ascii_wctomb
-                0x000000000800e39c       0x1a /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-wctomb_r.o)
-                0x000000000800e39c                __ascii_wctomb
- .text.memmove  0x000000000800e3b6       0x34 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memmove.o)
-                0x000000000800e3b6                memmove
+                0x000000000800eb8c       0x1a /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-wctomb_r.o)
+                0x000000000800eb8c                __ascii_wctomb
+ .text.memmove  0x000000000800eba6       0x34 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memmove.o)
+                0x000000000800eba6                memmove
  .text._realloc_r
-                0x000000000800e3ea       0x4c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-reallocr.o)
-                0x000000000800e3ea                _realloc_r
+                0x000000000800ebda       0x4c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-reallocr.o)
+                0x000000000800ebda                _realloc_r
  .text._malloc_usable_size_r
-                0x000000000800e436       0x12 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-msizer.o)
-                0x000000000800e436                _malloc_usable_size_r
- .text._sbrk    0x000000000800e448       0x1c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libnosys.a(sbrk.o)
-                0x000000000800e448                _sbrk
+                0x000000000800ec26       0x12 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-msizer.o)
+                0x000000000800ec26                _malloc_usable_size_r
+ .text._sbrk    0x000000000800ec38       0x1c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libnosys.a(sbrk.o)
+                0x000000000800ec38                _sbrk
  *(.glue_7)
- .glue_7        0x000000000800e464        0x0 linker stubs
+ .glue_7        0x000000000800ec54        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x000000000800e464        0x0 linker stubs
+ .glue_7t       0x000000000800ec54        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x000000000800e464        0x0 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+ .eh_frame      0x000000000800ec54        0x0 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
  *(.init)
- .init          0x000000000800e464        0x4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crti.o
-                0x000000000800e464                _init
- .init          0x000000000800e468        0x8 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtn.o
+ .init          0x000000000800ec54        0x4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crti.o
+                0x000000000800ec54                _init
+ .init          0x000000000800ec58        0x8 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtn.o
  *(.fini)
- .fini          0x000000000800e470        0x4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crti.o
-                0x000000000800e470                _fini
- .fini          0x000000000800e474        0x8 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtn.o
-                0x000000000800e47c                . = ALIGN (0x4)
-                0x000000000800e47c                _etext = .
+ .fini          0x000000000800ec60        0x4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crti.o
+                0x000000000800ec60                _fini
+ .fini          0x000000000800ec64        0x8 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtn.o
+                0x000000000800ec6c                . = ALIGN (0x4)
+                0x000000000800ec6c                _etext = .
 
-.vfp11_veneer   0x000000000800e47c        0x0
- .vfp11_veneer  0x000000000800e47c        0x0 linker stubs
+.vfp11_veneer   0x000000000800ec6c        0x0
+ .vfp11_veneer  0x000000000800ec6c        0x0 linker stubs
 
-.v4_bx          0x000000000800e47c        0x0
- .v4_bx         0x000000000800e47c        0x0 linker stubs
+.v4_bx          0x000000000800ec6c        0x0
+ .v4_bx         0x000000000800ec6c        0x0 linker stubs
 
-.iplt           0x000000000800e47c        0x0
- .iplt          0x000000000800e47c        0x0 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+.iplt           0x000000000800ec6c        0x0
+ .iplt          0x000000000800ec6c        0x0 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
 
-.rodata         0x000000000800e480     0x14e8
-                0x000000000800e480                . = ALIGN (0x4)
+.rodata         0x000000000800ec70     0x1580
+                0x000000000800ec70                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x000000000800e480       0x12 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
- *fill*         0x000000000800e492        0x2 
- .rodata        0x000000000800e494       0x12 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
- *fill*         0x000000000800e4a6        0x2 
- .rodata        0x000000000800e4a8       0x18 Src/system_stm32f1xx.o
-                0x000000000800e4a8                AHBPrescTable
-                0x000000000800e4b8                APBPrescTable
+ .rodata        0x000000000800ec70       0x12 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+ *fill*         0x000000000800ec82        0x2 
+ .rodata        0x000000000800ec84       0x12 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
+ *fill*         0x000000000800ec96        0x2 
+ .rodata        0x000000000800ec98       0x18 Src/system_stm32f1xx.o
+                0x000000000800ec98                AHBPrescTable
+                0x000000000800eca8                APBPrescTable
  *(.rodata*)
  .rodata.str1.4
-                0x000000000800e4c0       0x52 Src/init.o
- *fill*         0x000000000800e512        0x2 
+                0x000000000800ecb0       0x52 Src/init.o
+ *fill*         0x000000000800ed02        0x2 
  .rodata.str1.4
-                0x000000000800e514       0xc1 Src/lista.o
- *fill*         0x000000000800e5d5        0x3 
+                0x000000000800ed04       0xc1 Src/lista.o
+ *fill*         0x000000000800edc5        0x3 
  .rodata.str1.4
-                0x000000000800e5d8      0x150 Src/main.o
+                0x000000000800edc8      0x15c Src/main.o
  .rodata.str1.4
-                0x000000000800e728      0x1ac Src/screen1.o
+                0x000000000800ef24      0x1ac Src/screen1.o
                                         0x1cc (size before relaxing)
  .rodata.str1.4
-                0x000000000800e8d4      0x233 Src/screen10.o
+                0x000000000800f0d0      0x233 Src/screen10.o
                                         0x2b3 (size before relaxing)
- *fill*         0x000000000800eb07        0x1 
+ *fill*         0x000000000800f303        0x1 
  .rodata.str1.4
-                0x000000000800eb08      0x19e Src/screen11.o
-                                        0x1ca (size before relaxing)
- *fill*         0x000000000800eca6        0x2 
+                0x000000000800f304      0x14a Src/screen11.o
+                                        0x176 (size before relaxing)
+ *fill*         0x000000000800f44e        0x2 
  .rodata.str1.4
-                0x000000000800eca8      0x48a Src/screen12.o
+                0x000000000800f450      0x48a Src/screen12.o
                                         0x49a (size before relaxing)
- *fill*         0x000000000800f132        0x2 
+ *fill*         0x000000000800f8da        0x2 
  .rodata.str1.4
-                0x000000000800f134       0x2a Src/screen13.o
+                0x000000000800f8dc       0x2a Src/screen13.o
                                          0x3b (size before relaxing)
- *fill*         0x000000000800f15e        0x2 
+ *fill*         0x000000000800f906        0x2 
  .rodata.str1.4
-                0x000000000800f160       0x29 Src/screen3.o
-                                         0x3b (size before relaxing)
- *fill*         0x000000000800f189        0x3 
+                0x000000000800f908       0x4b Src/screen15.o
+                                         0x5b (size before relaxing)
+ *fill*         0x000000000800f953        0x1 
  .rodata.str1.4
-                0x000000000800f18c      0x2d4 Src/screen4.o
+                0x000000000800f954       0xc1 Src/screen3.o
+                                         0xd1 (size before relaxing)
+ *fill*         0x000000000800fa15        0x3 
+ .rodata.str1.4
+                0x000000000800fa18      0x2d4 Src/screen4.o
                                         0x3b4 (size before relaxing)
  .rodata.str1.4
-                0x000000000800f460      0x127 Src/screen6.o
+                0x000000000800fcec      0x127 Src/screen6.o
                                         0x1bf (size before relaxing)
- *fill*         0x000000000800f587        0x1 
+ *fill*         0x000000000800fe13        0x1 
  .rodata.str1.4
-                0x000000000800f588       0x86 Src/screen6_1.o
+                0x000000000800fe14       0x86 Src/screen6_1.o
                                          0xaf (size before relaxing)
- *fill*         0x000000000800f60e        0x2 
+ *fill*         0x000000000800fe9a        0x2 
  .rodata.str1.4
-                0x000000000800f610       0x3c Src/screen7.o
+                0x000000000800fe9c       0x3c Src/screen7.o
                                          0x4b (size before relaxing)
  .rodata.str1.4
-                0x000000000800f64c       0x29 Src/screen8.o
+                0x000000000800fed8       0x29 Src/screen8.o
                                          0x4b (size before relaxing)
- *fill*         0x000000000800f675        0x3 
+ *fill*         0x000000000800ff01        0x3 
  .rodata.str1.4
-                0x000000000800f678       0x40 Src/screen9.o
+                0x000000000800ff04       0x40 Src/screen9.o
                                          0x4f (size before relaxing)
  .rodata._printf_float.str1.1
-                0x000000000800f6b8       0x12 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_float.o)
+                0x000000000800ff44       0x12 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_float.o)
  .rodata._printf_i.str1.1
-                0x000000000800f6ca       0x22 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000000000800ff56       0x22 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
  .rodata._strtod_l.str1.1
-                0x000000000800f6ec       0x22 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtod.o)
+                0x000000000800ff78       0x22 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtod.o)
                                           0xc (size before relaxing)
  .rodata.fpi.6129
-                0x000000000800f6ec       0x14 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtod.o)
+                0x000000000800ff78       0x14 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtod.o)
  .rodata.fpinan.6165
-                0x000000000800f700       0x14 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtod.o)
- *fill*         0x000000000800f714        0x4 
+                0x000000000800ff8c       0x14 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtod.o)
  .rodata.tinytens
-                0x000000000800f718       0x28 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtod.o)
+                0x000000000800ffa0       0x28 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtod.o)
  .rodata._dtoa_r.str1.1
-                0x000000000800f740        0xd /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-dtoa.o)
+                0x000000000800ffc8        0xd /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-dtoa.o)
                                           0xf (size before relaxing)
  .rodata._setlocale_r.str1.1
-                0x000000000800f74d        0x8 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-locale.o)
+                0x000000000800ffd5        0x8 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-locale.o)
                                           0x9 (size before relaxing)
  .rodata.str1.1
-                0x000000000800f755        0x2 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-locale.o)
- *fill*         0x000000000800f757        0x1 
+                0x000000000800ffdd        0x2 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-locale.o)
+ *fill*         0x000000000800ffdf        0x1 
  .rodata.__mprec_bigtens
-                0x000000000800f758       0x28 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800f758                __mprec_bigtens
+                0x000000000800ffe0       0x28 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x000000000800ffe0                __mprec_bigtens
  .rodata.__mprec_tens
-                0x000000000800f780       0xc8 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
-                0x000000000800f780                __mprec_tens
+                0x0000000008010008       0xc8 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x0000000008010008                __mprec_tens
  .rodata.p05.6047
-                0x000000000800f848        0xc /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x00000000080100d0        0xc /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
  .rodata._svfprintf_r.str1.1
-                0x000000000800f854       0x11 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-svfprintf.o)
+                0x00000000080100dc       0x11 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-svfprintf.o)
  .rodata._ctype_
-                0x000000000800f865      0x101 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-ctype_.o)
-                0x000000000800f865                _ctype_
-                0x000000000800f968                . = ALIGN (0x4)
- *fill*         0x000000000800f966        0x2 
+                0x00000000080100ed      0x101 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-ctype_.o)
+                0x00000000080100ed                _ctype_
+                0x00000000080101f0                . = ALIGN (0x4)
+ *fill*         0x00000000080101ee        0x2 
 
-.rel.dyn        0x000000000800f968        0x0
- .rel.iplt      0x000000000800f968        0x0 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+.rel.dyn        0x00000000080101f0        0x0
+ .rel.iplt      0x00000000080101f0        0x0 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x000000000800f968        0x0
-                0x000000000800f968                __exidx_start = .
+.ARM            0x00000000080101f0        0x0
+                0x00000000080101f0                __exidx_start = .
  *(.ARM.exidx*)
-                0x000000000800f968                __exidx_end = .
+                0x00000000080101f0                __exidx_end = .
 
-.preinit_array  0x000000000800f968        0x0
-                0x000000000800f968                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x00000000080101f0        0x0
+                0x00000000080101f0                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x000000000800f968                PROVIDE (__preinit_array_end, .)
+                0x00000000080101f0                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x000000000800f968        0x4
-                0x000000000800f968                PROVIDE (__init_array_start, .)
+.init_array     0x00000000080101f0        0x4
+                0x00000000080101f0                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
- .init_array    0x000000000800f968        0x4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
-                0x000000000800f96c                PROVIDE (__init_array_end, .)
+ .init_array    0x00000000080101f0        0x4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+                0x00000000080101f4                PROVIDE (__init_array_end, .)
 
-.fini_array     0x000000000800f96c        0x4
+.fini_array     0x00000000080101f4        0x4
                 [!provide]                        PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x000000000800f96c        0x4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+ .fini_array    0x00000000080101f4        0x4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end, .)
-                0x000000000800f970                _sidata = LOADADDR (.data)
+                0x00000000080101f8                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000      0x1e8 load address 0x000000000800f970
+.data           0x0000000020000000      0x1e8 load address 0x00000000080101f8
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -6710,14 +6846,14 @@ LOAD /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.1
                 0x00000000200001e8                . = ALIGN (0x4)
                 0x00000000200001e8                _edata = .
 
-.jcr            0x00000000200001e8        0x0 load address 0x000000000800fb58
+.jcr            0x00000000200001e8        0x0 load address 0x00000000080103e0
  .jcr           0x00000000200001e8        0x0 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
 
-.igot.plt       0x00000000200001e8        0x0 load address 0x000000000800fb58
+.igot.plt       0x00000000200001e8        0x0 load address 0x00000000080103e0
  .igot.plt      0x00000000200001e8        0x0 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
                 0x00000000200001e8                . = ALIGN (0x4)
 
-.bss            0x00000000200001e8      0x978 load address 0x000000000800fb58
+.bss            0x00000000200001e8      0x980 load address 0x00000000080103e0
                 0x00000000200001e8                _sbss = .
                 0x00000000200001e8                __bss_start__ = _sbss
  *(.bss)
@@ -6760,97 +6896,104 @@ LOAD /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.1
                 0x0000000020000236                cutting_impulses
  .bss           0x0000000020000238        0x1 Src/screen12.o
                 0x0000000020000238                list_counter
- *fill*         0x0000000020000239        0x1 
- .bss           0x000000002000023a        0x6 Src/screen4.o
-                0x000000002000023a                error
-                0x000000002000023b                param_number
-                0x000000002000023c                button_calls
-                0x000000002000023e                temp1
+ .bss           0x0000000020000239        0x1 Src/screen15.o
+                0x0000000020000239                node_to_delete
+ .bss           0x000000002000023a        0x8 Src/screen3.o
+                0x000000002000023a                max_nodes
+                0x000000002000023c                list_position
+                0x000000002000023d                temp_position
+                0x000000002000023e                s
+                0x0000000020000240                local_p
+ .bss           0x0000000020000242        0x6 Src/screen4.o
+                0x0000000020000242                error
+                0x0000000020000243                param_number
+                0x0000000020000244                button_calls
+                0x0000000020000246                temp1
  *(.bss*)
  .bss.__malloc_free_list
-                0x0000000020000240        0x4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-mallocr.o)
-                0x0000000020000240                __malloc_free_list
+                0x0000000020000248        0x4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-mallocr.o)
+                0x0000000020000248                __malloc_free_list
  .bss.__malloc_sbrk_start
-                0x0000000020000244        0x4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-mallocr.o)
-                0x0000000020000244                __malloc_sbrk_start
+                0x000000002000024c        0x4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-mallocr.o)
+                0x000000002000024c                __malloc_sbrk_start
  .bss.heap_end.4116
-                0x0000000020000248        0x4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libnosys.a(sbrk.o)
+                0x0000000020000250        0x4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libnosys.a(sbrk.o)
  *(COMMON)
- COMMON         0x000000002000024c        0x4 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
-                0x000000002000024c                uwTick
- COMMON         0x0000000020000250      0x800 Src/main.o
-                0x0000000020000250                awg_struct
-                0x0000000020000444                Transfer_cplt
-                0x0000000020000445                Rx_indx
-                0x0000000020000448                htim4
-                0x0000000020000488                position_x
-                0x000000002000048a                Rx_UART1
-                0x000000002000048c                Rx_data
-                0x0000000020000490                Rx_Buffer_X
-                0x0000000020000494                htim3
-                0x00000000200004d4                sdatestructureget
-                0x00000000200004d8                Rx_Buffer_Y
-                0x00000000200004dc                huart1
-                0x000000002000051c                hrtc
-                0x0000000020000530                position_y
-                0x0000000020000534                data
-                0x0000000020000568                htim1
-                0x00000000200005a8                Rx_Buffer
-                0x00000000200005ac                stimestructureget
-                0x00000000200005b0                huart2
-                0x00000000200005f0                hpcd_USB_FS
- COMMON         0x0000000020000a50       0xbc Src/screen1.o
-                0x0000000020000a50                temp_left_eye
-                0x0000000020000a58                _pcs
-                0x0000000020000a5a                _right_cov
-                0x0000000020000a5c                temp_right_cov
-                0x0000000020000a64                _knife
-                0x0000000020000a68                temp_pcs_done
-                0x0000000020000a7c                _length
-                0x0000000020000a7e                _pcs_done
-                0x0000000020000a80                temp_left_cov
-                0x0000000020000a88                temp_pcs
-                0x0000000020000a9c                temp_name
-                0x0000000020000ab0                temp_knife_move_back
-                0x0000000020000ac4                temp_knife
-                0x0000000020000ad8                _knife_move_back
-                0x0000000020000ada                _left_cov
-                0x0000000020000adb                _right_eye
-                0x0000000020000adc                temp_length
-                0x0000000020000aec                _left_eye
-                0x0000000020000af0                _name
-                0x0000000020000b04                temp_right_eye
- COMMON         0x0000000020000b0c       0x18 Src/screen10.o
-                0x0000000020000b0c                temp_minutes
-                0x0000000020000b10                temp_year
-                0x0000000020000b14                temp_str
-                0x0000000020000b18                temp_month
-                0x0000000020000b1c                temp_hours
-                0x0000000020000b20                temp_day
- *fill*         0x0000000020000b24        0x4 
- COMMON         0x0000000020000b28       0x34 Src/screen11.o
-                0x0000000020000b28                dot_char_2
-                0x0000000020000b2c                temp_knife_move_back_mm
-                0x0000000020000b3c                dot_char_1
-                0x0000000020000b40                tempFloat
-                0x0000000020000b48                first_char_1
-                0x0000000020000b4c                temp_knife_mm
- COMMON         0x0000000020000b5c        0x4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-reent.o)
-                0x0000000020000b5c                errno
-                0x0000000020000b60                . = ALIGN (0x4)
-                0x0000000020000b60                _ebss = .
-                0x0000000020000b60                __bss_end__ = _ebss
+ COMMON         0x0000000020000254        0x4 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+                0x0000000020000254                uwTick
+ COMMON         0x0000000020000258      0x800 Src/main.o
+                0x0000000020000258                awg_struct
+                0x000000002000044c                Transfer_cplt
+                0x000000002000044d                Rx_indx
+                0x0000000020000450                htim4
+                0x0000000020000490                position_x
+                0x0000000020000492                Rx_UART1
+                0x0000000020000494                Rx_data
+                0x0000000020000498                Rx_Buffer_X
+                0x000000002000049c                htim3
+                0x00000000200004dc                sdatestructureget
+                0x00000000200004e0                Rx_Buffer_Y
+                0x00000000200004e4                huart1
+                0x0000000020000524                hrtc
+                0x0000000020000538                position_y
+                0x000000002000053c                data
+                0x0000000020000570                htim1
+                0x00000000200005b0                Rx_Buffer
+                0x00000000200005b4                stimestructureget
+                0x00000000200005b8                huart2
+                0x00000000200005f8                hpcd_USB_FS
+ COMMON         0x0000000020000a58       0xbc Src/screen1.o
+                0x0000000020000a58                temp_left_eye
+                0x0000000020000a60                _pcs
+                0x0000000020000a62                _right_cov
+                0x0000000020000a64                temp_right_cov
+                0x0000000020000a6c                _knife
+                0x0000000020000a70                temp_pcs_done
+                0x0000000020000a84                _length
+                0x0000000020000a86                _pcs_done
+                0x0000000020000a88                temp_left_cov
+                0x0000000020000a90                temp_pcs
+                0x0000000020000aa4                temp_name
+                0x0000000020000ab8                temp_knife_move_back
+                0x0000000020000acc                temp_knife
+                0x0000000020000ae0                _knife_move_back
+                0x0000000020000ae2                _left_cov
+                0x0000000020000ae3                _right_eye
+                0x0000000020000ae4                temp_length
+                0x0000000020000af4                _left_eye
+                0x0000000020000af8                _name
+                0x0000000020000b0c                temp_right_eye
+ COMMON         0x0000000020000b14       0x18 Src/screen10.o
+                0x0000000020000b14                temp_minutes
+                0x0000000020000b18                temp_year
+                0x0000000020000b1c                temp_str
+                0x0000000020000b20                temp_month
+                0x0000000020000b24                temp_hours
+                0x0000000020000b28                temp_day
+ *fill*         0x0000000020000b2c        0x4 
+ COMMON         0x0000000020000b30       0x34 Src/screen11.o
+                0x0000000020000b30                dot_char_2
+                0x0000000020000b34                temp_knife_move_back_mm
+                0x0000000020000b44                dot_char_1
+                0x0000000020000b48                tempFloat
+                0x0000000020000b50                first_char_1
+                0x0000000020000b54                temp_knife_mm
+ COMMON         0x0000000020000b64        0x4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-reent.o)
+                0x0000000020000b64                errno
+                0x0000000020000b68                . = ALIGN (0x4)
+                0x0000000020000b68                _ebss = .
+                0x0000000020000b68                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x0000000020000b60      0x600 load address 0x000000000800fb58
-                0x0000000020000b60                . = ALIGN (0x8)
-                0x0000000020000b60                PROVIDE (end, .)
+                0x0000000020000b68      0x600 load address 0x00000000080103e0
+                0x0000000020000b68                . = ALIGN (0x8)
+                0x0000000020000b68                PROVIDE (end, .)
                 [!provide]                        PROVIDE (_end, .)
-                0x0000000020000d60                . = (. + _Min_Heap_Size)
- *fill*         0x0000000020000b60      0x200 
-                0x0000000020001160                . = (. + _Min_Stack_Size)
- *fill*         0x0000000020000d60      0x400 
-                0x0000000020001160                . = ALIGN (0x8)
+                0x0000000020000d68                . = (. + _Min_Heap_Size)
+ *fill*         0x0000000020000b68      0x200 
+                0x0000000020001168                . = (. + _Min_Stack_Size)
+ *fill*         0x0000000020000d68      0x400 
+                0x0000000020001168                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -6911,116 +7054,118 @@ LOAD /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.1
  .ARM.attributes
                 0x00000000000004ac       0x33 Src/screen13.o
  .ARM.attributes
-                0x00000000000004df       0x33 Src/screen3.o
+                0x00000000000004df       0x33 Src/screen15.o
  .ARM.attributes
-                0x0000000000000512       0x33 Src/screen4.o
+                0x0000000000000512       0x33 Src/screen3.o
  .ARM.attributes
-                0x0000000000000545       0x33 Src/screen6.o
+                0x0000000000000545       0x33 Src/screen4.o
  .ARM.attributes
-                0x0000000000000578       0x33 Src/screen6_1.o
+                0x0000000000000578       0x33 Src/screen6.o
  .ARM.attributes
-                0x00000000000005ab       0x33 Src/screen7.o
+                0x00000000000005ab       0x33 Src/screen6_1.o
  .ARM.attributes
-                0x00000000000005de       0x33 Src/screen8.o
+                0x00000000000005de       0x33 Src/screen7.o
  .ARM.attributes
-                0x0000000000000611       0x33 Src/screen9.o
+                0x0000000000000611       0x33 Src/screen8.o
  .ARM.attributes
-                0x0000000000000644       0x33 Src/stm32f1xx_hal_msp.o
+                0x0000000000000644       0x33 Src/screen9.o
  .ARM.attributes
-                0x0000000000000677       0x33 Src/stm32f1xx_it.o
+                0x0000000000000677       0x33 Src/stm32f1xx_hal_msp.o
  .ARM.attributes
-                0x00000000000006aa       0x33 Src/system_stm32f1xx.o
+                0x00000000000006aa       0x33 Src/stm32f1xx_it.o
  .ARM.attributes
-                0x00000000000006dd       0x21 startup/startup_stm32f103xb.o
+                0x00000000000006dd       0x33 Src/system_stm32f1xx.o
  .ARM.attributes
-                0x00000000000006fe       0x1d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_addsubdf3.o)
+                0x0000000000000710       0x21 startup/startup_stm32f103xb.o
  .ARM.attributes
-                0x000000000000071b       0x1d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_muldivdf3.o)
+                0x0000000000000731       0x1d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_addsubdf3.o)
  .ARM.attributes
-                0x0000000000000738       0x1d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_cmpdf2.o)
+                0x000000000000074e       0x1d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_muldivdf3.o)
  .ARM.attributes
-                0x0000000000000755       0x1d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_fixdfsi.o)
+                0x000000000000076b       0x1d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_cmpdf2.o)
  .ARM.attributes
-                0x0000000000000772       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-atof.o)
+                0x0000000000000788       0x1d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_fixdfsi.o)
  .ARM.attributes
-                0x000000000000079f       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-atoi.o)
+                0x00000000000007a5       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-atof.o)
  .ARM.attributes
-                0x00000000000007cc       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-impure.o)
+                0x00000000000007d2       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-atoi.o)
  .ARM.attributes
-                0x00000000000007f9       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-init.o)
+                0x00000000000007ff       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-impure.o)
  .ARM.attributes
-                0x0000000000000826       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-malloc.o)
+                0x000000000000082c       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-init.o)
  .ARM.attributes
-                0x0000000000000853       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memset.o)
+                0x0000000000000859       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-malloc.o)
  .ARM.attributes
-                0x0000000000000880       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-freer.o)
+                0x0000000000000886       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memset.o)
  .ARM.attributes
-                0x00000000000008ad       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-mallocr.o)
+                0x00000000000008b3       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-freer.o)
  .ARM.attributes
-                0x00000000000008da       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_float.o)
+                0x00000000000008e0       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-mallocr.o)
  .ARM.attributes
-                0x0000000000000907       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000000000000090d       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_float.o)
  .ARM.attributes
-                0x0000000000000934       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-sbrkr.o)
+                0x000000000000093a       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
  .ARM.attributes
-                0x0000000000000961       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-sprintf.o)
+                0x0000000000000967       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-sbrkr.o)
  .ARM.attributes
-                0x000000000000098e       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strcpy.o)
+                0x0000000000000994       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-sprintf.o)
  .ARM.attributes
-                0x00000000000009bb       0x17 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strlen.o)
+                0x00000000000009c1       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strcpy.o)
  .ARM.attributes
-                0x00000000000009d2       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtod.o)
+                0x00000000000009ee       0x17 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strlen.o)
  .ARM.attributes
-                0x00000000000009ff       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtol.o)
+                0x0000000000000a05       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtod.o)
  .ARM.attributes
-                0x0000000000000a2c       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-dtoa.o)
+                0x0000000000000a32       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtol.o)
  .ARM.attributes
-                0x0000000000000a59       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-gethex.o)
+                0x0000000000000a5f       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-dtoa.o)
  .ARM.attributes
-                0x0000000000000a86       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-hexnan.o)
+                0x0000000000000a8c       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-gethex.o)
  .ARM.attributes
-                0x0000000000000ab3       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-locale.o)
+                0x0000000000000ab9       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-hexnan.o)
  .ARM.attributes
-                0x0000000000000ae0       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-localeconv.o)
+                0x0000000000000ae6       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-locale.o)
  .ARM.attributes
-                0x0000000000000b0d       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mbtowc_r.o)
+                0x0000000000000b13       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-localeconv.o)
  .ARM.attributes
-                0x0000000000000b3a       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memchr-stub.o)
+                0x0000000000000b40       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mbtowc_r.o)
  .ARM.attributes
-                0x0000000000000b67       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memcpy-stub.o)
+                0x0000000000000b6d       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memchr-stub.o)
  .ARM.attributes
-                0x0000000000000b94       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mlock.o)
+                0x0000000000000b9a       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memcpy-stub.o)
  .ARM.attributes
-                0x0000000000000bc1       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+                0x0000000000000bc7       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mlock.o)
  .ARM.attributes
-                0x0000000000000bee       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-callocr.o)
+                0x0000000000000bf4       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
  .ARM.attributes
-                0x0000000000000c1b       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-svfprintf.o)
+                0x0000000000000c21       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-callocr.o)
  .ARM.attributes
-                0x0000000000000c48       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-reent.o)
+                0x0000000000000c4e       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-svfprintf.o)
  .ARM.attributes
-                0x0000000000000c75       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strncmp.o)
+                0x0000000000000c7b       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-reent.o)
  .ARM.attributes
-                0x0000000000000ca2       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-wctomb_r.o)
+                0x0000000000000ca8       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strncmp.o)
  .ARM.attributes
-                0x0000000000000ccf       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-ctype_.o)
+                0x0000000000000cd5       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-wctomb_r.o)
  .ARM.attributes
-                0x0000000000000cfc       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memmove.o)
+                0x0000000000000d02       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-ctype_.o)
  .ARM.attributes
-                0x0000000000000d29       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-reallocr.o)
+                0x0000000000000d2f       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memmove.o)
  .ARM.attributes
-                0x0000000000000d56       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-msizer.o)
+                0x0000000000000d5c       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-reallocr.o)
  .ARM.attributes
-                0x0000000000000d83       0x1d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_unorddf2.o)
+                0x0000000000000d89       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-msizer.o)
  .ARM.attributes
-                0x0000000000000da0       0x1d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_fixunsdfsi.o)
+                0x0000000000000db6       0x1d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_unorddf2.o)
  .ARM.attributes
-                0x0000000000000dbd       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libnosys.a(sbrk.o)
+                0x0000000000000dd3       0x1d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_fixunsdfsi.o)
  .ARM.attributes
-                0x0000000000000dea       0x1d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtn.o
+                0x0000000000000df0       0x2d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libnosys.a(sbrk.o)
+ .ARM.attributes
+                0x0000000000000e1d       0x1d /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtn.o
 OUTPUT(CMT82.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000    0x30943
+.debug_info     0x0000000000000000    0x3201e
  .debug_info    0x0000000000000000      0xfaa Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_info    0x0000000000000faa     0x147b Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
  .debug_info    0x0000000000002425     0x1017 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
@@ -7037,26 +7182,27 @@ OUTPUT(CMT82.elf elf32-littlearm)
  .debug_info    0x000000000001230b     0x1730 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.o
  .debug_info    0x0000000000013a3b     0x1244 Src/init.o
  .debug_info    0x0000000000014c7f     0x1454 Src/lista.o
- .debug_info    0x00000000000160d3     0x31d3 Src/main.o
- .debug_info    0x00000000000192a6     0x1a0c Src/process.o
- .debug_info    0x000000000001acb2     0x1c6e Src/screen1.o
- .debug_info    0x000000000001c920     0x2245 Src/screen10.o
- .debug_info    0x000000000001eb65     0x246b Src/screen11.o
- .debug_info    0x0000000000020fd0     0x15b6 Src/screen12.o
- .debug_info    0x0000000000022586      0xe73 Src/screen13.o
- .debug_info    0x00000000000233f9      0xe73 Src/screen3.o
- .debug_info    0x000000000002426c     0x33c3 Src/screen4.o
- .debug_info    0x000000000002762f     0x1636 Src/screen6.o
- .debug_info    0x0000000000028c65     0x12d5 Src/screen6_1.o
- .debug_info    0x0000000000029f3a      0xe9e Src/screen7.o
- .debug_info    0x000000000002add8      0xe9e Src/screen8.o
- .debug_info    0x000000000002bc76      0xea0 Src/screen9.o
- .debug_info    0x000000000002cb16     0x1def Src/stm32f1xx_hal_msp.o
- .debug_info    0x000000000002e905     0x13b6 Src/stm32f1xx_it.o
- .debug_info    0x000000000002fcbb      0xc1b Src/system_stm32f1xx.o
- .debug_info    0x00000000000308d6       0x6d startup/startup_stm32f103xb.o
+ .debug_info    0x00000000000160d3     0x3344 Src/main.o
+ .debug_info    0x0000000000019417     0x1a0c Src/process.o
+ .debug_info    0x000000000001ae23     0x1c6e Src/screen1.o
+ .debug_info    0x000000000001ca91     0x2245 Src/screen10.o
+ .debug_info    0x000000000001ecd6     0x23a1 Src/screen11.o
+ .debug_info    0x0000000000021077     0x15b6 Src/screen12.o
+ .debug_info    0x000000000002262d      0xe73 Src/screen13.o
+ .debug_info    0x00000000000234a0      0xff1 Src/screen15.o
+ .debug_info    0x0000000000024491     0x14b6 Src/screen3.o
+ .debug_info    0x0000000000025947     0x33c3 Src/screen4.o
+ .debug_info    0x0000000000028d0a     0x1636 Src/screen6.o
+ .debug_info    0x000000000002a340     0x12d5 Src/screen6_1.o
+ .debug_info    0x000000000002b615      0xe9e Src/screen7.o
+ .debug_info    0x000000000002c4b3      0xe9e Src/screen8.o
+ .debug_info    0x000000000002d351      0xea0 Src/screen9.o
+ .debug_info    0x000000000002e1f1     0x1def Src/stm32f1xx_hal_msp.o
+ .debug_info    0x000000000002ffe0     0x13b6 Src/stm32f1xx_it.o
+ .debug_info    0x0000000000031396      0xc1b Src/system_stm32f1xx.o
+ .debug_info    0x0000000000031fb1       0x6d startup/startup_stm32f103xb.o
 
-.debug_abbrev   0x0000000000000000     0x5c2b
+.debug_abbrev   0x0000000000000000     0x5f5c
  .debug_abbrev  0x0000000000000000      0x2f2 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_abbrev  0x00000000000002f2      0x3cb Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
  .debug_abbrev  0x00000000000006bd      0x2d4 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
@@ -7077,22 +7223,23 @@ OUTPUT(CMT82.elf elf32-littlearm)
  .debug_abbrev  0x000000000000323d      0x2f5 Src/process.o
  .debug_abbrev  0x0000000000003532      0x2ba Src/screen1.o
  .debug_abbrev  0x00000000000037ec      0x2de Src/screen10.o
- .debug_abbrev  0x0000000000003aca      0x326 Src/screen11.o
- .debug_abbrev  0x0000000000003df0      0x2ae Src/screen12.o
- .debug_abbrev  0x000000000000409e      0x250 Src/screen13.o
- .debug_abbrev  0x00000000000042ee      0x250 Src/screen3.o
- .debug_abbrev  0x000000000000453e      0x325 Src/screen4.o
- .debug_abbrev  0x0000000000004863      0x2c9 Src/screen6.o
- .debug_abbrev  0x0000000000004b2c      0x2a2 Src/screen6_1.o
- .debug_abbrev  0x0000000000004dce      0x250 Src/screen7.o
- .debug_abbrev  0x000000000000501e      0x250 Src/screen8.o
- .debug_abbrev  0x000000000000526e      0x250 Src/screen9.o
- .debug_abbrev  0x00000000000054be      0x2c9 Src/stm32f1xx_hal_msp.o
- .debug_abbrev  0x0000000000005787      0x26c Src/stm32f1xx_it.o
- .debug_abbrev  0x00000000000059f3      0x226 Src/system_stm32f1xx.o
- .debug_abbrev  0x0000000000005c19       0x12 startup/startup_stm32f103xb.o
+ .debug_abbrev  0x0000000000003aca      0x32f Src/screen11.o
+ .debug_abbrev  0x0000000000003df9      0x2ae Src/screen12.o
+ .debug_abbrev  0x00000000000040a7      0x250 Src/screen13.o
+ .debug_abbrev  0x00000000000042f7      0x28e Src/screen15.o
+ .debug_abbrev  0x0000000000004585      0x2ea Src/screen3.o
+ .debug_abbrev  0x000000000000486f      0x325 Src/screen4.o
+ .debug_abbrev  0x0000000000004b94      0x2c9 Src/screen6.o
+ .debug_abbrev  0x0000000000004e5d      0x2a2 Src/screen6_1.o
+ .debug_abbrev  0x00000000000050ff      0x250 Src/screen7.o
+ .debug_abbrev  0x000000000000534f      0x250 Src/screen8.o
+ .debug_abbrev  0x000000000000559f      0x250 Src/screen9.o
+ .debug_abbrev  0x00000000000057ef      0x2c9 Src/stm32f1xx_hal_msp.o
+ .debug_abbrev  0x0000000000005ab8      0x26c Src/stm32f1xx_it.o
+ .debug_abbrev  0x0000000000005d24      0x226 Src/system_stm32f1xx.o
+ .debug_abbrev  0x0000000000005f4a       0x12 startup/startup_stm32f103xb.o
 
-.debug_loc      0x0000000000000000     0xbb5a
+.debug_loc      0x0000000000000000     0xbcb7
  .debug_loc     0x0000000000000000      0x108 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_loc     0x0000000000000108      0x5ad Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
  .debug_loc     0x00000000000006b5      0x71b Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
@@ -7115,13 +7262,15 @@ OUTPUT(CMT82.elf elf32-littlearm)
  .debug_loc     0x000000000000ad43      0x1f5 Src/screen10.o
  .debug_loc     0x000000000000af38      0x17a Src/screen11.o
  .debug_loc     0x000000000000b0b2       0xa6 Src/screen12.o
- .debug_loc     0x000000000000b158      0x6c6 Src/screen4.o
- .debug_loc     0x000000000000b81e       0x42 Src/screen6.o
- .debug_loc     0x000000000000b860       0x42 Src/screen6_1.o
- .debug_loc     0x000000000000b8a2      0x1d9 Src/stm32f1xx_hal_msp.o
- .debug_loc     0x000000000000ba7b       0xdf Src/system_stm32f1xx.o
+ .debug_loc     0x000000000000b158       0x21 Src/screen15.o
+ .debug_loc     0x000000000000b179      0x13c Src/screen3.o
+ .debug_loc     0x000000000000b2b5      0x6c6 Src/screen4.o
+ .debug_loc     0x000000000000b97b       0x42 Src/screen6.o
+ .debug_loc     0x000000000000b9bd       0x42 Src/screen6_1.o
+ .debug_loc     0x000000000000b9ff      0x1d9 Src/stm32f1xx_hal_msp.o
+ .debug_loc     0x000000000000bbd8       0xdf Src/system_stm32f1xx.o
 
-.debug_aranges  0x0000000000000000     0x12d0
+.debug_aranges  0x0000000000000000     0x1308
  .debug_aranges
                 0x0000000000000000       0xd0 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_aranges
@@ -7169,29 +7318,31 @@ OUTPUT(CMT82.elf elf32-littlearm)
  .debug_aranges
                 0x0000000000000fe8       0x30 Src/screen13.o
  .debug_aranges
-                0x0000000000001018       0x30 Src/screen3.o
+                0x0000000000001018       0x30 Src/screen15.o
  .debug_aranges
-                0x0000000000001048       0x48 Src/screen4.o
+                0x0000000000001048       0x38 Src/screen3.o
  .debug_aranges
-                0x0000000000001090       0x30 Src/screen6.o
+                0x0000000000001080       0x48 Src/screen4.o
  .debug_aranges
-                0x00000000000010c0       0x30 Src/screen6_1.o
+                0x00000000000010c8       0x30 Src/screen6.o
  .debug_aranges
-                0x00000000000010f0       0x30 Src/screen7.o
+                0x00000000000010f8       0x30 Src/screen6_1.o
  .debug_aranges
-                0x0000000000001120       0x30 Src/screen8.o
+                0x0000000000001128       0x30 Src/screen7.o
  .debug_aranges
-                0x0000000000001150       0x30 Src/screen9.o
+                0x0000000000001158       0x30 Src/screen8.o
  .debug_aranges
-                0x0000000000001180       0x60 Src/stm32f1xx_hal_msp.o
+                0x0000000000001188       0x30 Src/screen9.o
  .debug_aranges
-                0x00000000000011e0       0xa0 Src/stm32f1xx_it.o
+                0x00000000000011b8       0x60 Src/stm32f1xx_hal_msp.o
  .debug_aranges
-                0x0000000000001280       0x28 Src/system_stm32f1xx.o
+                0x0000000000001218       0xa0 Src/stm32f1xx_it.o
  .debug_aranges
-                0x00000000000012a8       0x28 startup/startup_stm32f103xb.o
+                0x00000000000012b8       0x28 Src/system_stm32f1xx.o
+ .debug_aranges
+                0x00000000000012e0       0x28 startup/startup_stm32f103xb.o
 
-.debug_ranges   0x0000000000000000     0x13d8
+.debug_ranges   0x0000000000000000     0x1400
  .debug_ranges  0x0000000000000000       0xc0 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_ranges  0x00000000000000c0       0xe0 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
  .debug_ranges  0x00000000000001a0       0x70 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
@@ -7215,19 +7366,20 @@ OUTPUT(CMT82.elf elf32-littlearm)
  .debug_ranges  0x00000000000010d8       0x28 Src/screen11.o
  .debug_ranges  0x0000000000001100       0x30 Src/screen12.o
  .debug_ranges  0x0000000000001130       0x20 Src/screen13.o
- .debug_ranges  0x0000000000001150       0x20 Src/screen3.o
- .debug_ranges  0x0000000000001170       0xb0 Src/screen4.o
- .debug_ranges  0x0000000000001220       0x20 Src/screen6.o
- .debug_ranges  0x0000000000001240       0x20 Src/screen6_1.o
- .debug_ranges  0x0000000000001260       0x20 Src/screen7.o
- .debug_ranges  0x0000000000001280       0x20 Src/screen8.o
- .debug_ranges  0x00000000000012a0       0x20 Src/screen9.o
- .debug_ranges  0x00000000000012c0       0x50 Src/stm32f1xx_hal_msp.o
- .debug_ranges  0x0000000000001310       0x90 Src/stm32f1xx_it.o
- .debug_ranges  0x00000000000013a0       0x18 Src/system_stm32f1xx.o
- .debug_ranges  0x00000000000013b8       0x20 startup/startup_stm32f103xb.o
+ .debug_ranges  0x0000000000001150       0x20 Src/screen15.o
+ .debug_ranges  0x0000000000001170       0x28 Src/screen3.o
+ .debug_ranges  0x0000000000001198       0xb0 Src/screen4.o
+ .debug_ranges  0x0000000000001248       0x20 Src/screen6.o
+ .debug_ranges  0x0000000000001268       0x20 Src/screen6_1.o
+ .debug_ranges  0x0000000000001288       0x20 Src/screen7.o
+ .debug_ranges  0x00000000000012a8       0x20 Src/screen8.o
+ .debug_ranges  0x00000000000012c8       0x20 Src/screen9.o
+ .debug_ranges  0x00000000000012e8       0x50 Src/stm32f1xx_hal_msp.o
+ .debug_ranges  0x0000000000001338       0x90 Src/stm32f1xx_it.o
+ .debug_ranges  0x00000000000013c8       0x18 Src/system_stm32f1xx.o
+ .debug_ranges  0x00000000000013e0       0x20 startup/startup_stm32f103xb.o
 
-.debug_macro    0x0000000000000000    0x1a396
+.debug_macro    0x0000000000000000    0x1a6e6
  .debug_macro   0x0000000000000000      0x342 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_macro   0x0000000000000342      0x8bc Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_macro   0x0000000000000bfe       0xd6 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
@@ -7312,25 +7464,26 @@ OUTPUT(CMT82.elf elf32-littlearm)
  .debug_macro   0x0000000000016b2a       0x52 Src/lista.o
  .debug_macro   0x0000000000016b7c       0x8d Src/lista.o
  .debug_macro   0x0000000000016c09       0x57 Src/lista.o
- .debug_macro   0x0000000000016c60      0x3ec Src/main.o
- .debug_macro   0x000000000001704c      0x332 Src/process.o
- .debug_macro   0x000000000001737e      0x332 Src/screen1.o
- .debug_macro   0x00000000000176b0      0x35c Src/screen10.o
- .debug_macro   0x0000000000017a0c      0x366 Src/screen11.o
- .debug_macro   0x0000000000017d72      0x328 Src/screen12.o
- .debug_macro   0x000000000001809a      0x328 Src/screen13.o
- .debug_macro   0x00000000000183c2      0x328 Src/screen3.o
- .debug_macro   0x00000000000186ea      0x366 Src/screen4.o
- .debug_macro   0x0000000000018a50      0x332 Src/screen6.o
- .debug_macro   0x0000000000018d82      0x332 Src/screen6_1.o
- .debug_macro   0x00000000000190b4      0x328 Src/screen7.o
- .debug_macro   0x00000000000193dc      0x328 Src/screen8.o
- .debug_macro   0x0000000000019704      0x328 Src/screen9.o
- .debug_macro   0x0000000000019a2c      0x31e Src/stm32f1xx_hal_msp.o
- .debug_macro   0x0000000000019d4a      0x328 Src/stm32f1xx_it.o
- .debug_macro   0x000000000001a072      0x324 Src/system_stm32f1xx.o
+ .debug_macro   0x0000000000016c60      0x3f6 Src/main.o
+ .debug_macro   0x0000000000017056      0x332 Src/process.o
+ .debug_macro   0x0000000000017388      0x332 Src/screen1.o
+ .debug_macro   0x00000000000176ba      0x35c Src/screen10.o
+ .debug_macro   0x0000000000017a16      0x366 Src/screen11.o
+ .debug_macro   0x0000000000017d7c      0x328 Src/screen12.o
+ .debug_macro   0x00000000000180a4      0x328 Src/screen13.o
+ .debug_macro   0x00000000000183cc      0x332 Src/screen15.o
+ .debug_macro   0x00000000000186fe      0x33c Src/screen3.o
+ .debug_macro   0x0000000000018a3a      0x366 Src/screen4.o
+ .debug_macro   0x0000000000018da0      0x332 Src/screen6.o
+ .debug_macro   0x00000000000190d2      0x332 Src/screen6_1.o
+ .debug_macro   0x0000000000019404      0x328 Src/screen7.o
+ .debug_macro   0x000000000001972c      0x328 Src/screen8.o
+ .debug_macro   0x0000000000019a54      0x328 Src/screen9.o
+ .debug_macro   0x0000000000019d7c      0x31e Src/stm32f1xx_hal_msp.o
+ .debug_macro   0x000000000001a09a      0x328 Src/stm32f1xx_it.o
+ .debug_macro   0x000000000001a3c2      0x324 Src/system_stm32f1xx.o
 
-.debug_line     0x0000000000000000    0x144a9
+.debug_line     0x0000000000000000    0x14d68
  .debug_line    0x0000000000000000      0x912 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_line    0x0000000000000912      0x911 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
  .debug_line    0x0000000000001223      0xad1 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
@@ -7347,26 +7500,27 @@ OUTPUT(CMT82.elf elf32-littlearm)
  .debug_line    0x000000000000978d      0xb91 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.o
  .debug_line    0x000000000000a31e      0x7e6 Src/init.o
  .debug_line    0x000000000000ab04      0x884 Src/lista.o
- .debug_line    0x000000000000b388      0xafe Src/main.o
- .debug_line    0x000000000000be86      0x891 Src/process.o
- .debug_line    0x000000000000c717      0x898 Src/screen1.o
- .debug_line    0x000000000000cfaf      0x92e Src/screen10.o
- .debug_line    0x000000000000d8dd      0x9ae Src/screen11.o
- .debug_line    0x000000000000e28b      0x878 Src/screen12.o
- .debug_line    0x000000000000eb03      0x78d Src/screen13.o
- .debug_line    0x000000000000f290      0x78b Src/screen3.o
- .debug_line    0x000000000000fa1b      0xb71 Src/screen4.o
- .debug_line    0x000000000001058c      0x7e2 Src/screen6.o
- .debug_line    0x0000000000010d6e      0x7b8 Src/screen6_1.o
- .debug_line    0x0000000000011526      0x78d Src/screen7.o
- .debug_line    0x0000000000011cb3      0x78d Src/screen8.o
- .debug_line    0x0000000000012440      0x78d Src/screen9.o
- .debug_line    0x0000000000012bcd      0x859 Src/stm32f1xx_hal_msp.o
- .debug_line    0x0000000000013426      0x870 Src/stm32f1xx_it.o
- .debug_line    0x0000000000013c96      0x796 Src/system_stm32f1xx.o
- .debug_line    0x000000000001442c       0x7d startup/startup_stm32f103xb.o
+ .debug_line    0x000000000000b388      0xb17 Src/main.o
+ .debug_line    0x000000000000be9f      0x891 Src/process.o
+ .debug_line    0x000000000000c730      0x898 Src/screen1.o
+ .debug_line    0x000000000000cfc8      0x92e Src/screen10.o
+ .debug_line    0x000000000000d8f6      0x9a6 Src/screen11.o
+ .debug_line    0x000000000000e29c      0x878 Src/screen12.o
+ .debug_line    0x000000000000eb14      0x78d Src/screen13.o
+ .debug_line    0x000000000000f2a1      0x7a6 Src/screen15.o
+ .debug_line    0x000000000000fa47      0x893 Src/screen3.o
+ .debug_line    0x00000000000102da      0xb71 Src/screen4.o
+ .debug_line    0x0000000000010e4b      0x7e2 Src/screen6.o
+ .debug_line    0x000000000001162d      0x7b8 Src/screen6_1.o
+ .debug_line    0x0000000000011de5      0x78d Src/screen7.o
+ .debug_line    0x0000000000012572      0x78d Src/screen8.o
+ .debug_line    0x0000000000012cff      0x78d Src/screen9.o
+ .debug_line    0x000000000001348c      0x859 Src/stm32f1xx_hal_msp.o
+ .debug_line    0x0000000000013ce5      0x870 Src/stm32f1xx_it.o
+ .debug_line    0x0000000000014555      0x796 Src/system_stm32f1xx.o
+ .debug_line    0x0000000000014ceb       0x7d startup/startup_stm32f103xb.o
 
-.debug_str      0x0000000000000000    0x7730d
+.debug_str      0x0000000000000000    0x773ac
  .debug_str     0x0000000000000000    0x727ec Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
                                       0x72ba8 (size before relaxing)
  .debug_str     0x00000000000727ec      0x2e1 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
@@ -7399,39 +7553,41 @@ OUTPUT(CMT82.elf elf32-littlearm)
                                       0x72a10 (size before relaxing)
  .debug_str     0x0000000000076843       0x90 Src/lista.o
                                       0x7296f (size before relaxing)
- .debug_str     0x00000000000768d3      0x4d9 Src/main.o
-                                      0x73b6f (size before relaxing)
- .debug_str     0x0000000000076dac       0x82 Src/process.o
+ .debug_str     0x00000000000768d3      0x514 Src/main.o
+                                      0x73baa (size before relaxing)
+ .debug_str     0x0000000000076de7       0x82 Src/process.o
                                       0x72b0f (size before relaxing)
- .debug_str     0x0000000000076e2e       0xd4 Src/screen1.o
+ .debug_str     0x0000000000076e69       0xd4 Src/screen1.o
                                       0x729ef (size before relaxing)
- .debug_str     0x0000000000076f02       0x80 Src/screen10.o
+ .debug_str     0x0000000000076f3d       0x80 Src/screen10.o
                                       0x72b38 (size before relaxing)
- .debug_str     0x0000000000076f82       0xad Src/screen11.o
+ .debug_str     0x0000000000076fbd       0xad Src/screen11.o
                                       0x72df4 (size before relaxing)
- .debug_str     0x000000000007702f       0x4b Src/screen12.o
+ .debug_str     0x000000000007706a       0x4b Src/screen12.o
                                       0x7286a (size before relaxing)
- .debug_str     0x000000000007707a       0x12 Src/screen13.o
+ .debug_str     0x00000000000770b5       0x12 Src/screen13.o
                                       0x7280b (size before relaxing)
- .debug_str     0x000000000007708c       0x11 Src/screen3.o
-                                      0x72806 (size before relaxing)
- .debug_str     0x000000000007709d       0x60 Src/screen4.o
+ .debug_str     0x00000000000770c7       0x21 Src/screen15.o
+                                      0x72891 (size before relaxing)
+ .debug_str     0x00000000000770e8       0x54 Src/screen3.o
+                                      0x7296b (size before relaxing)
+ .debug_str     0x000000000007713c       0x60 Src/screen4.o
                                       0x72b23 (size before relaxing)
- .debug_str     0x00000000000770fd       0x11 Src/screen6.o
+ .debug_str     0x000000000007719c       0x11 Src/screen6.o
                                       0x729d5 (size before relaxing)
- .debug_str     0x000000000007710e       0x13 Src/screen6_1.o
+ .debug_str     0x00000000000771ad       0x13 Src/screen6_1.o
                                       0x7299b (size before relaxing)
- .debug_str     0x0000000000077121       0x11 Src/screen7.o
+ .debug_str     0x00000000000771c0       0x11 Src/screen7.o
                                       0x72806 (size before relaxing)
- .debug_str     0x0000000000077132       0x11 Src/screen8.o
+ .debug_str     0x00000000000771d1       0x11 Src/screen8.o
                                       0x72806 (size before relaxing)
- .debug_str     0x0000000000077143       0x11 Src/screen9.o
+ .debug_str     0x00000000000771e2       0x11 Src/screen9.o
                                       0x72806 (size before relaxing)
- .debug_str     0x0000000000077154       0x29 Src/stm32f1xx_hal_msp.o
+ .debug_str     0x00000000000771f3       0x29 Src/stm32f1xx_hal_msp.o
                                       0x731f6 (size before relaxing)
- .debug_str     0x000000000007717d      0x12f Src/stm32f1xx_it.o
+ .debug_str     0x000000000007721c      0x12f Src/stm32f1xx_it.o
                                       0x72c3e (size before relaxing)
- .debug_str     0x00000000000772ac       0x61 Src/system_stm32f1xx.o
+ .debug_str     0x000000000007734b       0x61 Src/system_stm32f1xx.o
                                       0x724e7 (size before relaxing)
 
 .comment        0x0000000000000000       0x7f
@@ -7459,6 +7615,7 @@ OUTPUT(CMT82.elf elf32-littlearm)
  .comment       0x000000000000007f       0x80 Src/screen11.o
  .comment       0x000000000000007f       0x80 Src/screen12.o
  .comment       0x000000000000007f       0x80 Src/screen13.o
+ .comment       0x000000000000007f       0x80 Src/screen15.o
  .comment       0x000000000000007f       0x80 Src/screen3.o
  .comment       0x000000000000007f       0x80 Src/screen4.o
  .comment       0x000000000000007f       0x80 Src/screen6.o
@@ -7470,7 +7627,7 @@ OUTPUT(CMT82.elf elf32-littlearm)
  .comment       0x000000000000007f       0x80 Src/stm32f1xx_it.o
  .comment       0x000000000000007f       0x80 Src/system_stm32f1xx.o
 
-.debug_frame    0x0000000000000000     0x3da4
+.debug_frame    0x0000000000000000     0x3e40
  .debug_frame   0x0000000000000000      0x1ac Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_frame   0x00000000000001ac      0x12c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
  .debug_frame   0x00000000000002d8      0x148 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
@@ -7491,55 +7648,56 @@ OUTPUT(CMT82.elf elf32-littlearm)
  .debug_frame   0x00000000000026dc       0x94 Src/process.o
  .debug_frame   0x0000000000002770       0xb0 Src/screen1.o
  .debug_frame   0x0000000000002820       0x8c Src/screen10.o
- .debug_frame   0x00000000000028ac       0xc4 Src/screen11.o
- .debug_frame   0x0000000000002970       0x90 Src/screen12.o
- .debug_frame   0x0000000000002a00       0x54 Src/screen13.o
- .debug_frame   0x0000000000002a54       0x54 Src/screen3.o
- .debug_frame   0x0000000000002aa8       0xe4 Src/screen4.o
- .debug_frame   0x0000000000002b8c       0x68 Src/screen6.o
- .debug_frame   0x0000000000002bf4       0x64 Src/screen6_1.o
- .debug_frame   0x0000000000002c58       0x58 Src/screen7.o
- .debug_frame   0x0000000000002cb0       0x58 Src/screen8.o
- .debug_frame   0x0000000000002d08       0x58 Src/screen9.o
- .debug_frame   0x0000000000002d60       0xfc Src/stm32f1xx_hal_msp.o
- .debug_frame   0x0000000000002e5c      0x168 Src/stm32f1xx_it.o
- .debug_frame   0x0000000000002fc4       0x30 Src/system_stm32f1xx.o
- .debug_frame   0x0000000000002ff4       0xac /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x00000000000030a0       0x50 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x00000000000030f0       0xc4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_cmpdf2.o)
- .debug_frame   0x00000000000031b4       0x24 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_fixdfsi.o)
- .debug_frame   0x00000000000031d8       0x20 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-atof.o)
- .debug_frame   0x00000000000031f8       0x30 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-atoi.o)
- .debug_frame   0x0000000000003228       0x2c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-init.o)
- .debug_frame   0x0000000000003254       0x30 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-malloc.o)
- .debug_frame   0x0000000000003284       0x20 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memset.o)
- .debug_frame   0x00000000000032a4       0x38 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x00000000000032dc       0x2c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x0000000000003308       0x90 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_float.o)
- .debug_frame   0x0000000000003398       0x60 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_frame   0x00000000000033f8       0x2c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x0000000000003424       0x70 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-sprintf.o)
- .debug_frame   0x0000000000003494       0x20 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strcpy.o)
- .debug_frame   0x00000000000034b4      0x100 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtod.o)
- .debug_frame   0x00000000000035b4       0x88 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtol.o)
- .debug_frame   0x000000000000363c       0x6c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-dtoa.o)
- .debug_frame   0x00000000000036a8       0x70 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-gethex.o)
- .debug_frame   0x0000000000003718       0x74 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-hexnan.o)
- .debug_frame   0x000000000000378c       0x68 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-locale.o)
- .debug_frame   0x00000000000037f4       0x40 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-localeconv.o)
- .debug_frame   0x0000000000003834       0x48 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mbtowc_r.o)
- .debug_frame   0x000000000000387c       0x28 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memchr-stub.o)
- .debug_frame   0x00000000000038a4       0x28 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x00000000000038cc       0x30 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mlock.o)
- .debug_frame   0x00000000000038fc      0x244 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
- .debug_frame   0x0000000000003b40       0x2c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-callocr.o)
- .debug_frame   0x0000000000003b6c       0x90 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-svfprintf.o)
- .debug_frame   0x0000000000003bfc       0x5c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-reent.o)
- .debug_frame   0x0000000000003c58       0x28 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strncmp.o)
- .debug_frame   0x0000000000003c80       0x3c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-wctomb_r.o)
- .debug_frame   0x0000000000003cbc       0x28 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memmove.o)
- .debug_frame   0x0000000000003ce4       0x3c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-reallocr.o)
- .debug_frame   0x0000000000003d20       0x20 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-msizer.o)
- .debug_frame   0x0000000000003d40       0x20 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_unorddf2.o)
- .debug_frame   0x0000000000003d60       0x24 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_fixunsdfsi.o)
- .debug_frame   0x0000000000003d84       0x20 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libnosys.a(sbrk.o)
+ .debug_frame   0x00000000000028ac       0xc0 Src/screen11.o
+ .debug_frame   0x000000000000296c       0x90 Src/screen12.o
+ .debug_frame   0x00000000000029fc       0x54 Src/screen13.o
+ .debug_frame   0x0000000000002a50       0x64 Src/screen15.o
+ .debug_frame   0x0000000000002ab4       0x90 Src/screen3.o
+ .debug_frame   0x0000000000002b44       0xe4 Src/screen4.o
+ .debug_frame   0x0000000000002c28       0x68 Src/screen6.o
+ .debug_frame   0x0000000000002c90       0x64 Src/screen6_1.o
+ .debug_frame   0x0000000000002cf4       0x58 Src/screen7.o
+ .debug_frame   0x0000000000002d4c       0x58 Src/screen8.o
+ .debug_frame   0x0000000000002da4       0x58 Src/screen9.o
+ .debug_frame   0x0000000000002dfc       0xfc Src/stm32f1xx_hal_msp.o
+ .debug_frame   0x0000000000002ef8      0x168 Src/stm32f1xx_it.o
+ .debug_frame   0x0000000000003060       0x30 Src/system_stm32f1xx.o
+ .debug_frame   0x0000000000003090       0xac /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x000000000000313c       0x50 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x000000000000318c       0xc4 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x0000000000003250       0x24 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_fixdfsi.o)
+ .debug_frame   0x0000000000003274       0x20 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-atof.o)
+ .debug_frame   0x0000000000003294       0x30 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-atoi.o)
+ .debug_frame   0x00000000000032c4       0x2c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-init.o)
+ .debug_frame   0x00000000000032f0       0x30 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-malloc.o)
+ .debug_frame   0x0000000000003320       0x20 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x0000000000003340       0x38 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x0000000000003378       0x2c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x00000000000033a4       0x90 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_float.o)
+ .debug_frame   0x0000000000003434       0x60 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x0000000000003494       0x2c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x00000000000034c0       0x70 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-sprintf.o)
+ .debug_frame   0x0000000000003530       0x20 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strcpy.o)
+ .debug_frame   0x0000000000003550      0x100 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtod.o)
+ .debug_frame   0x0000000000003650       0x88 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strtol.o)
+ .debug_frame   0x00000000000036d8       0x6c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-dtoa.o)
+ .debug_frame   0x0000000000003744       0x70 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-gethex.o)
+ .debug_frame   0x00000000000037b4       0x74 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-gdtoa-hexnan.o)
+ .debug_frame   0x0000000000003828       0x68 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-locale.o)
+ .debug_frame   0x0000000000003890       0x40 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-localeconv.o)
+ .debug_frame   0x00000000000038d0       0x48 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mbtowc_r.o)
+ .debug_frame   0x0000000000003918       0x28 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memchr-stub.o)
+ .debug_frame   0x0000000000003940       0x28 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000000000003968       0x30 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mlock.o)
+ .debug_frame   0x0000000000003998      0x244 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-mprec.o)
+ .debug_frame   0x0000000000003bdc       0x2c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-callocr.o)
+ .debug_frame   0x0000000000003c08       0x90 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-svfprintf.o)
+ .debug_frame   0x0000000000003c98       0x5c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-reent.o)
+ .debug_frame   0x0000000000003cf4       0x28 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-strncmp.o)
+ .debug_frame   0x0000000000003d1c       0x3c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-wctomb_r.o)
+ .debug_frame   0x0000000000003d58       0x28 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-memmove.o)
+ .debug_frame   0x0000000000003d80       0x3c /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x0000000000003dbc       0x20 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libc_nano.a(lib_a-nano-msizer.o)
+ .debug_frame   0x0000000000003ddc       0x20 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_unorddf2.o)
+ .debug_frame   0x0000000000003dfc       0x24 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/libgcc.a(_arm_fixunsdfsi.o)
+ .debug_frame   0x0000000000003e20       0x20 /home/gorian/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/libnosys.a(sbrk.o)

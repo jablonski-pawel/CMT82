@@ -12,5 +12,6 @@
 void screen3_init();
 int screen3_button();
 void screen3_action(int button);
+void screen3_table(int dir);
 
 #endif /* SCREEN3_H_ */

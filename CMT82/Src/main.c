@@ -55,6 +55,8 @@
 #include "screen11.h"
 #include "screen12.h"
 #include "screen13.h"
+#include "screen15.h"
+
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -308,6 +310,10 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 			screen13_action(screen13_button());
 			break;
 
+		case 15:
+			screen15_action(screen15_button());
+			break;
+
 		default:
 			break;
 		}
@@ -375,6 +381,11 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 
 		case 13:
 			screen13_init();
+			//action = 0;
+			break;
+
+		case 15:
+			screen15_init();
 			//action = 0;
 			break;
 
@@ -557,7 +568,9 @@ int main(void)
 	wstaw(&L, 2, "ccc", 2000, 0, 300, 8, 7, 8, 9, 820, 250);
 	wstaw(&L, 3, "ddd", 3, 0, 50, 9, 8, 0, 0, 825, 50);
 	wstaw(&L, 4, "eee", 4000, 0, 500, 4, 3, 4, 5, 840, 250);
-
+	wstaw(&L, 5, "fff", 3, 0, 50, 9, 8, 0, 0, 825, 50);
+	wstaw(&L, 6, "ggg", 4000, 0, 500, 4, 3, 4, 5, 840, 250);
+	wstaw(&L, 7, "hhh", 4000, 0, 500, 4, 3, 4, 5, 840, 250);
 //ekran startowy - logo+pasek ładowania
 	wlaczanie(&huart1, &huart2);
 

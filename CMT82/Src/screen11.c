@@ -594,14 +594,14 @@ void screen11_value_update(char c) {
 			break;
 
 		}
-		_knife = (int)(-750/12*atof(temp_knife_mm)+900);
-		_knife_move_back = (int)(atof(temp_knife_move_back_mm)*(900-837.5));
-
-		size = sprintf(data, "Noże impulsy: %f ; Noże impulsy: %d\n\r", (-750/12*atof(temp_knife_mm)+900), _knife);
-		HAL_UART_Transmit(&huart1, data, size, 100);
-
-		size = sprintf(data, "Odskok impulsy: %f ; Odskok impulsy: %d\n\r", (atof(temp_knife_move_back_mm)*(900-837.5)) , _knife_move_back);
-		HAL_UART_Transmit(&huart1, data, size, 100);
+//		_knife = (int)(-750/12*atof(temp_knife_mm)+900);
+//		_knife_move_back = (int)(atof(temp_knife_move_back_mm)*(900-837.5));
+//
+//		size = sprintf(data, "Noże impulsy: %f ; Noże impulsy: %d\n\r", (-750/12*atof(temp_knife_mm)+900), _knife);
+//		HAL_UART_Transmit(&huart1, data, size, 100);
+//
+//		size = sprintf(data, "Odskok impulsy: %f ; Odskok impulsy: %d\n\r", (atof(temp_knife_move_back_mm)*(900-837.5)) , _knife_move_back);
+//		HAL_UART_Transmit(&huart1, data, size, 100);
 
 		key_delay= 1;
 

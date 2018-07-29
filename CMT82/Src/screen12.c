@@ -3,6 +3,7 @@
  *
  *  Created on: 20.11.2016
  *      Author: gorian
+ *      Ekran: Tabela AWG
  */
 #include "screen12.h"
 
