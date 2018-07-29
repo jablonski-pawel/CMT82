@@ -9,7 +9,7 @@
 
 #ifndef SCREEN11_H_
 #define SCREEN11_H_
-
+typedef enum {FALSE = 0, TRUE = !FALSE} bool;
 void screen11_init();
 int screen11_button();
 void screen11_action(int button);
