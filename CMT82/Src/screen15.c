@@ -32,7 +32,7 @@ void screen15_init() {
 	size = sprintf(data, "Zaladowano ekran 15\n\r");
 	HAL_UART_Transmit(&huart1, data, size, 1000);
 
-	size = sprintf(data, "BUZ 1000 2000\n\r");
+	size = sprintf(data, "BUZ 500 2000\n\r");
 	HAL_UART_Transmit(&huart2, data, size, 100);
 
 	screen = 15;

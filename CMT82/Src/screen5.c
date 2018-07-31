@@ -3,12 +3,11 @@
  *
  *  Created on: 25.11.2016
  *      Author: gorian
- *      Ekran: Zmiana ustawień długości przewodów do cięcia
+ *      Ekran:  Dodawane programu
  */
-#include "screen4.h"
+#include "screen5.h"
 #include "lista.h"
 #include <stdlib.h>
-#include <string.h>
 
 extern UART_HandleTypeDef huart1;
 extern UART_HandleTypeDef huart2;
@@ -21,45 +20,57 @@ extern uint8_t action;
 extern uint8_t data[50];
 extern uint8_t keyboard_timer;
 
-uint8_t param_number = 0;
-uint8_t max_size1 = 4;
-uint8_t error = 0;
-uint16_t temp1 = 0;
-char *temp_str[1];
-char temp_name[18];
-char *temp_pcs[5];
-char *temp_pcs_done[5];
-char *temp_length[4];
-char *temp_left_cov[2];
-char *temp_left_eye[2];
-char *temp_right_eye[2];
-char *temp_right_cov[2];
-char *temp_knife[5];
-char *temp_knife_move_back[5];
+extern uint8_t param_number;
+extern uint8_t max_size1;
+extern uint8_t error;
+extern uint16_t temp1;
+
+extern char *temp_str[1];
+extern char temp_name[18];
+extern char *temp_pcs[5];
+extern char *temp_pcs_done[5];
+extern char *temp_length[4];
+extern char *temp_left_cov[2];
+extern char *temp_left_eye[2];
+extern char *temp_right_eye[2];
+extern char *temp_right_cov[2];
+extern char *temp_knife[5];
+extern char *temp_knife_move_back[5];
 extern char last_char;
 
 char _name[18];
-uint16_t _pcs;
-uint16_t _pcs_done;
-uint16_t _length;
-uint8_t _left_cov;
-uint8_t _left_eye;
-uint8_t _right_eye;
-uint8_t _right_cov;
-uint16_t _knife;
-uint16_t _knife_move_back;
+extern uint16_t _pcs;
+extern uint16_t _pcs_done;
+extern uint16_t _length;
+extern uint8_t _left_cov;
+extern uint8_t _left_eye;
+extern uint8_t _right_eye;
+extern uint8_t _right_cov;
+extern uint16_t _knife;
+extern uint16_t _knife_move_back;
+
+uint8_t new_program = 0;
 
 //lista jednokierunkowa
 extern wezel *L;
 extern uint16_t p;
-extern uint8_t node_to_delete;
+extern uint16_t p_max;
 
-uint8_t button_calls = 0;
+extern uint8_t button_calls;
 
-void screen4_init() {
+void screen5_init() {
+
+	p_max = ilosc_wezlow(L);
+
+	if(new_program < 1){
+		sprintf(temp_name, "%s %d", "Program", p_max+1);
+		wstaw(&L, p_max, temp_name, 10, 0, 50, 0, 0, 0, 0, 900, 50);
+		new_program = 1;
+		p = p_max;
+	}
 
 	zwroc(L, p, &_name, &_pcs, &_pcs_done, &_length, &_left_cov, &_left_eye, &_right_eye,
-			&_right_cov, &_knife, &_knife_move_back);
+				&_right_cov, &_knife, &_knife_move_back);
 	sprintf(temp_name, "%s", _name);
 	sprintf(temp_pcs, "%d", _pcs);
 	sprintf(temp_pcs_done, "%d", _pcs_done);
@@ -75,7 +86,10 @@ void screen4_init() {
 	size = sprintf(data, "LOAD 0 0 4.bmp\n\r");
 	HAL_UART_Transmit(&huart2, data, size, 100);
 
-	size = sprintf(data, "Zaladowano ekran 4\n\r");
+	size = sprintf(data, "CLR 0 225 45 270 65535\n\r");
+	HAL_UART_Transmit(&huart2, data, size, 100);
+
+	size = sprintf(data, "Zaladowano ekran 5 P: %d nP: %d, PM: %d, w: %d\n\r", p, new_program, p_max, ilosc_wezlow(L));
 	HAL_UART_Transmit(&huart1, data, size, 1000);
 
 	size = sprintf(data, "UF 3 100 15 65535 %s\n\r", temp_name);
@@ -102,10 +116,10 @@ void screen4_init() {
 	size = sprintf(data, "UF 2 257 243 0 %s\n\r", temp_right_cov);
 	HAL_UART_Transmit(&huart2, data, size, 1000);
 
-	screen = 4;
+	screen = 5;
 }
 
-int screen4_button() {
+int screen5_button() {
 	if (((0 < position_x) && (position_x < 45))
 			&& ((0 < position_y) && (position_y < 45))) {
 		size = sprintf(data, "BUZ 150 2000\n\r");
@@ -286,13 +300,6 @@ int screen4_button() {
 		return 26;
 	}
 
-	if (((0 < position_x) && (position_x < 45))
-			&& ((235 < position_y) && (position_y < 270))) {
-		size = sprintf(data, "BUZ 150 2000\n\r");
-		HAL_UART_Transmit(&huart2, data, size, 100);
-		return 27;
-	}
-
 	position_x = 0;
 	position_y = 0;
 	return 0;
@@ -323,27 +330,28 @@ int screen4_button() {
 	//24 - lewe oczko
 	//25 - prawe oczko
 	//26 - prawe skórowanie
-	//27 - kosz - usuwanie programu
 	// Y 70; 115; 160; 205; 250
 	//X 320; 365; 410; 460
 
 }
 
-void screen4_action(int button) {
+void screen5_action(int button) {
 	switch (button) {
 
 	case 1:
-		sprintf(temp_name, "");
-		sprintf(temp_str, "");
-		sprintf(temp_pcs_done, "");
-		sprintf(temp_pcs, "");
-		sprintf(temp_length, "");
-		sprintf(temp_left_cov, "");
-		sprintf(temp_left_eye, "");
-		sprintf(temp_right_eye, "");
-		sprintf(temp_right_cov, "");
-		sprintf(temp_knife, "");
-		sprintf(temp_knife_move_back, "");
+//		sprintf(temp_name, "");
+//		sprintf(temp_str, "");
+//		sprintf(temp_pcs_done, "");
+//		sprintf(temp_pcs, "");
+//		sprintf(temp_length, "");
+//		sprintf(temp_left_cov, "");
+//		sprintf(temp_left_eye, "");
+//		sprintf(temp_right_eye, "");
+//		sprintf(temp_right_cov, "");
+//		sprintf(temp_knife, "");
+//		sprintf(temp_knife_move_back, "");
+		usun(&L, p);
+		new_program = 0;
 		param_number = 0;
 		screen = 2;
 		action = 1;
@@ -353,6 +361,7 @@ void screen4_action(int button) {
 	case 2:
 		screen4_save();
 		if(error <1){
+			new_program = 0;
 			screen = 2;
 			action = 1;
 		}
@@ -575,18 +584,12 @@ void screen4_action(int button) {
 		HAL_UART_Transmit(&huart1, data, size, 1000);
 		break;
 
-	case 27:
-		screen = 15;
-		action = 1;
-		node_to_delete = p;
-		break;
-
 	default:
 		break;
 	}
 }
 
-void screen4_value_update(char c) {
+void screen5_value_update(char c) {
 	uint8_t len = 0;
 	uint8_t add = 0;
 
@@ -974,7 +977,7 @@ void screen4_value_update(char c) {
 	}
 }
 
-void screen4_plus_minus(uint8_t option) {
+void screen5_plus_minus(uint8_t option) {
 	uint16_t temp = 0;
 
 	switch (param_number) {
@@ -1188,109 +1191,3 @@ void screen4_plus_minus(uint8_t option) {
 		break;
 	}
 }
-
-void screen4_save(){
-	uint8_t name_repeat = 0;
-	uint8_t temp_p = p;
-
-	_pcs = atoi(temp_pcs);
-	_pcs_done = atoi(temp_pcs_done);
-	_length = atoi(temp_length);
-	_left_cov = atoi(temp_left_cov);
-	_left_eye = atoi(temp_left_eye);
-	_right_eye = atoi(temp_right_eye);
-	_right_cov = atoi(temp_right_cov);
-	_knife = atoi(temp_knife);
-	_knife_move_back = atoi(temp_knife_move_back);
-
-	error = 0;
-
-	for(int i = 0; i<ilosc_wezlow(L);i++){
-		zwroc(L, i, &_name, &_pcs, &_pcs_done, &_length, &_left_cov, &_left_eye, &_right_eye,
-						&_right_cov, &_knife, &_knife_move_back);
-
-		if (i!=temp_p && strcmp(&temp_name, &_name)==0){
-			size = sprintf(data, "nazwa1 %s nazwa2 %s \n\r", _name, temp_name);
-				HAL_UART_Transmit(&huart1, data, size, 100);
-			name_repeat=1;
-			break;
-		}
-
-	}
-
-	p = temp_p;
-	zwroc(L, p, &_name, &_pcs, &_pcs_done, &_length, &_left_cov, &_left_eye, &_right_eye,
-					&_right_cov, &_knife, &_knife_move_back);
-
-	if (_pcs < 1) {
-		size = sprintf(data, "BUZ 500 500\n\r");
-		HAL_UART_Transmit(&huart2, data, size, 100);
-		sprintf(temp_pcs, "");
-		size = sprintf(data, "CLR 205 74 253 90 65535\n\r");
-		HAL_UART_Transmit(&huart2, data, size, 100);
-
-		size = sprintf(data, "LOAD 0 0 error.bmp\n\r");
-		HAL_UART_Transmit(&huart2, data, size, 100);
-
-		size = sprintf(data,
-				"UF 3 60 15 65535 PCS value can't be less than 1\n\r");
-		HAL_UART_Transmit(&huart2, data, size, 100);
-		param_number = 2;
-		max_size1 = 4;
-		error = 1;
-
-	} else if (_length < 50) {
-		size = sprintf(data, "BUZ 500 500\n\r");
-		HAL_UART_Transmit(&huart2, data, size, 100);
-		sprintf(temp_length, "");
-		size = sprintf(data, "CLR 165 114 193 131 65535\n\r");
-		HAL_UART_Transmit(&huart2, data, size, 100);
-
-		size = sprintf(data, "LOAD 0 0 error.bmp\n\r");
-		HAL_UART_Transmit(&huart2, data, size, 100);
-
-		size = sprintf(data,
-				"UF 3 60 15 65535 length can't be less than 50mm\n\r");
-		HAL_UART_Transmit(&huart2, data, size, 100);
-		param_number = 3;
-		max_size1 = 3;
-		error = 1;
-
-	} else if (((_left_cov + _right_cov) >= _length)) {
-		size = sprintf(data, "BUZ 500 500\n\r");
-		HAL_UART_Transmit(&huart2, data, size, 100);
-		sprintf(temp_length, "");
-		size = sprintf(data, "CLR 165 114 193 131 65535\n\r");
-		HAL_UART_Transmit(&huart2, data, size, 100);
-
-		size = sprintf(data, "LOAD 0 0 error.bmp\n\r");
-		HAL_UART_Transmit(&huart2, data, size, 100);
-
-		size = sprintf(data, "UF 3 60 15 65535 Wrong values\n\r");
-		HAL_UART_Transmit(&huart2, data, size, 100);
-		param_number = 3;
-		max_size1 = 3;
-		error = 1;
-
-	}else if (strlen(temp_name)==0 ||name_repeat==1){
-		size = sprintf(data, "BUZ 500 500\n\r");
-		HAL_UART_Transmit(&huart2, data, size, 100);
-		sprintf(temp_name, "");
-		size = sprintf(data, "CLR 90 14 300 40 62882\n\r");
-		HAL_UART_Transmit(&huart2, data, size, 100);
-		size = sprintf(data, "LOAD 0 0 error.bmp\n\r");
-		HAL_UART_Transmit(&huart2, data, size, 100);
-		size = sprintf(data, "UF 3 60 15 65535 Wrong program name\n\r");
-		HAL_UART_Transmit(&huart2, data, size, 100);
-		param_number = 1;
-		max_size1 = 13;
-		error = 1;
-
-	}	else {
-		usun(&L, p);
-		wstaw(&L, p, temp_name, _pcs, _pcs_done, _length, _left_cov, _left_eye,
-				_right_eye, _right_cov, _knife, _knife_move_back);
-		param_number = 0;
-	}
-}
-

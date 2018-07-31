@@ -61,6 +61,8 @@ extern uint16_t p;
 uint16_t cutting_impulses = 0;
 extern uint8_t set_cutting;
 
+extern uint8_t new_program;
+
 void screen11_init() {
 	//zmiana prędkości zamykania noży do bazowania
 //	htim4.Init.Period = 143;
@@ -310,7 +312,11 @@ void screen11_action(int button) {
 
 	case 1:
 //		base = 0;
-		screen = 4;
+		if(new_program > 0){
+			screen = 5;
+		} else {
+			screen = 4;
+		}
 		action = 1;
 		cutting_impulses = 0;
 
@@ -342,7 +348,12 @@ void screen11_action(int button) {
 					_right_cov, _knife , _knife_move_back);
 	//		cutting_impulses
 
-			screen = 4;
+			if(new_program > 0){
+				screen = 5;
+			} else {
+				screen = 4;
+			}
+
 			action = 1;
 			cutting_impulses = 0;
 

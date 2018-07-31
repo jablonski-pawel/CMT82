@@ -46,6 +46,7 @@
 #include "screen1.h"
 #include "screen3.h"
 #include "screen4.h"
+#include "screen5.h"
 #include "screen6.h"
 #include "screen6_1.h"
 #include "screen7.h"
@@ -274,6 +275,10 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 			screen4_action(screen4_button());
 			break;
 
+		case 5:
+			screen5_action(screen5_button());
+			break;
+
 		case 6:
 			screen6_action(screen6_button());
 			break;
@@ -336,6 +341,11 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 
 		case 4:
 			screen4_init();
+			//action = 0;
+			break;
+
+		case 5:
+			screen5_init();
 			//action = 0;
 			break;
 

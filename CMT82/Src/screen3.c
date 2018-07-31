@@ -109,6 +109,7 @@ int screen3_button() {
 	}
 
 	for (int i=0; i<6;i++){
+		//wybór elementu z listy
 		if (((50 < position_x) && (position_x < 430))
 				&& ((57+37*i < position_y) && (position_y < 87+35*i)) && list_position < max_nodes/6+footer) {
 			size = sprintf(data, "BUZ 150 2000\n\r");
@@ -127,7 +128,7 @@ int screen3_button() {
 			}
 		}
 
-		//obsługa śmietników
+		//wybór śmietnika
 		if (((430 < position_x) && (position_x < 480))
 				&& ((57+37*i < position_y) && (position_y < 87+35*i)) && list_position < max_nodes/6+footer) {
 
@@ -144,6 +145,9 @@ int screen3_button() {
 		}else if (((430 < position_x) && (position_x < 480))
 				&& ((57+37*i < position_y) && (position_y < 87+35*i))){
 			if(i<6-list_position*6+max_nodes){
+
+				if(list_position==1 && i==0) return 0;
+
 				size = sprintf(data, "BUZ 150 2000\n\r");
 				HAL_UART_Transmit(&huart2, data, size, 100);
 				node_to_delete = 6*(list_position-1)+i+temp_position;
