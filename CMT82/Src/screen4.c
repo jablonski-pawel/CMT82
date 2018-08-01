@@ -81,25 +81,22 @@ void screen4_init() {
 	size = sprintf(data, "UF 3 100 15 65535 %s\n\r", temp_name);
 	HAL_UART_Transmit(&huart2, data, size, 1000);
 
-	size = sprintf(data, "UF 2 214 72 0 %s\n\r", temp_pcs);
+	size = sprintf(data, "UF 2 %d 72 0 %s PCS\n\r", 214-(strlen(temp_pcs)+5)*5, temp_pcs);
 	HAL_UART_Transmit(&huart2, data, size, 1000);
 
-//	size = sprintf(data, "UF 2 214 72 0 %s\/%s\n\r", temp_pcs_done, temp_pcs);
-//	HAL_UART_Transmit(&huart2, data, size, 1000);
-
-	size = sprintf(data, "UF 2 165 114 0 %s\n\r", temp_length);
+	size = sprintf(data, "UF 2 %d 114 0 %s\n\r", 178-(strlen(temp_length)*5), temp_length);
 	HAL_UART_Transmit(&huart2, data, size, 1000);
 
-	size = sprintf(data, "UF 2 114 152 0 %s\n\r", temp_left_eye);
+	size = sprintf(data, "UF 2 %d 152 0 %s\n\r", 126-strlen(temp_left_eye)*5, temp_left_eye);
 	HAL_UART_Transmit(&huart2, data, size, 1000);
 
-	size = sprintf(data, "UF 2 217 152 0 %s\n\r", temp_right_eye);
+	size = sprintf(data, "UF 2 %d 152 0 %s\n\r", 230-strlen(temp_right_eye)*5, temp_right_eye);
 	HAL_UART_Transmit(&huart2, data, size, 1000);
 
-	size = sprintf(data, "UF 2 77 243 0 %s\n\r", temp_left_cov);
+	size = sprintf(data, "UF 2 %d 243 0 %s\n\r", 89-strlen(temp_left_cov)*5, temp_left_cov);
 	HAL_UART_Transmit(&huart2, data, size, 1000);
 
-	size = sprintf(data, "UF 2 257 243 0 %s\n\r", temp_right_cov);
+	size = sprintf(data, "UF 2 %d 243 0 %s\n\r", 268-strlen(temp_right_cov)*5,temp_right_cov);
 	HAL_UART_Transmit(&huart2, data, size, 1000);
 
 	screen = 4;
@@ -244,7 +241,7 @@ int screen4_button() {
 		return 20;
 	}
 
-	if (((200 < position_x) && (position_x < 300))
+	if (((150 < position_x) && (position_x < 300))
 			&& ((65 < position_y) && (position_y < 100))) {
 		size = sprintf(data, "BUZ 150 2000\n\r");
 		HAL_UART_Transmit(&huart2, data, size, 100);
@@ -372,32 +369,32 @@ void screen4_action(int button) {
 			break;
 		case 2:
 			sprintf(temp_pcs, "");
-			size = sprintf(data, "CLR 205 74 253 90 65535\n\r");
+			size = sprintf(data, "CLR 160 74 270 90 65535\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 			break;
 		case 3:
 			sprintf(temp_length, "");
-			size = sprintf(data, "CLR 165 114 193 131 65535\n\r");
+			size = sprintf(data, "CLR 140 114 220 131 65535\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 			break;
 		case 4:
 			sprintf(temp_left_cov, "");
-			size = sprintf(data, "CLR 77 243 95 260 65535\n\r");
+			size = sprintf(data, "CLR 77 243 100 260 65535\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 			break;
 		case 5:
 			sprintf(temp_left_eye, "");
-			size = sprintf(data, "CLR 114 154 132 170 65535\n\r");
+			size = sprintf(data, "CLR 114 152 135 168 65535\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 			break;
 		case 6:
 			sprintf(temp_right_eye, "");
-			size = sprintf(data, "CLR 217 154 235 170 65535\n\r");
+			size = sprintf(data, "CLR 217 154 240 168 65535\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 			break;
 		case 7:
 			sprintf(temp_right_cov, "");
-			size = sprintf(data, "CLR 257 243 275 260 65535\n\r");
+			size = sprintf(data, "CLR 257 243 280 260 65535\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 			break;
 		default:
@@ -862,14 +859,14 @@ void screen4_value_update(char c) {
 				size = sprintf(data, "BUZ 500 500\n\r");
 				HAL_UART_Transmit(&huart2, data, size, 100);
 				sprintf(temp_pcs, "");
-				size = sprintf(data, "CLR 205 74 253 90 65535\n\r");
+				size = sprintf(data, "CLR 160 74 270 90 65535\n\r");
 				HAL_UART_Transmit(&huart2, data, size, 100);
 
 			} else {
-				size = sprintf(data, "CLR 205 74 253 90 65535\n\r");
+				size = sprintf(data, "CLR 160 74 270 90 65535\n\r");
 				HAL_UART_Transmit(&huart2, data, size, 100);
 
-				size = sprintf(data, "UF 2 214 72 0 %s\n\r", temp_pcs);
+				size = sprintf(data, "UF 2 %d 72 0 %s PCS\n\r", 214-(strlen(temp_pcs)+5)*5, temp_pcs);
 				HAL_UART_Transmit(&huart2, data, size, 100);
 			}
 			break;
@@ -880,14 +877,14 @@ void screen4_value_update(char c) {
 				size = sprintf(data, "BUZ 500 500\n\r");
 				HAL_UART_Transmit(&huart2, data, size, 100);
 				sprintf(temp_length, "");
-				size = sprintf(data, "CLR 165 114 193 131 65535\n\r");
+				size = sprintf(data, "CLR 140 114 220 131 65535\n\r");
 				HAL_UART_Transmit(&huart2, data, size, 100);
 
 			} else {
-				size = sprintf(data, "CLR 165 114 193 131 65535\n\r");
+				size = sprintf(data, "CLR 140 114 220 131 65535\n\r");
 				HAL_UART_Transmit(&huart2, data, size, 100);
 
-				size = sprintf(data, "UF 2 165 114 0 %s\n\r", temp_length);
+				size = sprintf(data, "UF 2 %d 114 0 %s\n\r", 178-(strlen(temp_length)*5), temp_length);
 				HAL_UART_Transmit(&huart2, data, size, 100);
 			}
 			break;
@@ -898,14 +895,14 @@ void screen4_value_update(char c) {
 				size = sprintf(data, "BUZ 500 500\n\r");
 				HAL_UART_Transmit(&huart2, data, size, 100);
 				sprintf(temp_left_cov, "");
-				size = sprintf(data, "CLR 77 243 95 260 65535\n\r");
+				size = sprintf(data, "CLR 77 243 100 260 65535\n\r");
 				HAL_UART_Transmit(&huart2, data, size, 100);
 
 			} else {
-				size = sprintf(data, "CLR 77 243 95 260 65535\n\r");
+				size = sprintf(data, "CLR 77 243 100 260 65535\n\r");
 				HAL_UART_Transmit(&huart2, data, size, 100);
 
-				size = sprintf(data, "UF 2 77 243 0 %s\n\r", temp_left_cov);
+				size = sprintf(data, "UF 2 %d 243 0 %s\n\r", 89-strlen(temp_left_cov)*5, temp_left_cov);
 				HAL_UART_Transmit(&huart2, data, size, 100);
 			}
 			break;
@@ -916,14 +913,14 @@ void screen4_value_update(char c) {
 				size = sprintf(data, "BUZ 500 500\n\r");
 				HAL_UART_Transmit(&huart2, data, size, 100);
 				sprintf(temp_left_eye, "");
-				size = sprintf(data, "CLR 114 154 132 170 65535\n\r");
+				size = sprintf(data, "CLR 114 152 135 168 65535\n\r");
 				HAL_UART_Transmit(&huart2, data, size, 100);
 
 			} else {
-				size = sprintf(data, "CLR 114 154 132 170 65535\n\r");
+				size = sprintf(data, "CLR 114 152 135 168 65535\n\r");
 				HAL_UART_Transmit(&huart2, data, size, 100);
 
-				size = sprintf(data, "UF 2 114 152 0 %s\n\r", temp_left_eye);
+				size = sprintf(data, "UF 2 %d 152 0 %s\n\r", 126-strlen(temp_left_eye)*5, temp_left_eye);
 				HAL_UART_Transmit(&huart2, data, size, 100);
 			}
 			break;
@@ -934,14 +931,14 @@ void screen4_value_update(char c) {
 				size = sprintf(data, "BUZ 500 500\n\r");
 				HAL_UART_Transmit(&huart2, data, size, 100);
 				sprintf(temp_right_eye, "");
-				size = sprintf(data, "CLR 217 154 235 170 65535\n\r");
+				size = sprintf(data, "CLR 217 154 240 168 65535\n\r");
 				HAL_UART_Transmit(&huart2, data, size, 100);
 
 			} else {
-				size = sprintf(data, "CLR 217 154 235 170 65535\n\r");
+				size = sprintf(data, "CLR 217 154 240 168 65535\n\r");
 				HAL_UART_Transmit(&huart2, data, size, 100);
 
-				size = sprintf(data, "UF 2 217 152 0 %s\n\r", temp_right_eye);
+				size = sprintf(data, "UF 2 %d 152 0 %s\n\r", 230-strlen(temp_right_eye)*5, temp_right_eye);
 				HAL_UART_Transmit(&huart2, data, size, 100);
 			}
 			break;
@@ -952,14 +949,14 @@ void screen4_value_update(char c) {
 				size = sprintf(data, "BUZ 500 500\n\r");
 				HAL_UART_Transmit(&huart2, data, size, 100);
 				sprintf(temp_right_cov, "");
-				size = sprintf(data, "CLR 257 243 275 260 65535\n\r");
+				size = sprintf(data, "CLR 257 243 280 260 65535\n\r");
 				HAL_UART_Transmit(&huart2, data, size, 100);
 
 			} else {
-				size = sprintf(data, "CLR 257 243 275 260 65535\n\r");
+				size = sprintf(data, "CLR 257 243 280 260 65535\n\r");
 				HAL_UART_Transmit(&huart2, data, size, 100);
 
-				size = sprintf(data, "UF 2 257 243 0 %s\n\r", temp_right_cov);
+				size = sprintf(data, "UF 2 %d 243 0 %s\n\r", 268-strlen(temp_right_cov)*5,temp_right_cov);
 				HAL_UART_Transmit(&huart2, data, size, 100);
 
 			}
@@ -985,7 +982,7 @@ void screen4_plus_minus(uint8_t option) {
 			size = sprintf(data, "BUZ 500 500\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 			sprintf(temp_pcs, "");
-			size = sprintf(data, "CLR 205 74 253 90 65535\n\r");
+			size = sprintf(data, "CLR 160 74 270 90 65535\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 
 		} else {
@@ -1005,10 +1002,10 @@ void screen4_plus_minus(uint8_t option) {
 				temp = 9999;
 
 			sprintf(temp_pcs, "%d", temp);
-			size = sprintf(data, "CLR 205 74 253 90 65535\n\r");
+			size = sprintf(data, "CLR 160 74 270 90 65535\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 
-			size = sprintf(data, "UF 2 214 72 0 %s\n\r", temp_pcs);
+			size = sprintf(data, "UF 2 %d 72 0 %s PCS\n\r", 214-(strlen(temp_pcs)+5)*5, temp_pcs);
 			HAL_UART_Transmit(&huart2, data, size, 100);
 		}
 		break;
@@ -1019,7 +1016,7 @@ void screen4_plus_minus(uint8_t option) {
 			size = sprintf(data, "BUZ 500 500\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 			sprintf(temp_length, "");
-			size = sprintf(data, "CLR 165 114 193 131 65535\n\r");
+			size = sprintf(data, "CLR 140 114 220 131 65535\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 
 		} else {
@@ -1039,10 +1036,10 @@ void screen4_plus_minus(uint8_t option) {
 				temp = 999;
 
 			sprintf(temp_length, "%d", temp);
-			size = sprintf(data, "CLR 165 114 193 131 65535\n\r");
+			size = sprintf(data, "CLR 140 114 220 131 65535\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 
-			size = sprintf(data, "UF 2 165 114 0 %s\n\r", temp_length);
+			size = sprintf(data, "UF 2 %d 114 0 %s\n\r", 178-(strlen(temp_length)*5), temp_length);
 			HAL_UART_Transmit(&huart2, data, size, 100);
 		}
 		break;
@@ -1053,7 +1050,7 @@ void screen4_plus_minus(uint8_t option) {
 			size = sprintf(data, "BUZ 500 500\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 			sprintf(temp_left_cov, "");
-			size = sprintf(data, "CLR 77 243 95 260 65535\n\r");
+			size = sprintf(data, "CLR 77 243 100 260 65535\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 
 		} else {
@@ -1073,10 +1070,10 @@ void screen4_plus_minus(uint8_t option) {
 				temp = 30;
 
 			sprintf(temp_left_cov, "%d", temp);
-			size = sprintf(data, "CLR 77 243 95 260 65535\n\r");
+			size = sprintf(data, "CLR 77 243 100 260 65535\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 
-			size = sprintf(data, "UF 2 77 243 0 %s\n\r", temp_left_cov);
+			size = sprintf(data, "UF 2 %d 243 0 %s\n\r", 89-strlen(temp_left_cov)*5, temp_left_cov);
 			HAL_UART_Transmit(&huart2, data, size, 100);
 		}
 		break;
@@ -1087,7 +1084,7 @@ void screen4_plus_minus(uint8_t option) {
 			size = sprintf(data, "BUZ 500 500\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 			sprintf(temp_left_eye, "");
-			size = sprintf(data, "CLR 114 154 132 170 65535\n\r");
+			size = sprintf(data, "CLR 114 152 135 168 65535\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 
 		} else {
@@ -1107,10 +1104,10 @@ void screen4_plus_minus(uint8_t option) {
 				temp = 30;
 
 			sprintf(temp_left_eye, "%d", temp);
-			size = sprintf(data, "CLR 114 154 132 170 65535\n\r");
+			size = sprintf(data, "CLR 114 152 135 168 65535\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 
-			size = sprintf(data, "UF 2 114 152 0 %s\n\r", temp_left_eye);
+			size = sprintf(data, "UF 2 %d 152 0 %s\n\r", 126-strlen(temp_left_eye)*5, temp_left_eye);
 			HAL_UART_Transmit(&huart2, data, size, 100);
 		}
 		break;
@@ -1121,7 +1118,7 @@ void screen4_plus_minus(uint8_t option) {
 			size = sprintf(data, "BUZ 500 500\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 			sprintf(temp_right_eye, "");
-			size = sprintf(data, "CLR 217 154 235 170 65535\n\r");
+			size = sprintf(data, "CLR 217 154 240 168 65535\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 
 		} else {
@@ -1141,10 +1138,10 @@ void screen4_plus_minus(uint8_t option) {
 				temp = 30;
 
 			sprintf(temp_right_eye, "%d", temp);
-			size = sprintf(data, "CLR 217 154 235 170 65535\n\r");
+			size = sprintf(data, "CLR 217 154 240 168 65535\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 
-			size = sprintf(data, "UF 2 217 152 0 %s\n\r", temp_right_eye);
+			size = sprintf(data, "UF 2 %d 152 0 %s\n\r", 230-strlen(temp_right_eye)*5, temp_right_eye);
 			HAL_UART_Transmit(&huart2, data, size, 100);
 		}
 		break;
@@ -1155,7 +1152,7 @@ void screen4_plus_minus(uint8_t option) {
 			size = sprintf(data, "BUZ 500 500\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 			sprintf(temp_right_cov, "");
-			size = sprintf(data, "CLR 257 243 275 260 65535\n\r");
+			size = sprintf(data, "CLR 257 243 280 260 65535\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 
 		} else {
@@ -1175,10 +1172,10 @@ void screen4_plus_minus(uint8_t option) {
 				temp = 30;
 
 			sprintf(temp_right_cov, "%d", temp);
-			size = sprintf(data, "CLR 257 243 275 260 65535\n\r");
+			size = sprintf(data, "CLR 257 243 280 260 65535\n\r");
 			HAL_UART_Transmit(&huart2, data, size, 100);
 
-			size = sprintf(data, "UF 2 257 243 0 %s\n\r", temp_right_cov);
+			size = sprintf(data, "UF 2 %d 243 0 %s\n\r", 268-strlen(temp_right_cov)*5,temp_right_cov);
 			HAL_UART_Transmit(&huart2, data, size, 100);
 
 		}
@@ -1192,16 +1189,6 @@ void screen4_plus_minus(uint8_t option) {
 void screen4_save(){
 	uint8_t name_repeat = 0;
 	uint8_t temp_p = p;
-
-	_pcs = atoi(temp_pcs);
-	_pcs_done = atoi(temp_pcs_done);
-	_length = atoi(temp_length);
-	_left_cov = atoi(temp_left_cov);
-	_left_eye = atoi(temp_left_eye);
-	_right_eye = atoi(temp_right_eye);
-	_right_cov = atoi(temp_right_cov);
-	_knife = atoi(temp_knife);
-	_knife_move_back = atoi(temp_knife_move_back);
 
 	error = 0;
 
@@ -1222,11 +1209,21 @@ void screen4_save(){
 	zwroc(L, p, &_name, &_pcs, &_pcs_done, &_length, &_left_cov, &_left_eye, &_right_eye,
 					&_right_cov, &_knife, &_knife_move_back);
 
+	_pcs = atoi(temp_pcs);
+	_pcs_done = atoi(temp_pcs_done);
+	_length = atoi(temp_length);
+	_left_cov = atoi(temp_left_cov);
+	_left_eye = atoi(temp_left_eye);
+	_right_eye = atoi(temp_right_eye);
+	_right_cov = atoi(temp_right_cov);
+	_knife = atoi(temp_knife);
+	_knife_move_back = atoi(temp_knife_move_back);
+
 	if (_pcs < 1) {
 		size = sprintf(data, "BUZ 500 500\n\r");
 		HAL_UART_Transmit(&huart2, data, size, 100);
 		sprintf(temp_pcs, "");
-		size = sprintf(data, "CLR 205 74 253 90 65535\n\r");
+		size = sprintf(data, "CLR 160 74 270 90 65535\n\r");
 		HAL_UART_Transmit(&huart2, data, size, 100);
 
 		size = sprintf(data, "LOAD 0 0 error.bmp\n\r");
@@ -1243,7 +1240,7 @@ void screen4_save(){
 		size = sprintf(data, "BUZ 500 500\n\r");
 		HAL_UART_Transmit(&huart2, data, size, 100);
 		sprintf(temp_length, "");
-		size = sprintf(data, "CLR 165 114 193 131 65535\n\r");
+		size = sprintf(data, "CLR 140 114 220 131 65535\n\r");
 		HAL_UART_Transmit(&huart2, data, size, 100);
 
 		size = sprintf(data, "LOAD 0 0 error.bmp\n\r");
@@ -1260,7 +1257,7 @@ void screen4_save(){
 		size = sprintf(data, "BUZ 500 500\n\r");
 		HAL_UART_Transmit(&huart2, data, size, 100);
 		sprintf(temp_length, "");
-		size = sprintf(data, "CLR 165 114 193 131 65535\n\r");
+		size = sprintf(data, "CLR 140 114 220 131 65535\n\r");
 		HAL_UART_Transmit(&huart2, data, size, 100);
 
 		size = sprintf(data, "LOAD 0 0 error.bmp\n\r");

@@ -75,6 +75,7 @@ void screen15_action(int button) {
 		HAL_UART_Transmit(&huart1, data, size, 100);
 		if(node_to_delete>0){
 			usun(&L, node_to_delete);
+			p = 0;
 			screen = 2;
 			action = 1;
 		}

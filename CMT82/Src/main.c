@@ -103,7 +103,7 @@ uint8_t key_delay = 0; //flaga dla opóźnienia po wciśnięciu przycisku na ekr
 
 //struktura i zmienne dla listy z programami
 wezel *L = NULL;
-uint16_t p = 3;
+uint16_t p = 0;
 uint16_t p_max = 0;
 
 uint8_t start = 0; //start procesu
@@ -419,22 +419,18 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 		//jeśli minuta się zmieniła to zmienia godzinę wyświetlaną
 		if (stimestructureget.Seconds == 0) {
 			if (screen == 2) {
-				size = sprintf(data, "CLR 400 1 479 45 19481\n\r");
-				HAL_UART_Transmit(&huart2, data, size, 100);
-				size = sprintf(data, "UF 5 405 10 65535 %0.2d:%0.2d\n\r",
+				size = sprintf(data, "CLR 400 1 479 45 19481\n\rUF 5 405 10 65535 %0.2d:%0.2d\n\r",
 						stimestructureget.Hours, stimestructureget.Minutes);
 				HAL_UART_Transmit(&huart2, data, size, 100);
 			}
 
-			if (screen == 6) {
-				if(_pcs_done < _pcs){
-					size = sprintf(data, "CLR 400 1 479 45 405441\n\r");
-					HAL_UART_Transmit(&huart2, data, size, 100);
-					size = sprintf(data, "UF 5 405 10 65535 %0.2d:%0.2d\n\r",
-							stimestructureget.Hours, stimestructureget.Minutes);
-					HAL_UART_Transmit(&huart2, data, size, 100);
-				}
-			}
+//			if (screen == 6) {
+//				if(_pcs_done < _pcs){
+//					size = sprintf(data, "CLR 400 1 479 45 405441\n\rUF 5 405 10 65535 %0.2d:%0.2d\n\r",
+//							stimestructureget.Hours, stimestructureget.Minutes);
+//					HAL_UART_Transmit_IT(&huart2, data, size);
+//				}
+//			}
 
 			if (screen == 10) {
 
@@ -572,15 +568,15 @@ int main(void)
 	HAL_RTC_GetTime(&hrtc, &stimestructureget, RTC_FORMAT_BIN); // pobranie godziny
 
 	//tworzenie listy jednokierunkowej. TODO: WSTAWIĆ TUTAJ EEPROM
-	wstawPocz(&L, "aaa", 999, 0, 999, 1, 2, 3, 4, 800, 250);
+	wstawPocz(&L, "Program 1", 999, 0, 50, 0, 0, 0, 0, 800, 250);
 	//wstawPocz(&L, 33);
-	wstaw(&L, 1, "bbb", 1000, 0, 200, 7, 6, 7, 8, 810, 250);
-	wstaw(&L, 2, "ccc", 2000, 0, 300, 8, 7, 8, 9, 820, 250);
-	wstaw(&L, 3, "ddd", 3, 0, 50, 9, 8, 0, 0, 825, 50);
-	wstaw(&L, 4, "eee", 4000, 0, 500, 4, 3, 4, 5, 840, 250);
-	wstaw(&L, 5, "fff", 3, 0, 50, 9, 8, 0, 0, 825, 50);
-	wstaw(&L, 6, "ggg", 4000, 0, 500, 4, 3, 4, 5, 840, 250);
-	wstaw(&L, 7, "hhh", 4000, 0, 500, 4, 3, 4, 5, 840, 250);
+//	wstaw(&L, 1, "bbb", 1000, 0, 200, 7, 6, 7, 8, 810, 250);
+//	wstaw(&L, 2, "ccc", 2000, 0, 300, 8, 7, 8, 9, 820, 250);
+//	wstaw(&L, 3, "ddd", 3, 0, 50, 9, 8, 0, 0, 825, 50);
+//	wstaw(&L, 4, "eee", 4000, 0, 500, 4, 3, 4, 5, 840, 250);
+//	wstaw(&L, 5, "fff", 3, 0, 50, 9, 8, 0, 0, 825, 50);
+//	wstaw(&L, 6, "ggg", 4000, 0, 500, 4, 3, 4, 5, 840, 250);
+//	wstaw(&L, 7, "hhh", 4000, 0, 500, 4, 3, 4, 5, 840, 250);
 //ekran startowy - logo+pasek ładowania
 	wlaczanie(&huart1, &huart2);
 

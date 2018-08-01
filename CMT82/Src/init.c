@@ -24,7 +24,7 @@ void wlaczanie( huart1, huart2) {
 	size = sprintf(data, "Start programu\n\r");
 	HAL_UART_Transmit_IT(huart1, data, size);
 
-	HAL_Delay(1500); //oczekiwanie aż wyswietlacz się włączy i będzie gotowy do pracy
+	HAL_Delay(2500); //oczekiwanie aż wyswietlacz się włączy i będzie gotowy do pracy
 
 	// Wyświetlanie logo
 	size = sprintf(data, "LOAD 0 0 1.bmp\n\r");
