@@ -24,7 +24,7 @@ void screen13_init() {
 	size = sprintf(data, "Zaladowano ekran 13\n\r");
 	HAL_UART_Transmit(&huart1, data, size, 1000);
 
-	screen = 3;
+	screen = 13;
 }
 
 int screen13_button() {

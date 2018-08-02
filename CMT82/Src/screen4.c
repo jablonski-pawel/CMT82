@@ -1269,7 +1269,7 @@ void screen4_save(){
 		max_size1 = 3;
 		error = 1;
 
-	}else if (strlen(temp_name)==0 ||name_repeat==1){
+	}else if (strlen(temp_name)==0 || name_repeat==1 || temp_name[0] == ' '){
 		size = sprintf(data, "BUZ 500 500\n\r");
 		HAL_UART_Transmit(&huart2, data, size, 100);
 		sprintf(temp_name, "");
@@ -1279,7 +1279,7 @@ void screen4_save(){
 		HAL_UART_Transmit(&huart2, data, size, 100);
 		size = sprintf(data, "UF 3 60 15 65535 Wrong program name\n\r");
 		HAL_UART_Transmit(&huart2, data, size, 100);
-		param_number = 1;
+		param_number = 0; //jest 0, zamiast 1, aby użytkownik musiał kliknąć X by zamknąć komunikat o błędzie
 		max_size1 = 13;
 		error = 1;
 

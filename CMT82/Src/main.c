@@ -217,6 +217,30 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 					HAL_GPIO_TogglePin(C1_GPIO_Port, C1_Pin);
 					break;
 
+				case 7:
+					htim3.Init.Period = 19;
+					htim3.Init.Prescaler = 719;
+					if (HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_REPETITIVE) != HAL_OK) {
+						Error_Handler();
+					}
+					break;
+
+				case 8:
+					htim3.Init.Period = 17;
+					htim3.Init.Prescaler = 999;
+					if (HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_REPETITIVE) != HAL_OK) {
+						Error_Handler();
+					}
+					break;
+
+				case 9:
+					htim3.Init.Period = 12;
+					htim3.Init.Prescaler = 719;
+					if (HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_REPETITIVE) != HAL_OK) {
+						Error_Handler();
+					}
+					break;
+
 
 				default: // Jezeli odebrano nieobslugiwany znak
 					//size = sprintf(Data, "Odebrano nieznany znak: %c\n\r", Received);
