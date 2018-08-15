@@ -61,6 +61,8 @@
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
+I2C_HandleTypeDef hi2c2;
+
 RTC_HandleTypeDef hrtc;
 
 TIM_HandleTypeDef htim1;
@@ -105,6 +107,8 @@ uint8_t key_delay = 0; //flaga dla opóźnienia po wciśnięciu przycisku na ekr
 wezel *L = NULL;
 uint16_t p = 0;
 uint16_t p_max = 0;
+uint8_t counter = 99;
+
 
 uint8_t start = 0; //start procesu
 uint8_t stop_process = 0;	//flaga zatrzymująca proces po naciśnięciu stopu
@@ -120,6 +124,9 @@ extern uint16_t _pcs_done;
 extern uint8_t step;
 extern uint8_t start_begin;
 
+uint16_t process_time = 0;
+uint8_t process_time_ctr = 0;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -132,6 +139,7 @@ static void MX_USART1_UART_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_TIM3_Init(void);
 static void MX_TIM4_Init(void);
+static void MX_I2C2_Init(void);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
@@ -169,6 +177,8 @@ void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart) {
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 	uint8_t i;
+	uint8_t result;
+	uint8_t odczyt =0;
 
 	if(huart->Instance == USART1){
 		switch (atoi(&Rx_UART1)) {
@@ -182,6 +192,9 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 				case 1: // Jezeli odebrany zostanie znak 1
 					HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
 					HAL_GPIO_WritePin(wire_LED_GPIO_Port, wire_LED_Pin, GPIO_PIN_SET);
+//					zapisz_EEPROM(L, 1);
+					counter = 100;
+
 					break;
 
 				case 2: //uruchomienie procesu cięcia na długość i odizolowywania
@@ -196,13 +209,18 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 							start = 1;
 						}
 					}
-
+					process_time = 0;
+					process_time_ctr = 0;
 					break;
 
 				case 3: //zatrzymanie procesu cięcia
 					if(start == 1){
 						stop_process = 1;
 					}
+
+					size = sprintf(data, "TIMER COUNTER: %d\n\r", process_time);
+					HAL_UART_Transmit(&huart1, data, size, 100);
+
 					break;
 
 				case 4: //bazowanie
@@ -214,7 +232,19 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 					break;
 
 				case 6:
-					HAL_GPIO_TogglePin(C1_GPIO_Port, C1_Pin);
+////					counter =99;
+//					HAL_GPIO_WritePin(EEPROM_WP_GPIO_Port, EEPROM_WP_Pin, GPIO_PIN_SET);
+//					HAL_I2C_Mem_Read(&hi2c2, 0xa0, counter, 1, (uint8_t*)&odczyt, sizeof(odczyt), HAL_MAX_DELAY);
+//
+//					size = sprintf(data, "EEPROM COUNTER: %d  zapisano: %d\n\r", counter, odczyt);
+//					HAL_UART_Transmit(&huart1, data, size, 100);
+
+//					++counter;
+//					HAL_GPIO_WritePin(EEPROM_WP_GPIO_Port, EEPROM_WP_Pin, GPIO_PIN_RESET);
+//					HAL_I2C_Mem_Write(&hi2c2, 0xa0, 0x10, 1, (uint8_t*)&counter, sizeof(counter), HAL_MAX_DELAY);
+
+
+					odczyt_EEPROM(L, p);
 					break;
 
 				case 7:
@@ -240,6 +270,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 						Error_Handler();
 					}
 					break;
+
 
 
 				default: // Jezeli odebrano nieobslugiwany znak
@@ -533,6 +564,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 	if (htim->Instance == TIM3) { // Jeżeli przerwanie pochodzi od timera 3
 		if (start > 0) {
 			process_run();
+			if(process_time_ctr==0){
+				++process_time;
+			}
 		}
 	}
 }
@@ -579,6 +613,7 @@ int main(void)
   MX_TIM1_Init();
   MX_TIM3_Init();
   MX_TIM4_Init();
+  MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
 	HAL_UART_Receive_IT(&huart1, &Rx_UART1, 1); //start nasłuchu dla UART1 co 1 znak w przerwaniu
 	HAL_UART_Receive_IT(&huart2, &Rx_data, 1); //start odbioru dla UART2 co 1 znak w przerwaniu
@@ -591,8 +626,19 @@ int main(void)
 	HAL_TIM_Base_Start_IT(&htim4); //start timera dla silnika noża
 	HAL_RTC_GetTime(&hrtc, &stimestructureget, RTC_FORMAT_BIN); // pobranie godziny
 
-	//tworzenie listy jednokierunkowej. TODO: WSTAWIĆ TUTAJ EEPROM
+	//tworzenie listy jednokierunkowej.
+	//odczyt danych z eeprom
+//	HAL_GPIO_WritePin(EEPROM_WP_GPIO_Port, EEPROM_WP_Pin, GPIO_PIN_RESET);
+//	HAL_I2C_Mem_Write(&hi2c2, 0xa0, 99, 1, &p, 1, HAL_MAX_DELAY);
+
+	HAL_GPIO_WritePin(EEPROM_WP_GPIO_Port, EEPROM_WP_Pin, GPIO_PIN_SET);
+	HAL_I2C_Mem_Read(&hi2c2, 0xa0, 99, 1, &p, 1, HAL_MAX_DELAY);
+
 	wstawPocz(&L, "Program 1", 999, 0, 50, 0, 0, 0, 0, 800, 250);
+	for(uint8_t i=0; i<p; i++){
+		odczyt_EEPROM(L, i);
+	}
+	p=0;
 	//wstawPocz(&L, 33);
 //	wstaw(&L, 1, "bbb", 1000, 0, 200, 7, 6, 7, 8, 810, 250);
 //	wstaw(&L, 2, "ccc", 2000, 0, 300, 8, 7, 8, 9, 820, 250);
@@ -683,6 +729,26 @@ void SystemClock_Config(void)
 
   /* SysTick_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(SysTick_IRQn, 0, 0);
+}
+
+/* I2C2 init function */
+static void MX_I2C2_Init(void)
+{
+
+  hi2c2.Instance = I2C2;
+  hi2c2.Init.ClockSpeed = 100000;
+  hi2c2.Init.DutyCycle = I2C_DUTYCYCLE_2;
+  hi2c2.Init.OwnAddress1 = 0xff;
+  hi2c2.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c2.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c2.Init.OwnAddress2 = 0xff;
+  hi2c2.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c2.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c2) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
+  }
+
 }
 
 /* RTC init function */
@@ -862,8 +928,8 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOA, C2_Pin|C1_Pin|wire_LED_Pin|USBDISC_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, LED_Pin|CP_R_Pin|CW_R_Pin|CP_C_Pin 
-                          |CW_C_Pin|CW_L_Pin|CP_L_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, LED_Pin|EEPROM_WP_Pin|CP_R_Pin|CW_R_Pin 
+                          |CP_C_Pin|CW_C_Pin|CW_L_Pin|CP_L_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : ENA_Pin */
   GPIO_InitStruct.Pin = ENA_Pin;
@@ -889,10 +955,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(door_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : LED_Pin CP_R_Pin CW_R_Pin CP_C_Pin 
-                           CW_C_Pin CW_L_Pin CP_L_Pin */
-  GPIO_InitStruct.Pin = LED_Pin|CP_R_Pin|CW_R_Pin|CP_C_Pin 
-                          |CW_C_Pin|CW_L_Pin|CP_L_Pin;
+  /*Configure GPIO pins : LED_Pin EEPROM_WP_Pin CP_R_Pin CW_R_Pin 
+                           CP_C_Pin CW_C_Pin CW_L_Pin CP_L_Pin */
+  GPIO_InitStruct.Pin = LED_Pin|EEPROM_WP_Pin|CP_R_Pin|CW_R_Pin 
+                          |CP_C_Pin|CW_C_Pin|CW_L_Pin|CP_L_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);

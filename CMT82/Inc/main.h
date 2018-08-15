@@ -65,6 +65,8 @@
 #define door_EXTI_IRQn EXTI0_IRQn
 #define LED_Pin GPIO_PIN_1
 #define LED_GPIO_Port GPIOB
+#define EEPROM_WP_Pin GPIO_PIN_2
+#define EEPROM_WP_GPIO_Port GPIOB
 #define knife_Pin GPIO_PIN_8
 #define knife_GPIO_Port GPIOA
 #define knife_EXTI_IRQn EXTI9_5_IRQn

@@ -12,6 +12,7 @@
 
 extern UART_HandleTypeDef huart1;
 extern UART_HandleTypeDef huart2;
+extern I2C_HandleTypeDef hi2c2;
 extern uint8_t screen;
 extern uint16_t size;
 extern uint16_t position_x;
@@ -349,6 +350,7 @@ void screen4_action(int button) {
 		// XXX: zapisywanie wartości
 	case 2:
 		screen4_save();
+
 		if(error <1){
 			screen = 2;
 			action = 1;
@@ -1189,7 +1191,7 @@ void screen4_plus_minus(uint8_t option) {
 void screen4_save(){
 	uint8_t name_repeat = 0;
 	uint8_t temp_p = p;
-
+	uint8_t new_p_max = ilosc_wezlow(L);
 	error = 0;
 
 	for(int i = 0; i<ilosc_wezlow(L);i++){
@@ -1219,7 +1221,21 @@ void screen4_save(){
 	_knife = atoi(temp_knife);
 	_knife_move_back = atoi(temp_knife_move_back);
 
-	if (_pcs < 1) {
+	if(new_p_max==255){
+		size = sprintf(data, "BUZ 500 500\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+		sprintf(temp_length, "");
+		size = sprintf(data, "CLR 140 114 220 131 65535\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+
+		size = sprintf(data, "LOAD 0 0 error.bmp\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+
+		size = sprintf(data,
+				"UF 3 60 15 65535 Not enough memory\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+		error = 1;
+	} else if (_pcs < 1) {
 		size = sprintf(data, "BUZ 500 500\n\r");
 		HAL_UART_Transmit(&huart2, data, size, 100);
 		sprintf(temp_pcs, "");
@@ -1247,7 +1263,7 @@ void screen4_save(){
 		HAL_UART_Transmit(&huart2, data, size, 100);
 
 		size = sprintf(data,
-				"UF 3 60 15 65535 length can't be less than 50mm\n\r");
+				"UF 3 60 15 65535 Length can't be less than 50mm\n\r");
 		HAL_UART_Transmit(&huart2, data, size, 100);
 		param_number = 3;
 		max_size1 = 3;
@@ -1287,6 +1303,12 @@ void screen4_save(){
 		usun(&L, p);
 		wstaw(&L, p, temp_name, _pcs, _pcs_done, _length, _left_cov, _left_eye,
 				_right_eye, _right_cov, _knife, _knife_move_back);
+		zapisz_EEPROM(L, p);
+		HAL_GPIO_WritePin(EEPROM_WP_GPIO_Port, EEPROM_WP_Pin, GPIO_PIN_RESET);
+		HAL_I2C_Mem_Write(&hi2c2, 0xa0, 99, 1, &new_p_max, 1, HAL_MAX_DELAY);
+		HAL_GPIO_WritePin(EEPROM_WP_GPIO_Port, EEPROM_WP_Pin, GPIO_PIN_SET);
+		size = sprintf(data, "ilosc p do odczytu %d - 1\n\r", new_p_max);
+		HAL_UART_Transmit(&huart1, data, size, 100);
 		param_number = 0;
 	}
 }

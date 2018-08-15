@@ -10,6 +10,8 @@
 
 extern UART_HandleTypeDef huart1;
 extern UART_HandleTypeDef huart2;
+extern I2C_HandleTypeDef hi2c2;
+
 extern uint8_t screen;
 extern uint16_t size;
 extern uint16_t position_x;
@@ -63,6 +65,10 @@ int screen15_button() {
 
 void screen15_action(int button) {
 
+	uint8_t new_p_max;
+	uint8_t p_eeprom;
+	uint16_t adresRZ = 100;//adresRozpoczeciaZapisu
+	uint8_t temp_odczyt;
 	switch (button) {
 
 	case 1:
@@ -75,6 +81,36 @@ void screen15_action(int button) {
 		HAL_UART_Transmit(&huart1, data, size, 100);
 		if(node_to_delete>0){
 			usun(&L, node_to_delete);
+
+			size = sprintf(data, "node_to_delete %d\n\r", node_to_delete);
+			HAL_UART_Transmit(&huart1, data, size, 100);
+
+			//usuwanie z eeproma
+			HAL_GPIO_WritePin(EEPROM_WP_GPIO_Port, EEPROM_WP_Pin, GPIO_PIN_SET);
+			HAL_I2C_Mem_Read_IT(&hi2c2, 0xa0, 99, 1, &p_eeprom, 1);
+
+			for(uint8_t i=node_to_delete; i<p_eeprom-1; i++){
+				for(uint8_t j=0; j<32; j++){
+					HAL_GPIO_WritePin(EEPROM_WP_GPIO_Port, EEPROM_WP_Pin, GPIO_PIN_SET);
+					HAL_I2C_Mem_Read(&hi2c2, 0xa0, adresRZ+32*(i+1)+j, 1, &temp_odczyt, 1, HAL_MAX_DELAY);
+//					size = sprintf(data, "odczytuje %d do komorki: %d\n\r", temp_odczyt, adresRZ+32*(i+1)+j);
+//					HAL_UART_Transmit(&huart1, data, size, 100);
+					HAL_GPIO_WritePin(EEPROM_WP_GPIO_Port, EEPROM_WP_Pin, GPIO_PIN_RESET);
+					HAL_I2C_Mem_Write(&hi2c2, 0xa0, adresRZ+32*i+j, 1, &temp_odczyt, 1, HAL_MAX_DELAY);
+					size = sprintf(data, "zapisuje %d do komorki: %d\n\r", temp_odczyt, adresRZ+32*i+j );
+					HAL_UART_Transmit(&huart1, data, size, 100);
+				}
+			}
+
+			//zmiana ilosci programow po usunieciu
+			new_p_max = ilosc_wezlow(L);
+//			HAL_GPIO_WritePin(EEPROM_WP_GPIO_Port, EEPROM_WP_Pin, GPIO_PIN_RESET);
+			HAL_I2C_Mem_Write(&hi2c2, 0xa0, 99, 1, &new_p_max, 1, HAL_MAX_DELAY);
+			size = sprintf(data, "ilosc p do odczytu %d - 1\n\r", new_p_max);
+			HAL_UART_Transmit(&huart1, data, size, 100);
+
+			HAL_GPIO_WritePin(EEPROM_WP_GPIO_Port, EEPROM_WP_Pin, GPIO_PIN_SET);
+
 			p = 0;
 			screen = 2;
 			action = 1;
