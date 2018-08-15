@@ -101,7 +101,7 @@ void screen1_init(uint8_t hours, uint8_t minutes) {
 	p_max = ilosc_wezlow(L);
 //	wypisz(L); //TODO: zakomentować na koniec wypisywanie całej listy kierunkowej w terminalu
 
-	size = sprintf(data, "Ilosc wezlow: %d\n\r", p_max);
+	size = sprintf(data, "Ilosc wezlow: %d oraz p %d\n\r", p_max, p);
 	HAL_UART_Transmit(&huart1, data, size, 1000);
 
 	screen = 2;
@@ -264,7 +264,9 @@ void screen1_action(int button) {
 		break;
 
 	case 4:
-		if (p < (p_max - 1)) {
+//		size = sprintf(data, "p %d i p_max %d\n\r", p, p_max);
+//				HAL_UART_Transmit(&huart1, data, size, 100);
+		if (p < (p_max-1)) {
 			p++;
 			screen1_program_update();
 		}

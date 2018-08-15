@@ -39,8 +39,6 @@ extern uint8_t cut;
 extern RTC_HandleTypeDef hrtc;
 extern RTC_TimeTypeDef stimestructureget;
 
-extern uint8_t process_time_ctr;
-
 //lista jednokierunkowa
 extern wezel *L;
 extern uint16_t p;
@@ -338,7 +336,6 @@ void process_run() {
 		wstaw(&L, p, temp_name, _pcs, _pcs_done, _length, _left_cov, _left_eye,
 			_right_eye, _right_cov, _knife, _knife_move_back);
 		step = 19;
-		process_time_ctr= 1;
 		break;
 
 	case 18:

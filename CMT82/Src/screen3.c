@@ -177,6 +177,8 @@ void screen3_action(int button) {
 	switch (button) {
 
 	case 1:
+//		size = sprintf(data, "P tuz po wyborze %d\n\r", p);
+//		HAL_UART_Transmit(&huart1, data, size, 100);
 		screen = 2;
 		action = 1;
 		break;
@@ -196,8 +198,8 @@ void screen3_action(int button) {
 
 void screen3_table(int dir) {
 	temp_position  = 0;
-	if (list_position > 1)
-		temp_position=1;
+//	if (list_position == 1)
+//		temp_position=1;
 
 	if (dir == 0) {
 		list_position = 1;
@@ -226,12 +228,18 @@ void screen3_table(int dir) {
 
 		}
 
-		if(6*(list_position-1)+s+temp_position < max_nodes){
+//		size = sprintf(data, " l_position %d nasz s %d nasze t_pos %d \n\r", list_position, s, temp_position);
+//					HAL_UART_Transmit(&huart1, data, size, 100);
+
+		if(6*(list_position-1)+s < max_nodes){
 			zwroc(L, 6*(list_position-1)+s, &_name, &_pcs, &_pcs_done, &_length, &_left_cov, &_left_eye, &_right_eye,
 				&_right_cov, &_knife, &_knife_move_back);
 			sprintf(temp_name, "%s", _name);
 			size = sprintf(data, "UF 3 60 %d 0 %s\n\r", 59+37*s, temp_name);
 			HAL_UART_Transmit(&huart2, data, size, 100);
+
+//			size = sprintf(data, "nasze p %d nasza nazwa %s nasze max %d \n\r", p, temp_name, ilosc_wezlow(L));
+//			HAL_UART_Transmit(&huart1, data, size, 100);
 		}
 	}
 

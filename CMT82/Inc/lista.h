@@ -40,6 +40,5 @@ uint16_t ilosc_wezlow(wezel *L);
 void wypisz(wezel *L);
 //uint8_t zapisz(wezel *L, char *nazwaPliku);
 //uint8_t wczytaj(wezel **L, char *nazwaPliku);
-void zapisz_EEPROM(wezel *L, uint8_t p);
-void odczyt_EEPROM(wezel *L, uint8_t p);
+
 #endif /* LISTA_H_ */
