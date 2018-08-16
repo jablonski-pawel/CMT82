@@ -20,6 +20,7 @@ uint8_t step_cut = 0; // numer kroku bazowania
 uint16_t close_open_knife_clk = 0;
 
 extern UART_HandleTypeDef huart1;
+extern TIM_HandleTypeDef htim3;
 extern uint8_t data[50];
 extern uint16_t size;
 
@@ -39,6 +40,15 @@ extern uint8_t cut;
 extern RTC_HandleTypeDef hrtc;
 extern RTC_TimeTypeDef stimestructureget;
 
+extern uint8_t feed_speed;
+extern uint8_t blade_speed;
+extern uint16_t batch_pieces;
+extern uint8_t batch_delay;
+uint8_t batch_delay_flag = 0;
+
+extern uint16_t prescaler_array[10];
+extern uint16_t period_array[10];
+
 //lista jednokierunkowa
 extern wezel *L;
 extern uint16_t p;
@@ -52,6 +62,8 @@ void process_run() {
 			start = 0;
 			screen9_init();
 		} else {
+			if (batch_delay_flag>0)
+				break;
 			HAL_RTC_GetTime(&hrtc, &stimestructureget, RTC_FORMAT_BIN);
 			if(_pcs_done < _pcs && stop_process < 1){
 				screen6_init(stimestructureget.Hours, stimestructureget.Minutes);
@@ -64,6 +76,12 @@ void process_run() {
 			}
 			//kierunek w lewo
 			process_steppers_CW(1);
+			//zmiana predkosci rolek
+			htim3.Init.Period = period_array[feed_speed];
+			htim3.Init.Prescaler = prescaler_array[feed_speed];
+			if (HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_REPETITIVE) != HAL_OK) {
+				Error_Handler();
+			}
 			//włączenie silników
 			process_steppers_EN(1);
 			ipr_count = 0; // zerowanie counter'a
@@ -90,6 +108,12 @@ void process_run() {
 			ipr_count = 0;
 			//kierunek zamykania noży
 			HAL_GPIO_WritePin(CW_C_GPIO_Port, CW_C_Pin, GPIO_PIN_RESET);
+			//zmiana predkosci noży
+			htim3.Init.Period = period_array[blade_speed];
+			htim3.Init.Prescaler = prescaler_array[blade_speed];
+			if (HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_REPETITIVE) != HAL_OK) {
+				Error_Handler();
+			}
 		}
 		break;
 
@@ -127,7 +151,12 @@ void process_run() {
 				i2do = process_mm2i(_length) - process_mm2i(_left_cov);
 				step = 5;
 			}
-
+			//zmiana predkosci rolek
+			htim3.Init.Period = period_array[feed_speed];
+			htim3.Init.Prescaler = prescaler_array[feed_speed];
+			if (HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_REPETITIVE) != HAL_OK) {
+				Error_Handler();
+			}
 			ipr_count = 0;
 		}
 		break;
@@ -141,6 +170,12 @@ void process_run() {
 		} else {
 			ipr_count = 0;
 			++step;
+			//zmiana predkosci noży
+			htim3.Init.Period = period_array[blade_speed];
+			htim3.Init.Prescaler = prescaler_array[blade_speed];
+			if (HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_REPETITIVE) != HAL_OK) {
+				Error_Handler();
+			}
 		}
 		break;
 
@@ -152,7 +187,12 @@ void process_run() {
 			//kierunek w lewo
 			process_steppers_CW(1);
 			i2do = process_mm2i(_length) - (process_mm2i(_left_cov) - process_mm2i(_left_eye));
-
+			//zmiana predkosci rolek
+			htim3.Init.Period = period_array[feed_speed];
+			htim3.Init.Prescaler = prescaler_array[feed_speed];
+			if (HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_REPETITIVE) != HAL_OK) {
+				Error_Handler();
+			}
 			ipr_count = 0;
 			++step;
 		}
@@ -169,6 +209,12 @@ void process_run() {
 			HAL_GPIO_WritePin(CW_C_GPIO_Port, CW_C_Pin, GPIO_PIN_RESET);
 			ipr_count = 0;
 			++step;
+			//zmiana predkosci noży
+			htim3.Init.Period = period_array[blade_speed];
+			htim3.Init.Prescaler = prescaler_array[blade_speed];
+			if (HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_REPETITIVE) != HAL_OK) {
+				Error_Handler();
+			}
 		}
 		break;
 
@@ -204,6 +250,12 @@ void process_run() {
 			}
 
 			ipr_count = 0;
+			//zmiana predkosci rolek
+			htim3.Init.Period = period_array[feed_speed];
+			htim3.Init.Prescaler = prescaler_array[feed_speed];
+			if (HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_REPETITIVE) != HAL_OK) {
+				Error_Handler();
+			}
 		}
 		break;
 
@@ -234,7 +286,12 @@ void process_run() {
 
 			++step;
 			ipr_count = 0;
-
+			//zmiana predkosci noży
+			htim3.Init.Period = period_array[blade_speed];
+			htim3.Init.Prescaler = prescaler_array[blade_speed];
+			if (HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_REPETITIVE) != HAL_OK) {
+				Error_Handler();
+			}
 		}
 		break;
 
@@ -271,7 +328,12 @@ void process_run() {
 			} else {
 				step = 14;
 			}
-
+			//zmiana predkosci rolek
+			htim3.Init.Period = period_array[feed_speed];
+			htim3.Init.Prescaler = prescaler_array[feed_speed];
+			if (HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_REPETITIVE) != HAL_OK) {
+				Error_Handler();
+			}
 			ipr_count = 0;
 		}
 		break;
@@ -285,6 +347,12 @@ void process_run() {
 		} else {
 			ipr_count = 0;
 			++step;
+			//zmiana predkosci noży
+			htim3.Init.Period = period_array[blade_speed];
+			htim3.Init.Prescaler = prescaler_array[blade_speed];
+			if (HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_REPETITIVE) != HAL_OK) {
+				Error_Handler();
+			}
 		}
 		break;
 
@@ -296,7 +364,12 @@ void process_run() {
 
 			//obliczenie długości przesunięcia przewodu w lewo o długość prawego skórowania + 15mm
 			i2do = process_mm2i(15) + process_mm2i(_right_eye);
-
+			//zmiana predkosci rolek
+			htim3.Init.Period = period_array[feed_speed];
+			htim3.Init.Prescaler = prescaler_array[feed_speed];
+			if (HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_REPETITIVE) != HAL_OK) {
+				Error_Handler();
+			}
 			ipr_count = 0;
 			++step;
 		}
@@ -332,9 +405,15 @@ void process_run() {
 	case 17:
 		//zwiększenie ilości wykonanych przewodów i zapisanie tej wartości do struktury
 		++_pcs_done;
+		//flaga postoju po zadanej ilości sztuk przewodów
 		usun(&L, p);
 		wstaw(&L, p, temp_name, _pcs, _pcs_done, _length, _left_cov, _left_eye,
 			_right_eye, _right_cov, _knife, _knife_move_back);
+		if(_pcs_done%batch_pieces==0 && batch_delay > 0){
+			batch_delay_flag=1;
+			step = 18;
+			break;
+		}
 		step = 19;
 		break;
 
@@ -344,6 +423,11 @@ void process_run() {
 			HAL_GPIO_TogglePin(CP_L_GPIO_Port, CP_L_Pin);
 			++ipr_count;
 		} else {
+			//jeśli flaga postoju po zrobieniu partii przewodów jest wystawiona i przewód ostatni został wysunięty, to przygotowuje do dalszej pracy po zerowaniu flagi
+			if(batch_delay_flag>0){
+				step = 19;
+				break;
+			}
 			if(stop_process < 1){
 				screen6_init(stimestructureget.Hours, stimestructureget.Minutes);
 			} else {

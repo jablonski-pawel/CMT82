@@ -57,6 +57,7 @@
 #include "screen12.h"
 #include "screen13.h"
 #include "screen15.h"
+#include "screen16.h"
 
 /* USER CODE END Includes */
 
@@ -119,7 +120,9 @@ extern uint16_t _pcs;
 extern uint16_t _pcs_done;
 extern uint8_t step;
 extern uint8_t start_begin;
-
+extern uint8_t batch_delay_flag;
+uint8_t batch_delay_timer=0;
+extern uint8_t batch_delay;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -192,6 +195,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 					} else {
 						if(screen == 2){
 							step = 0;
+							batch_delay_timer=0;
 							start_begin = 1;
 							start = 1;
 						}
@@ -343,6 +347,10 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 			screen15_action(screen15_button());
 			break;
 
+		case 16:
+			screen16_action(screen16_button());
+			break;
+
 		default:
 			break;
 		}
@@ -423,6 +431,11 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 			//action = 0;
 			break;
 
+		case 16:
+			screen16_init();
+			//action = 0;
+			break;
+
 		default:
 			//action = 0;
 			break;
@@ -436,10 +449,23 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 }
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+
 	if (htim->Instance == TIM1) { // Jeżeli przerwanie pochodzi od timera 1
 		//pobiera godzinę
 		HAL_RTC_GetTime(&hrtc, &stimestructureget, RTC_FORMAT_BIN);
 
+
+		//opoznienie batch_delay_timer
+		if (start>0 && batch_delay_timer==2*batch_delay && batch_delay_flag > 0){
+			batch_delay_timer=0;
+			batch_delay_flag=0;
+			size = sprintf(data, "IF Bat del: %d batch tim %d bat flag: %d\n\r", batch_delay, batch_delay_timer, batch_delay_flag);
+			HAL_UART_Transmit(&huart1, data, size, 100);
+		}else if (start>0 && batch_delay_flag > 0){
+			batch_delay_timer++;
+			size = sprintf(data, "ELSE Bat del: %d batch tim %d bat flag: %d\n\r", batch_delay, batch_delay_timer, batch_delay_flag);
+			HAL_UART_Transmit(&huart1, data, size, 100);
+		}
 		//jeśli minuta się zmieniła to zmienia godzinę wyświetlaną
 		if (stimestructureget.Seconds == 0) {
 			if (screen == 2) {

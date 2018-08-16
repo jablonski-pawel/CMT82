@@ -92,8 +92,8 @@ int screen3_button() {
 
 		return 2;
 	}
-	size = sprintf(data, "LP: %d, nodes: %d, footer: %d: max node: %d\n\r", list_position, (max_nodes/6)+footer, footer, max_nodes);
-			HAL_UART_Transmit(&huart1, data, size, 100);
+//	size = sprintf(data, "LP: %d, nodes: %d, footer: %d: max node: %d\n\r", list_position, (max_nodes/6)+footer, footer, max_nodes);
+//			HAL_UART_Transmit(&huart1, data, size, 100);
 	if (((0 < position_x) && (position_x < 45))
 			&& ((227 < position_y) && (position_y < 272)) && list_position < (max_nodes/6)+footer ) {
 		size = sprintf(data, "BUZ 150 2000\n\r");

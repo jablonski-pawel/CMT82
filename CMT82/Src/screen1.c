@@ -220,6 +220,13 @@ int screen1_button() {
 		return 17;
 	}
 
+	if (((435 < position_x) && (position_x < 480))
+			&& ((227 < position_y) && (position_y < 272))) {
+		size = sprintf(data, "BUZ 150 2000\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+		return 18;
+	}
+
 	position_x = 0;
 	position_y = 0;
 	return 0;
@@ -240,6 +247,7 @@ int screen1_button() {
 	//15 - prawe oczko
 	//16 - prawy odpad
 	//17 - reset licznika
+	//18 - ustawienia maszyny
 }
 
 void screen1_action(int button) {
@@ -349,6 +357,11 @@ void screen1_action(int button) {
 //		action = 1;
 		screen1_program_update();
 
+		break;
+
+	case 18:
+		screen = 16;
+		action = 1;
 		break;
 
 	default:
