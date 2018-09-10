@@ -37,6 +37,7 @@ extern uint16_t _knife_move_back;
 extern uint8_t start;
 extern uint8_t stop_process;
 extern uint8_t cut;
+extern float scaling;
 extern RTC_HandleTypeDef hrtc;
 extern RTC_TimeTypeDef stimestructureget;
 
@@ -55,6 +56,7 @@ extern uint16_t p;
 
 void process_run() {
 	//bazowanie();
+
 	switch (step) {
 	case 0:
 		//Jeśli otwarto drzwiczki
@@ -70,7 +72,7 @@ void process_run() {
 			} else {
 				//przygotowanie zmiennych do wysunięcia ostatniego przewodu obrobionego z maszyny
 				ipr_count = 0;
-				i2do = process_mm2i(80);
+				i2do = process_mm2i(scaling*80);
 				step = 18;
 				break;
 			}
@@ -87,11 +89,11 @@ void process_run() {
 			ipr_count = 0; // zerowanie counter'a
 
 			if (_left_cov > 0) {
-				i2do = process_mm2i(_left_cov); // obliczenie ilości impulsów do zrobienia
+				i2do = process_mm2i(scaling*_left_cov); // obliczenie ilości impulsów do zrobienia
 				++step;
 			} else {
 				// jeśli nie ma do zrobienia nacięcia i oczka, to idzie na drugą stronę
-				i2do = process_mm2i(_length);
+				i2do = process_mm2i(scaling*_length);
 				step = 6;
 			}
 		}
@@ -138,7 +140,7 @@ void process_run() {
 			HAL_GPIO_TogglePin(CP_C_GPIO_Port, CP_C_Pin);
 			++ipr_count;
 		} else {
-			i2do = process_mm2i(_left_eye);
+			i2do = process_mm2i(scaling*_left_eye);
 
 			//jeśli ma być zrobione oczko
 			if (i2do > 0) {
@@ -148,7 +150,7 @@ void process_run() {
 
 			//jeśli oczka ma nie być
 			} else {
-				i2do = process_mm2i(_length) - process_mm2i(_left_cov);
+				i2do = process_mm2i(scaling*_length) - process_mm2i(scaling*_left_cov);
 				step = 5;
 			}
 			//zmiana predkosci rolek
@@ -186,7 +188,7 @@ void process_run() {
 		} else {
 			//kierunek w lewo
 			process_steppers_CW(1);
-			i2do = process_mm2i(_length) - (process_mm2i(_left_cov) - process_mm2i(_left_eye));
+			i2do = process_mm2i(scaling*_length) - (process_mm2i(scaling*_left_cov) - process_mm2i(scaling*_left_eye));
 			//zmiana predkosci rolek
 			htim3.Init.Period = period_array[feed_speed];
 			htim3.Init.Prescaler = prescaler_array[feed_speed];
@@ -269,7 +271,7 @@ void process_run() {
 			//opuszczenie rurki w dół
 			HAL_GPIO_WritePin(C2_GPIO_Port, C2_Pin, GPIO_PIN_SET);
 
-			i2do = process_mm2i(_right_cov); // obliczenie ilości impulsów do zrobienia
+			i2do = process_mm2i(scaling*_right_cov); // obliczenie ilości impulsów do zrobienia
 			++step;
 			ipr_count = 0;
 		}
@@ -316,7 +318,7 @@ void process_run() {
 			HAL_GPIO_TogglePin(CP_C_GPIO_Port, CP_C_Pin);
 			++ipr_count;
 		} else {
-			i2do = process_mm2i(_right_eye);
+			i2do = process_mm2i(scaling*_right_eye);
 
 			//jeśli ma być zrobione oczko
 			if (i2do > 0) {
@@ -363,7 +365,7 @@ void process_run() {
 		} else {
 
 			//obliczenie długości przesunięcia przewodu w lewo o długość prawego skórowania + 15mm
-			i2do = process_mm2i(15) + process_mm2i(_right_eye);
+			i2do = process_mm2i(15) + process_mm2i(scaling*_right_eye);
 			//zmiana predkosci rolek
 			htim3.Init.Period = period_array[feed_speed];
 			htim3.Init.Prescaler = prescaler_array[feed_speed];
@@ -448,7 +450,7 @@ void process_run() {
 }
 
 //zamiana długości w mm na ilość impulsów dla silników
-uint16_t process_mm2i(uint16_t mm) {
+uint16_t process_mm2i(float mm) {
 	uint16_t i = 0;
 	i = mm * ipr / mmpr;
 	return i;

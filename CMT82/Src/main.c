@@ -1,3 +1,4 @@
+
 /**
   ******************************************************************************
   * @file           : main.c
@@ -38,6 +39,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "stm32f1xx_hal.h"
+#include <stdio.h>
 
 /* USER CODE BEGIN Includes */
 #include "init.h"
@@ -62,6 +64,8 @@
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
+I2C_HandleTypeDef hi2c2;
+
 RTC_HandleTypeDef hrtc;
 
 TIM_HandleTypeDef htim1;
@@ -122,7 +126,18 @@ extern uint8_t step;
 extern uint8_t start_begin;
 extern uint8_t batch_delay_flag;
 uint8_t batch_delay_timer=0;
+extern uint8_t feed_speed;
+extern uint8_t blade_speed;
+extern uint16_t batch_pieces;
 extern uint8_t batch_delay;
+extern float scaling;
+extern uint8_t node_to_delete;
+uint8_t *ptr_scaling;
+volatile uint8_t interrupt = 0;
+uint8_t counter_while = 0;
+uint8_t counter_while_new = 0;
+extern char *temp_scaling[5];
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -135,6 +150,7 @@ static void MX_USART1_UART_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_TIM3_Init(void);
 static void MX_TIM4_Init(void);
+static void MX_I2C2_Init(void);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
@@ -230,21 +246,23 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 					break;
 
 				case 8:
-					htim3.Init.Period = 17;
-					htim3.Init.Prescaler = 999;
-					if (HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_REPETITIVE) != HAL_OK) {
-						Error_Handler();
-					}
+//					htim3.Init.Period = 17;
+//					htim3.Init.Prescaler = 999;
+//					if (HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_REPETITIVE) != HAL_OK) {
+//						Error_Handler();
+//					}
+					interrupt =5;
 					break;
 
 				case 9:
-					htim3.Init.Period = 12;
-					htim3.Init.Prescaler = 719;
-					if (HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_REPETITIVE) != HAL_OK) {
-						Error_Handler();
-					}
-					break;
 
+//					htim3.Init.Period = 12;
+//					htim3.Init.Prescaler = 719;
+//					if (HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_REPETITIVE) != HAL_OK) {
+//						Error_Handler();
+//					}
+
+					break;
 
 				default: // Jezeli odebrano nieobslugiwany znak
 					//size = sprintf(Data, "Odebrano nieznany znak: %c\n\r", Received);
@@ -577,6 +595,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+	uint8_t new_p_max;
+	uint8_t *temp_array[2];
 
   /* USER CODE END 1 */
 
@@ -605,6 +625,7 @@ int main(void)
   MX_TIM1_Init();
   MX_TIM3_Init();
   MX_TIM4_Init();
+  MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
 	HAL_UART_Receive_IT(&huart1, &Rx_UART1, 1); //start nasłuchu dla UART1 co 1 znak w przerwaniu
 	HAL_UART_Receive_IT(&huart2, &Rx_data, 1); //start odbioru dla UART2 co 1 znak w przerwaniu
@@ -617,8 +638,20 @@ int main(void)
 	HAL_TIM_Base_Start_IT(&htim4); //start timera dla silnika noża
 	HAL_RTC_GetTime(&hrtc, &stimestructureget, RTC_FORMAT_BIN); // pobranie godziny
 
-	//tworzenie listy jednokierunkowej. TODO: WSTAWIĆ TUTAJ EEPROM
+	size = sprintf(data, "Petla PRZED while ciagle %d \n\r", 120);
+					HAL_UART_Transmit(&huart1, data, size, 100);
+
+	//tworzenie listy jednokierunkowej i odczyt EEPROM
 	wstawPocz(&L, "Program 1", 999, 0, 50, 0, 0, 0, 0, 800, 250);
+	interrupt =2;
+
+	//ToDO zmienic na eeprom
+	scaling=1;
+	feed_speed=1;
+	blade_speed=1;
+	batch_pieces=45;
+	batch_delay=5;
+
 	//wstawPocz(&L, 33);
 //	wstaw(&L, 1, "bbb", 1000, 0, 200, 7, 6, 7, 8, 810, 250);
 //	wstaw(&L, 2, "ccc", 2000, 0, 300, 8, 7, 8, 9, 820, 250);
@@ -641,16 +674,99 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
+
+//		size = sprintf(data, "Petla while ciagle %d \n\r", 120);
+//				HAL_UART_Transmit(&huart1, data, size, 100);
+
+		if(interrupt == 1){		//zapis
+			interrupt = 0;
+//			zapisz_EEPROM(L, p);
+//			new_p_max = ilosc_wezlow(L);
+//			if(HAL_I2C_Mem_Write_IT(&hi2c2, 0xa0, 99, 1, &new_p_max, 1)!= HAL_OK){
+//				Error_Handler();
+//			}
+//			while (HAL_I2C_GetState(&hi2c2) != HAL_I2C_STATE_READY){}
+		}
+
+		if(interrupt == 2){		//odczyt programow i ustawien
+			interrupt = 0;
+//			size = sprintf(data, "Petla while PREDFOR %d \n\r", 120);
+//						HAL_UART_Transmit(&huart1, data, size, 100);
+//			if(HAL_I2C_Mem_Read_IT(&hi2c2, 0xa0, 99, 1, &p, 1)!= HAL_OK){
+//				size = sprintf(data, "Petla while IF %d \n\r", 120);
+//										HAL_UART_Transmit(&huart1, data, size, 100);
+//				Error_Handler();
+//			}
+//			while (HAL_I2C_GetState(&hi2c2) != HAL_I2C_STATE_READY){
+//				size = sprintf(data, "Petla while WHIKE %d \n\r", 120);
+//										HAL_UART_Transmit(&huart1, data, size, 100);
+//			}
+//			size = sprintf(data, "Petla while PREDFOR1 %d \n\r", 120);
+//									HAL_UART_Transmit(&huart1, data, size, 100);
+//			for(uint8_t j=0; j<p; j++){
+//				odczyt_EEPROM(L, j);
+//				size = sprintf(data, "Petla while FOR %d \n\r", 120);
+//							HAL_UART_Transmit(&huart1, data, size, 100);
+//			}
+//			odczyt_ustawien_EEPROM();
+//			size = sprintf(data, "Petla while %d \n\r", 120);
+//			HAL_UART_Transmit(&huart1, data, size, 100);
+//			p=0;
+//			screen1_init(stimestructureget.Hours, stimestructureget.Minutes);
+		}
+
+		if(interrupt == 3){		//usuwanie
+			interrupt = 0;
+//			usun_z_EEPROM(L, node_to_delete);
+		}
+		if(interrupt==4){	//zapisywanie ustawien
+			interrupt=0;
+
+			HAL_I2C_Mem_Write(&hi2c2, 0xa0, 1, 1, &feed_speed, 1, HAL_MAX_DELAY);
+			HAL_Delay(5);
+
+			HAL_I2C_Mem_Write(&hi2c2, 0xa0, 2, 1, &blade_speed, 1, HAL_MAX_DELAY);
+			HAL_Delay(5);
+
+			temp_array[0] = (uint8_t)((batch_pieces & 0xff00) >> 8);
+			HAL_I2C_Mem_Write(&hi2c2, 0xa0, 3, 1, temp_array, 1, HAL_MAX_DELAY);
+			HAL_Delay(5);
+
+			temp_array[1] = (uint8_t)batch_pieces & 0xff;
+			HAL_I2C_Mem_Write(&hi2c2, 0xa0, 4, 1, temp_array+1, 1, HAL_MAX_DELAY);
+			HAL_Delay(5);
+
+			HAL_I2C_Mem_Write(&hi2c2, 0xa0, 5, 1, &batch_delay, 1, HAL_MAX_DELAY);
+			HAL_Delay(5);
+
+			sprintf(temp_scaling, "%.1f", scaling);
+			ptr_scaling = temp_scaling;
+
+			for(uint8_t i=0; i<5; i++){
+				if(HAL_I2C_Mem_Write_IT(&hi2c2, 0xa0, 6+i, 1, ptr_scaling+i, 1)!= HAL_OK){
+					size = sprintf(data, "Petla while FOR IF %d \n\r", 120);
+						HAL_UART_Transmit(&huart1, data, size, 100);
+					Error_Handler();
+				}
+				while (HAL_I2C_GetState(&hi2c2) != HAL_I2C_STATE_READY){}
+				HAL_Delay(5);
+			}
+
+		}
+//		if(interrupt==5){
+//			interrupt=0;
+//			}
+//
+//		}
 //		HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
 //		HAL_GPIO_TogglePin(wire_LED_GPIO_Port, wire_LED_Pin);
-//		HAL_Delay(500);
+//		HAL_Delay(1);
 		//size = sprintf((char*) data, "Noz: %d \n\r", HAL_GPIO_ReadPin(knife_GPIO_Port, knife_Pin));
 		//HAL_UART_Transmit(&huart1, data, size, 100);
 	}
   /* USER CODE END 3 */
 
 }
-
 /**
   * @brief System Clock Configuration
   * @retval None
@@ -711,27 +827,57 @@ void SystemClock_Config(void)
   HAL_NVIC_SetPriority(SysTick_IRQn, 0, 0);
 }
 
+/* I2C2 init function */
+static void MX_I2C2_Init(void)
+{
+
+  hi2c2.Instance = I2C2;
+  hi2c2.Init.ClockSpeed = 100000;
+  hi2c2.Init.DutyCycle = I2C_DUTYCYCLE_2;
+  hi2c2.Init.OwnAddress1 = 0;
+  hi2c2.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c2.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c2.Init.OwnAddress2 = 0;
+  hi2c2.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c2.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c2) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
+  }
+
+}
+
 /* RTC init function */
 static void MX_RTC_Init(void)
 {
 
+  /* USER CODE BEGIN RTC_Init 0 */
+
+  /* USER CODE END RTC_Init 0 */
+
   RTC_TimeTypeDef sTime;
   RTC_DateTypeDef DateToUpdate;
+
+  /* USER CODE BEGIN RTC_Init 1 */
+
+  /* USER CODE END RTC_Init 1 */
 
     /**Initialize RTC Only 
     */
   hrtc.Instance = RTC;
-  if(HAL_RTCEx_BKUPRead(&hrtc, RTC_BKP_DR1) != 0x32F2){
   hrtc.Init.AsynchPrediv = RTC_AUTO_1_SECOND;
   hrtc.Init.OutPut = RTC_OUTPUTSOURCE_ALARM;
   if (HAL_RTC_Init(&hrtc) != HAL_OK)
   {
     _Error_Handler(__FILE__, __LINE__);
   }
+  /* USER CODE BEGIN RTC_Init 2 */
+
+  /* USER CODE END RTC_Init 2 */
 
     /**Initialize RTC and set the Time and Date 
     */
-  sTime.Hours = 0x1;
+  sTime.Hours = 0x0;
   sTime.Minutes = 0x0;
   sTime.Seconds = 0x0;
 
@@ -739,6 +885,9 @@ static void MX_RTC_Init(void)
   {
     _Error_Handler(__FILE__, __LINE__);
   }
+  /* USER CODE BEGIN RTC_Init 3 */
+
+  /* USER CODE END RTC_Init 3 */
 
   DateToUpdate.WeekDay = RTC_WEEKDAY_TUESDAY;
   DateToUpdate.Month = RTC_MONTH_NOVEMBER;
@@ -749,9 +898,9 @@ static void MX_RTC_Init(void)
   {
     _Error_Handler(__FILE__, __LINE__);
   }
+  /* USER CODE BEGIN RTC_Init 4 */
 
-    HAL_RTCEx_BKUPWrite(&hrtc,RTC_BKP_DR1,0x32F2);
-  }
+  /* USER CODE END RTC_Init 4 */
 
 }
 
@@ -894,12 +1043,14 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin : ENA_Pin */
   GPIO_InitStruct.Pin = ENA_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(ENA_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : C2_Pin C1_Pin wire_LED_Pin USBDISC_Pin */
   GPIO_InitStruct.Pin = C2_Pin|C1_Pin|wire_LED_Pin|USBDISC_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
@@ -920,6 +1071,7 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pin = LED_Pin|CP_R_Pin|CW_R_Pin|CP_C_Pin 
                           |CW_C_Pin|CW_L_Pin|CP_L_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 

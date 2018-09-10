@@ -17,6 +17,7 @@ extern uint16_t position_y;
 extern uint8_t action;
 
 extern uint8_t data[50];
+extern uint8_t interrupt;
 
 //lista jednokierunkowa
 extern wezel *L;
@@ -75,6 +76,7 @@ void screen15_action(int button) {
 		HAL_UART_Transmit(&huart1, data, size, 100);
 		if(node_to_delete>0){
 			usun(&L, node_to_delete);
+			interrupt = 3;
 			p = 0;
 			screen = 2;
 			action = 1;

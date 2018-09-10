@@ -10,7 +10,7 @@
 #define PROCESS_H_
 
 void process_run();
-uint16_t process_mm2i(uint16_t mm);
+uint16_t process_mm2i(float mm);
 uint8_t process_steppers_EN(uint8_t state);
 uint8_t process_steppers_CW(uint8_t dir);
 void process_cut(void);

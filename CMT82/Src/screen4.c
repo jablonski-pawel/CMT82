@@ -37,7 +37,7 @@ char *temp_right_cov[2];
 char *temp_knife[5];
 char *temp_knife_move_back[5];
 extern char last_char;
-
+extern uint8_t interrupt;
 char _name[18];
 uint16_t _pcs;
 uint16_t _pcs_done;
@@ -74,6 +74,11 @@ void screen4_init() {
 
 	size = sprintf(data, "LOAD 0 0 4.bmp\n\r");
 	HAL_UART_Transmit(&huart2, data, size, 100);
+
+	if(p==0){	//zasloniecie kosza dla zerowego programu
+		size = sprintf(data, "CLR 0 235 45 270 65535\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 1000);
+	}
 
 	size = sprintf(data, "Zaladowano ekran 4\n\r");
 	HAL_UART_Transmit(&huart1, data, size, 1000);
@@ -283,7 +288,7 @@ int screen4_button() {
 		return 26;
 	}
 
-	if (((0 < position_x) && (position_x < 45))
+	if (((0 < position_x) && (position_x < 45) && p>0)
 			&& ((235 < position_y) && (position_y < 270))) {
 		size = sprintf(data, "BUZ 150 2000\n\r");
 		HAL_UART_Transmit(&huart2, data, size, 100);
@@ -1287,6 +1292,7 @@ void screen4_save(){
 		usun(&L, p);
 		wstaw(&L, p, temp_name, _pcs, _pcs_done, _length, _left_cov, _left_eye,
 				_right_eye, _right_cov, _knife, _knife_move_back);
+		interrupt = 1;
 		param_number = 0;
 	}
 }

@@ -14,18 +14,27 @@ extern uint16_t size;
 extern uint16_t position_x;
 extern uint16_t position_y;
 extern uint8_t action;
+extern uint8_t interrupt;
 
 extern uint8_t data[50];
-uint8_t feed_speed = 5;
-uint8_t blade_speed = 5;
-uint16_t batch_pieces = 5;
-uint8_t batch_delay = 5;
+uint8_t feed_speed;
+uint8_t blade_speed;
+uint16_t batch_pieces;
+uint8_t batch_delay;
+float scaling;
+
+char *temp_batch_pieces[4];
+char *temp_scaling[5];
 
 uint16_t prescaler_array[10]={0, 999, 710, 740, 723 , 795, 740, 740, 805, 825 ,719};
 uint16_t period_array[10] ={0, 17, 22, 19, 18, 15, 15, 14, 12, 11, 12};
 
 
 void screen16_init() {
+
+	sprintf(temp_batch_pieces, "%d", batch_pieces);
+	sprintf(temp_scaling, "%.1f", scaling);
+
 
 	size = sprintf(data, "LOAD 0 0 16.bmp\n\r");
 	HAL_UART_Transmit(&huart2, data, size, 100);
@@ -66,7 +75,7 @@ void screen16_init() {
 	size = sprintf(data, "LOAD 240 %d minus.bmp\n\r", 55+37*2);
 	HAL_UART_Transmit(&huart2, data, size, 100);
 
-	size = sprintf(data, "UF 3 327 %d 0 %d\n\r", 59+37*2, batch_pieces);
+	size = sprintf(data, "UF 3 %d %d 0 %d\n\r", 327-strlen(temp_batch_pieces)*5/2, 59+37*2, batch_pieces);
 	HAL_UART_Transmit(&huart2, data, size, 100);
 
 	size = sprintf(data, "LOAD 394 %d plus.bmp\n\r", 55+37*2);
@@ -84,6 +93,17 @@ void screen16_init() {
 	size = sprintf(data, "LOAD 394 %d plus.bmp\n\r", 55+37*3);
 	HAL_UART_Transmit(&huart2, data, size, 100);
 
+	size = sprintf(data, "UF 3 60 %d 0 Length correction\n\r", 59+37*4);
+	HAL_UART_Transmit(&huart2, data, size, 100);
+
+	size = sprintf(data, "LOAD 240 %d minus.bmp\n\r", 55+37*4);
+	HAL_UART_Transmit(&huart2, data, size, 100);
+
+	size = sprintf(data, "UF 3 %d %d 0 %.1f\n\r", 327-strlen(temp_scaling)*5/2, 59+37*4, scaling);
+	HAL_UART_Transmit(&huart2, data, size, 100);
+
+	size = sprintf(data, "LOAD 394 %d plus.bmp\n\r", 55+37*4);
+	HAL_UART_Transmit(&huart2, data, size, 100);
 
 //	screen16_table(0);
 	screen = 16;
@@ -184,6 +204,20 @@ int screen16_button() {
 		return 11;
 	}
 
+	if (((240 < position_x) && (position_x < 285))
+			&& ((55+37*4 < position_y) && (position_y < 55+37*5))) {
+		size = sprintf(data, "BUZ 150 2000\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+		return 12;
+	}
+
+	if (((394 < position_x) && (position_x < 425))
+			&& ((55+37*4 < position_y) && (position_y < 55+37*5))) {
+		size = sprintf(data, "BUZ 150 2000\n\r");
+		HAL_UART_Transmit(&huart2, data, size, 100);
+		return 13;
+	}
+
 	position_x = 0;
 	position_y = 0;
 	return 0;
@@ -192,17 +226,29 @@ int screen16_button() {
 	//2 - w górę
 	//3 - w dół
 
+	//4 - feed speed -
+	//5 - feed speed +
+	//6 - blade speed -
+	//7 - blade speed +
+	//8 - batch pieces -
+	//9 - batch pieces +
+	//10 - batch delay -
+	//11 - batch delay +
+	//12 - scaling -
+	//13 - scaling +
 }
 
 void screen16_action(int button) {
 
-	char *temp_batch_pieces[4];
+	uint8_t *temp_array[2];
 
 	sprintf(temp_batch_pieces, "%d", batch_pieces);
+	sprintf(temp_scaling, "%.1f", scaling);
 
 	switch (button) {
 
 	case 1:
+		interrupt = 4;
 		screen = 2;
 		action = 1;
 		break;
@@ -223,7 +269,6 @@ void screen16_action(int button) {
 			HAL_UART_Transmit(&huart2, data, size, 1000);
 			size = sprintf(data, "UF 3 %d %d 0 %d\n\r", 327-5/2, 59+37*0, feed_speed);
 			HAL_UART_Transmit(&huart2, data, size, 100);
-
 		}
 		break;
 
@@ -234,11 +279,6 @@ void screen16_action(int button) {
 			HAL_UART_Transmit(&huart2, data, size, 1000);
 			size = sprintf(data, "UF 3 %d %d 0 %d\n\r", 327-5/2, 59+37*0, feed_speed);
 			HAL_UART_Transmit(&huart2, data, size, 100);
-//			htim3.Init.Period = period_array[feed_speed];
-//			htim3.Init.Prescaler = prescaler_array[feed_speed];
-//			if (HAL_TIM_OnePulse_Init(&htim3, TIM_OPMODE_REPETITIVE) != HAL_OK) {
-//				Error_Handler();
-//			}
 		}
 		break;
 
@@ -269,7 +309,6 @@ void screen16_action(int button) {
 			HAL_UART_Transmit(&huart2, data, size, 1000);
 			size = sprintf(data, "UF 3 %d %d 0 %d\n\r", 327-strlen(temp_batch_pieces)*5/2, 59+37*2, batch_pieces);
 			HAL_UART_Transmit(&huart2, data, size, 100);
-			HAL_UART_Transmit(&huart1, data, size, 100);
 		}
 		break;
 
@@ -280,7 +319,6 @@ void screen16_action(int button) {
 			HAL_UART_Transmit(&huart2, data, size, 100);
 			size = sprintf(data, "UF 3 %d %d 0 %d\n\r", 327-strlen(temp_batch_pieces)*5/2, 59+37*2, batch_pieces);
 			HAL_UART_Transmit(&huart2, data, size, 100);
-			HAL_UART_Transmit(&huart1, data, size, 100);
 		}
 		break;
 
@@ -294,13 +332,33 @@ void screen16_action(int button) {
 			HAL_UART_Transmit(&huart2, data, size, 100);
 		}
 		break;
-
+// 9 9 620 165 56929.9
 	case 11:
 		if(batch_delay<9){
 			batch_delay++;
 			size = sprintf(data, "CLR 285 %d 380 %d 65535\n\r",55+37*3, 50+37*4);
 			HAL_UART_Transmit(&huart2, data, size, 1000);
 			size = sprintf(data, "UF 3 %d %d 0 %d\n\r", 327-5/2, 59+37*3, batch_delay);
+			HAL_UART_Transmit(&huart2, data, size, 100);
+		}
+		break;
+
+	case 12:
+		if(scaling>90.1){
+			scaling-=0.1;
+			size = sprintf(data, "CLR 285 %d 380 %d 65535\n\r",55+37*4, 45+37*5);
+			HAL_UART_Transmit(&huart2, data, size, 1000);
+			size = sprintf(data, "UF 3 %d %d 0 %.1f\n\r", 327-strlen(temp_scaling)*5/2, 59+37*4, scaling);
+			HAL_UART_Transmit(&huart2, data, size, 100);
+		}
+		break;
+
+	case 13:
+		if(scaling<110){
+			scaling+=0.1;
+			size = sprintf(data, "CLR 285 %d 380 %d 65535\n\r",55+37*4, 45+37*5);
+			HAL_UART_Transmit(&huart2, data, size, 1000);
+			size = sprintf(data, "UF 3 %d %d 0 %.1f\n\r", 327-strlen(temp_scaling)*5/2, 59+37*4, scaling);
 			HAL_UART_Transmit(&huart2, data, size, 100);
 		}
 		break;
